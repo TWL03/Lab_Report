@@ -16,7 +16,10 @@ Each folder contains:
 
 ---
 
-## 🧪 List of Laboratory Reports — *Physics Practical I (ZCT 191,2)*
+## 🧪 Experiment Lists
+
+### 🧾 Year 1 — *Physics Practical I (ZCT 191,2)*
+
 
 | No. | Code | Experiment Title | Folder Link |
 |:---:|----|------------------|-------------|
@@ -35,7 +38,18 @@ Each folder contains:
 
 ---
 
-## 📄 Supporting Materials
+### 🧾 Year 2 — *Physics Practical II (ZCT 293, 294 )*
+
+| No. | Title | Link |
+|:--:|-----------------------------|----------------|
+| 1 | Microwave Interference | [📂 View](./Year%202%20-%20Physics%20Practical%20II/1.%20Microwave%20Interference) |
+| 2 | Excitation and Ionisation | [📂 View](./Year%202%20-%20Physics%20Practical%20II/2.%20Excitation%20and%20Ionisation) |
+| 3 | Glider Collision | [📂 View](./Year%202%20-%20Physics%20Practical%20II/3.%20Glider%20Collision) |
+| 4 | Emission Spectrum of Mercury | [📂 View](./Year%202%20-%20Physics%20Practical%20II/4.%20Emission%20Spectrum%20of%20Mercury) |
+
+---
+
+### 📄 Supporting Materials
 
 | File | Description | Link |
 |------|-------------|------|
