@@ -9,10 +9,9 @@ All experiments were conducted as part of USM’s core physics laboratory module
 
 Each folder contains:
 
-- `lab_report.pdf` — Final submitted report  
-- `report.tex` — LaTeX source code  
-- `data/` — Raw or processed data (CSV, XLSX, etc.)  
-- `figures/` — Graphs and diagrams included in the report
+- `Manual` — Experiment manual 
+- `Data` — Raw or processed data (CSV, XLSX, etc.)  
+- `Report` — Final Submitted Report  
 
 ---
 
