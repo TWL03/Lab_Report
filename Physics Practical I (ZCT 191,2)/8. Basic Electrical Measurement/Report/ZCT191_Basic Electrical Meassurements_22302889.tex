@@ -1,0 +1,626 @@
+\documentclass[twocolumn,a4paper,11pt]{article}
+\usepackage{geometry}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+
+% Load xcolor first with all necessary options
+\usepackage[table]{xcolor}
+\definecolor{mygreen}{rgb}{0.82, 0.94, 0.75}
+\definecolor{mygreen2}{rgb}{0.67, 0.88, 0.69}
+\definecolor{codegreen}{rgb}{0,0.94,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\usepackage{titlesec}
+\usepackage{amsmath}  % For mathematical symbols and equations
+\usepackage{yhmath}
+\usepackage{amssymb}%For some mathrelationsymbol
+\usepackage{extarrows}
+\usepackage{enumerate}
+\usepackage{makecell} % 表格内换行
+\usepackage{paralist}
+\usepackage{datetime}
+\usepackage{siunitx}
+\usepackage{graphicx}  % For including figures
+\graphicspath{{./figure/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.jpg}
+\usepackage{wrapfig}
+\usepackage{bm}       % 同时黑体斜体
+\usepackage{listings} % 插入代码
+\usepackage[all]{xy}
+\usepackage{esint}
+\usepackage{bigints}
+\usepackage{mathrsfs}
+\usepackage{tcolorbox}
+\usepackage{ulem}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\usepackage{tasks}
+\usepackage[hidelinks]{hyperref} %removing red boxes around references
+\usepackage{fancyhdr} % 页眉页脚 header&footer
+\usepackage{calc} % For calculating widths
+\usepackage{tocloft}
+\usepackage{booktabs} % For formal tables
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{multicol} % Required for multicolumn within a column
+\usepackage{caption}
+
+\captionsetup[table]{
+  labelfont=bf, % Makes the "Table:" label bold
+}
+
+\captionsetup[figure]{labelfont=bf}
+
+% Custom styling for the Python code
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\tiny, % Adjusting the code size here
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+% Center subsection titles
+\titleformat{\subsection}[block]{\normalfont\large\bfseries\filcenter}{}{1em}{}
+
+\begin{document}
+
+\title{1EM1: Basic Electrical Measurements}
+\author{}
+\date{}
+\maketitle
+
+\subsection*{OBJECTIVES}
+\begin{enumerate}
+    \item To become familiar with the basic methods of measuring voltage, current, and resistance.
+    \item To be acquainted with the use of an oscilloscope.
+\end{enumerate}
+
+\subsection*{THEORY}
+
+\subsubsection*{Digital Storage Oscilloscope (DSO)}
+A digital storage oscilloscope (DSO) is a laboratory instrument used to display and analyze the waveform of electronic signals. We can use a DSO to measure various electrical signals, including voltage, current, frequency, and phase. In our experiment, the DSO shows you the voltage plot as a function of time of an AC current.
+
+\subsubsection*{Root Mean Square Voltage}
+In our experiment, an oscilloscope measures how voltage changes as time progresses. In other words, it detects the voltage as a function of time, \(V(t)\). At home, you have many 3-pin sockets providing an AC voltage source. An AC voltage is typically varying like the sine curve; as time progresses,
+
+\begin{equation}
+    V(t) = V_0 \sin(2\pi ft)
+\end{equation}
+
+where \(V_0\) is the amplitude, and \(f\) is the frequency of the signal. You can imagine this as a fluctuating voltage battery that could automatically change its terminal signs (+ or -), too!
+
+A sine signal pattern repeats as time progresses, and each pattern cycle takes about \(T\) seconds. Therefore, the frequency of the signal is given by \( f = \frac{1}{T} \) Hz. Suppose that you randomly pick \( N \) numbers between 0 sec and \(T\) secs, i.e., \( t_1, t_2, t_3, \ldots, t_N \). With these, you can evaluate the corresponding values of voltages using Eq. (1), i.e.,
+
+\[
+\begin{aligned}
+    V_1 &= V_0 \sin(2\pi ft_1) \\
+    V_2 &= V_0 \sin(2\pi ft_2) \\
+    V_3 &= V_0 \sin(2\pi ft_3) \\
+    &\vdots \\
+    V_N &= V_0 \sin(2\pi ft_N)
+\end{aligned}
+\]
+
+You can calculate the average using the standard formula,
+
+\begin{equation}
+    \bar{V} = \frac{V_1 + V_2 + \ldots + V_N}{N}
+\end{equation}
+
+Voila! You have estimated the average of the voltage function, \( \bar{V}(t) \), over the period \( T \). However, the sine signal fluctuates above and below zero. So, the average voltage in Eq. (2) will be \( \overline{V} \), which is not meaningful. To get a meaningful result, we are interested in the average of the magnitudes, regardless of the voltage sign. To make it easy, we just take the squares of each \(V(t)\), because squaring a positive or negative number will always return a positive number! Therefore,
+
+\begin{equation}
+    \bar{V^2} = \frac{V_1^2 + V_2^2 + \ldots + V_N^2}{N}
+\end{equation}
+
+However, Eq. (3) is the average of the squared of \(V\). That is too large; therefore, engineers take the square root,
+
+\begin{equation}
+    V_{rms} = \sqrt{\frac{V_1^2 + V_2^2 + \ldots + V_N^2}{N}}
+\end{equation}
+
+If you generate many, many, many random numbers \( t_i \), i.e., \( N \rightarrow \infty \), then you have to use calculus,
+
+\begin{equation}
+    V_{rms} = \sqrt{\frac{1}{T} \int_{0}^{T} V^2 dt} 
+\end{equation}   
+\\
+\newpage
+\begin{align*}
+     &= \sqrt{\frac{1}{T} \int_{0}^{T} V_0^2 \sin^2(2\pi ft) \, dt} \\
+     &= \frac{V_0}{\sqrt{2}} 
+\end{align*}   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Page 2
+\subsection*{EQUIPMENT}
+\begin{enumerate}
+    \item Battery (6 V)
+    \item Ammeter (0-30 mA)
+    \item Voltmeter (0-10 V)
+    \item Digital storage oscilloscope (DSO)
+    \item Audio frequency generator
+    \item Digital multimeter (DMM)
+    \item 10-decade potentiometers
+\end{enumerate}
+
+\subsection*{PROCEDURES}
+
+\subsubsection*{Week 1 (Part A): Measuring resistance using Ammeters and Voltmeters}
+
+In this part of the experiment, you will use three different methods to measure the unknown resistance, \(R_x\) (A1) using a voltmeter and an ammeter, (A2) using a graphical method by varying resistance and noting the current.
+
+%Figure 
+
+\paragraph{A1: Ohms Law Method}
+\begin{enumerate}
+    \item Using a DMM, obtain the resistance value after subtracting the lead resistance. Take this as your true value of resistance.
+    \item Set up the circuit shown in Figure 1 and obtain the resistance using Ohm's law, 
+    \begin{equation}
+     R = \frac{V}{I}
+    \end{equation}
+    \item We can estimate the error of \(R\) using the Propagation of Error formula,
+\end{enumerate}
+
+\begin{equation}
+    \Delta R = R \sqrt{\left(\frac{\Delta V}{V}\right)^2 + \left(\frac{\Delta I}{I}\right)^2}
+\end{equation}
+
+\begin{equation}
+\Delta R = R\sqrt{\left(\frac{\Delta V}{V}\right)^2 + \left(\frac{\Delta I}{I}\right)^2} \tag{7}
+\end{equation}
+where \(\Delta R\), \(\Delta V\), and \(\Delta I\) are the error of \(R\), measured voltage, and measured current, respectively. Your final quote of \(R_x\) will be,
+\[
+R_x = R \pm \Delta R \text{ Ohms}
+\]
+
+%Figure 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\linewidth]{SEM1}
+\caption{Ciruit for the ammeter/ voltmeter method.}
+\label{6}
+\end{figure}
+\paragraph{A2: Empirical Method}
+In this part of the experiment, you will obtain the unknown resistance, \(R_x\), using a plot of known resistance, \(R(I)\), against the measured current.
+
+\begin{enumerate}
+    \item Set the circuit as shown in Figure 2.
+    \item Set both \(R_0\) and \(R_1\) into 9 \(\Omega\).
+    \item Adjust \(R_0\) so that the milli-ammeter reading stays at 10 mA.
+    \item Notice that now \(R_m = R_0\) due to Step 2. Record the milli-ammeter reading, and this corresponds to \(I_0\).
+    \item Now, repeat Step 4, but adjust \(R_1\) into other values and record corresponding ammeter readings for \(R_1 = 100\Omega, 200\Omega, \ldots, 1000\Omega\).
+    \item Prepare a table like in Table 1. For each row, calculate \(a_i\),
+\begin{equation}
+a_{i} = -\frac{1}{R_i} \ln \left(\frac{I_i}{10}\right) \tag{8}
+\end{equation}
+\begin{table}[ht]
+\centering
+\caption{}
+\begin{tabular}{ccc}
+\toprule
+\(R_i (\Omega)\) & \(I_i (mA)\) & \(a_i\) \\
+\midrule
+0 & 10.0 & - \\
+100 & \(I_1 + \Delta I\) & \(a_1\) \\
+200 & \(I_2 + \Delta I\) & \(a_2\) \\
+\vdots & \vdots & \vdots \\
+1000 & \(I_{10} + \Delta I\) & \(a_{10}\) \\
+\bottomrule
+\end{tabular}
+
+\label{tab:table1}
+\end{table}
+   \item Make a plot of current vs. resistance recorded in the above table. Obtain
+\begin{equation}
+\alpha = \frac{a_1 + a_2 + \ldots + a_{10}}{10} \tag{9}
+\end{equation}
+    \item Replace \(R_x\) with \(R_0\). Obtain the milliammeter reading, \(I_x\). Obtain \(R_x\) using Eq. (3),
+\begin{equation}
+I_x = 10e^{-\alpha R_x} \tag{10}
+\end{equation}
+\item[] where $\alpha$ is the value that you have obtained in Step 7.
+\end{enumerate}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\linewidth]{SEM2}
+\caption{Circuit for the graphical method.}
+\label{6}
+\end{figure}
+\newpage
+
+\hfill
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page 4
+\subsubsection*{Part B: Using an Oscilloscope}
+
+In this part, you will use the DSO to measure (a) measure the amplitude and frequency of an AC Voltage and (b) verify that, \( V_{rms} = \frac{1}{\sqrt{2}}V_0 \), where \( V_{rms} \) is the root mean square voltage, and \( V_0 \) is the amplitude of the AC voltage.
+
+\subsubsection*{Setting up the AC Source}
+\begin{enumerate}
+    \item Turn on the AC source power.
+    \item Toggle the attenuation knob to 0 dB.
+    \item Adjust the output level knob to the middle position.
+    \item Adjust the frequency level knob to any value. You can use the dial on the AC source as a guide.
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\linewidth]{SEM3}
+\caption{The connection for Part B. (1) The $frequency\,level$ knob. (2) The $output\,level$ knob.}
+\label{6}
+\end{figure}
+\subsubsection*{Setting up the Oscilloscope.}
+\begin{enumerate}
+    \item Set up the circuit connection as in Figure 1. You don't have to worry about polarity (+ or - signs).
+    \item Turn on the oscilloscope and press the \textit{Autoset} button (Figure 4). Please wait for it to set up.
+    \item If the display is frustrating, adjust the output level knob and repeat step 2.
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\linewidth]{SEM4}
+\caption{Circuit for the graphical method.}
+\label{6}
+\end{figure}
+
+\subsubsection*{Verifying the relationship between root mean square voltage, \( V_{rms} \) and amplitude, \( V_0 \)}
+In this part, you will plot the peak voltage versus the RMS voltage of the sine wave. Refer to Figure 5.
+
+\begin{enumerate}
+    \item Push the \textit{Measure} button (1) to see the Measure Menu.
+    \item Push the topmost option button (2); then the Measure 1 menu appears.
+    \item Push \textit{Source} $\blacktriangleright$ \textit{CH2} (depends on which terminal you connect the AC source).
+    \item Push \textit{Type} $\blacktriangleright$ \textit{Cyc RMS}.
+    \item Push the \textit{Back} option button.
+    \item Push the second option button (3) from the top; the Measure 2 Menu appears.
+    \item Push \textit{Source} $\blacktriangleright$ \textit{CH2} (depends on which terminal you connect the AC source).
+    \item Push \textit{Type} $\blacktriangleright$ \textit{Cyc RMS}.
+    \item Push the \textit{Back} option button.
+    \item From the oscilloscope screen (next to each corresponding option button), obtain the \( V_{max} \) and the corresponding \( V_{rms} \).
+    \item Repeat this for the various \( V_{max} \) values (adjust using the output level knob of the AC source) and record the \( (V_{max}, V_{rms}) \) pair in Table 2 of your worksheet (Part B).
+    \item Follow the remaining instructions in the worksheet.
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\linewidth]{SEM5}
+\caption{Oscilloscope buttons. (1) The measure button. (2) First option button, }
+\label{6}
+\end{figure}
+\newpage
+
+\hfill
+\newpage
+\hfill
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page 6
+\subsection*{BASIC ELECTRICAL MEASUREMENTS WORKSHEET}
+
+Instructions: Please submit this worksheet at the end of the second session of your experiment.
+
+\begin{tabular}{ll}
+Name & :\underline{TAN WEI LIANG\hspace{0.95cm}} \\
+Group & :\underline{M5B\hspace{3.3cm}} \\
+Partner's Name & :\underline{AINA IMANINA BINTI} \\
+          & \ \underline{MOHB KHOZIKIN\hspace{0.7cm}}\\
+          & \\
+Marks & :\underline{\hspace{4.2cm}} \\
+\end{tabular}
+
+\subsection*{DATA}
+
+\subsubsection*{Part A1: Ammeter / Voltmeter Method}
+\begin{enumerate}
+    \item The true value of resistance (measured using a digital multimeter (DMM)): \\
+    First measurement (\(R_1\)): \\
+    \underline{ 471 $\pm$ 1 } \(\Omega\) \\
+    Second measurement (\(R_2\)): \\
+    \underline{ 471 $\pm$ 1 } \(\Omega\) \\
+    Third measurement (\(R_3\)): \\
+    \underline{ 471 $\pm$ 1 } \(\Omega\) \\
+    Average: \\
+    \underline{ 471 $\pm$ 1 } \(\Omega\)
+    
+    \item Value of resistance using Ohm's Law (show your workings below): 
+    \begin{enumerate}
+    \item[a)] Current (\(I\)): \\
+    \underline{ 12.50 $\pm$ 0.25 }  mA 
+    \item[b)] Voltage (\(V\)): \\
+   \underline{ 6.0 $\pm$ 0.1 }  V 
+   \item[c)] Resistance (\(R\)) using Eqs. (6) \& (7): \\
+    \underline{ 480 $\pm$ 12 }  \(\Omega\)
+    \end{enumerate}
+\end{enumerate}
+\newpage
+\subsubsection*{Part A2: Empirical Method}
+\begin{table}[h]
+\centering
+\caption{Resistance versus current.}
+\label{tab:resistance_current}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor{lightgray} 
+Resistance,& Current,  & \(a_i\) \\
+\rowcolor{lightgray} 
+\(R_1 (\Omega)\)  & \(I_i (mA)\) &\\
+\hline  
+0 & 10.0 & - \\
+\hline
+100 & \(3.8\pm0.1\) & 0.009676 \\
+\hline
+200 & \(2.4\pm0.1\) & 0.007136\\
+\hline
+300 & \(1.8\pm0.1\) & 0.005716\\
+\hline
+400 & \(1.4\pm0.1\) & 0.004915\\
+\hline
+500 & \(1.1\pm0.1\) & 0.004415\\
+\hline
+600 & \(1.0\pm0.1\) & 0.003838\\
+\hline
+700 & \(0.8\pm0.1\) & 0.003608\\
+\hline
+800 & \(0.7\pm0.1\) & 0.003324\\
+\hline
+900 & \(0.6\pm0.1\) & 0.003126\\
+\hline
+1000 & \(0.5\pm0.1\) & 0.002996\\
+\hline
+\cellcolor{black} & {Average of \(a_i\) (\(\bar{a}\))} &  0.004875\\
+\hline
+{\(R_x\)} & \(435.9\pm 0.1\) &\\
+\hline
+\end{tabular}
+}
+\end{table}
+\noindent Since, \(I_x\) = \(1.2 \pm 0.1\) mA. 
+From Eq. (10), the value of \(R_x\) is given by \underline{ \(435.9\pm 0.1\)} \(\Omega\).\\
+\\
+\noindent Calculate the percentage discrepancy between the measurement made using (1) the digital multimeter (DMM) and (2) the multimeter with the value of resistance obtained through the colour code.
+\newpage
+\subsection*{Data Analysis}
+{\text{for}\,\textbf{A1} \,\text{experiment:}} 
+\begin{align*}
+&\text{Calculation of resistance:}\\
+V &= IR \\
+R &= \frac{V}{I} = \frac{6.0}{12.5 \times 10^{-3}} = 480 \,\Omega\\
+\\
+&\text{Uncertainty of resistance:}\\
+(\frac{\Delta R}{R})^2 &= (\frac{\Delta V}{V})^2 +(\frac{\Delta I}{I})^2\\
+\Delta R &= R \sqrt{(\frac{\Delta V}{V})^2 +(\frac{\Delta I}{I})^2}\\
+&= 480 \sqrt{(\frac{0.1}{6.0})^2 +(\frac{0.25}{12.50})^2}\\
+&= 12\,\Omega\\
+\\
+&\text{Percentage of discrepancy}\\
+&= \frac{|E_{\text{exp}} - E_{\text{th}}|}{E_{\text{th}}} \times 100\% \\
+&= \frac{|480 - 471|}{471} \times 100\%\\
+&= 1.91 \%
+\end{align*}
+{\text{for}\,\textbf{A2} \,\text{experiment:}}
+\begin{align*}
+&\text{Calculation of resistance:}\\
+\alpha_i &= -\frac{1}{R_i} \ln (\frac{I_i}{10})\\
+R_x &= -\frac{1}{\alpha} \ln (\frac{I_x}{10})\\
+&= -\frac{1}{0.004875} \ln (\frac{1.2}{10})\\
+&=435.9\,\Omega\\
+\\
+&\text{Uncertainty of resistance:}\\
+\Delta R_x &=\frac{\Delta I_x}{I_x}= \frac{0.1}{1.2}= 0.083\,\Omega\\
+\\
+&\text{Percentage of discrepancy:}\\
+&= \frac{|E_{\text{exp}} - E_{\text{th}}|}{E_{\text{th}}} \times 100\% \\
+&= \frac{|435.9 - 471|}{471} \times 100\%\\
+&= 7.45 \%
+\end{align*}
+\newpage
+\begin{figure}[htbp]
+\includegraphics[width=1.1\linewidth]{SEM6}
+\caption{Graph of current against resistance }
+\label{6}
+\end{figure}
+
+In further exploration, graph of current against resistance is ploted by using python with exponential function fit. By comparing two curve, the fitted curved showed value of resistance of $495 \pm 47 \,\Omega$ which is more relative to the true value with eleminate the outlier of theoretical value of (0, 10.0). The additional curve indicated that if considered the outlier, it would deviate significantly from the curve that represents the actual experimental data.
+\subsection*{DISCUSSION \& CONCLUSION (PART A)}
+\noindent{$Safety\,Precautions:$} \\
+
+Before conducting experiments, test your equipment such as multimeters, ammeters, and power supplies to ensure they are functioning correctly to avoid erroneous readings or unexpected failures.\\
+
+Ensuring tight connections in circuit prevents an increase in resistance, which is crucial for maintaining efficient current flow and consistent circuit performance.\\
+
+Being aware of environmental conditions is crucial when conducting electrical experiments, as factors like humidity, temperature, and the presence of flammable materials can significantly impact circuit behavior and safety. Humidity can cause condensation and short circuits, extreme temperatures may affect component performance and reliability, and flammable materials pose fire risks. \\
+
+Additionally, dust can lead to overheating and unintended electrical pathways, while inadequate air flow can cause hot spots. Electrostatic discharge, more common in dry environments, can also damage sensitive components. Managing these environmental factors is essential for maintaining safe and effective experimental conditions.\\
+\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent{$Potential\,Sources\,of\,Error:$}\\
+
+Poor connections in the circuit, including at the probes, cables, or terminals, can lead to inconsistent signal transmission and increased resistance or capacitance.\\
+
+Wires have inherent resistance that can affect the circuit's overall resistance, especially if the wires are long or have a small diameter. This can be particularly impactful in low-resistance circuits or when measuring very small currents.\\
+
+The actual resistance of a rheostat might differ from its labeled value due to manufacturing imperfections. Environmental factors like temperature can also affect the resistance of the materials in the circuit and the performance of the electronic components, leading to variability in measurements.\\
+
+Ammeters also might be source of error that can affect the circuit they're measuring by adding a small resistance, which can slightly alter the current. Additionally, precision errors and calibration issues can cause inaccurate current readings.\\
+\\
+\newpage
+\noindent{$Comments\,about\,your\,findings:$}\\
+
+In part \textbf{A1} experiment, the averange true value of resistance measured using a digital multimeter   (DMM) is $471 \pm 1 \,\Omega$. The value of resistance using Ohm's Law is $480 \pm 12\,\Omega$. The percentage of discrepancy between the experimental value and the true value is 1.91 \%, which lower than 5.00 \%, showed the hight accurancy of the experiment result.\\
+
+In part \textbf{A2} experiment, the value of $R_x$ is $435.9 \pm 0.1\,\Omega$. The percentage of discrepancy between the value and the true value $471\,\Omega$ is 7.45 \%, which slightly higher than 5.00 \%, showed the mediate accurancy of the experiment result.\\
+
+Based on further exploration, the exponential function used in equation (10) is not suitable for finding the resistance or current for simple electric circuit, which it will deviate significantly from the actual value of experiments data. But the exponential function used in equation (10) always useful to made an approximation value for experiment data of the complicated electric circuit. \\
+
+\noindent\textit{Conclusions:} \\
+
+In part \textbf{A1} experiment, the averange true value of resistance measured using a digital multimeter   (DMM) is $471 \pm 1 \,\Omega$. The value of resistance using Ohm's Law is $480 \pm 12\,\Omega$.\\
+
+In part \textbf{A2} experiment, the value of $R_x$ is $435.9 \pm 0.1\,\Omega$.\vfill
+\begin{center}
+-----The End of Part A (Week 1)-----
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{Part B2: Measurement of AC Voltage}
+\begin{table}[h!]
+\caption{Peak voltage versus RMS voltage}
+\label{tab:peak_rms_voltage}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Peak Voltage (V\textsubscript{p})} & \textbf{RMS Voltage (V\textsubscript{rms})} & \textbf{m = $\frac{V_{\text{max}}}{V_0}$} \\
+\hline
+60.0 & $41.4\pm 0.1$ & 0.6900 \\
+61.6 & $43.0\pm 0.1$ & 0.6981 \\
+64.0 & $44.5\pm 0.1$ & 0.6953 \\
+65.6 & $45.6\pm 0.1$ & 0.6951 \\
+67.2 & $46.9\pm 0.1$ & 0.6979 \\
+69.6 & $48.4\pm 0.1$ & 0.6954 \\
+72.0 & $50.5\pm 0.1$ & 0.7014 \\
+73.6 & $51.2\pm 0.1$ & 0.6957 \\
+76.8 & $53.4\pm 0.1$ & 0.6953 \\
+79.2 & $55.5\pm 0.1$ & 0.7008 \\
+80.0 & $56.2\pm 0.1$ & 0.7025 \\
+\hline
+\multicolumn{2}{|c|}{\textbf{Average of m:}} & 0.6970 \\
+\hline
+\end{tabular}
+}
+\end{table}
+\noindent From the above result (average of \( m \)), obtain the slope of the straight line and compare this value with the theoretical value, \( \frac{1}{\sqrt{2}} \). Calculate its percentage discrepancy.
+\subsection*{Data Analysis}
+\begin{align*}
+&\text{The teoretical value of m}\\
+&=\frac{1}{\sqrt{2}} \approx 0.7071\\
+\\
+&\text{Percentage of discrepancy} \\
+&= \frac{|E_{\text{exp}} - E_{\text{th}}|}{E_{\text{th}}} \times 100\% \\
+&= \frac{|0.6970 - 0.7071|}{0.7071} \times 100\%\\
+&= 1.43 \%
+\end{align*}
+\newpage
+\subsection*{DISCUSSION AND CONCLUSION (PART B)}
+\noindent{$Safety$ $Precautions:$}\\
+
+The safety precaution is have to check equipment condition, inspect all equipment for any damage or wear before use. This includes checking wires, connectors, and any other components for integrity.\\
+
+Also, conduct experiments in a dry environment. Moisture can cause short circuits and increase the risk of electric shock.\\
+
+The loose connections can lead to inaccurate readings and intermittent faults. Make sure all connections between wires and instruments are secure and tight. This is ensured the circuit is complete to allow the current flow.\\
+
+Before conduct the experiments always remember to use a multimeter to verify that connections are correct and that voltages and currents are within expected ranges before powering your circuit fully.\\
+
+Even at low voltages, it's a good practice to turn off power when building or changing circuits to avoid any unexpected behavior or component damage.
+\\
+\\
+\noindent {$Potential\,Sources\,of\,Error:$} \\
+
+Sources of error might come from External Electromagnetic Interference (EMI). Nearby electrical devices, power lines, or even mobile phones can introduce noise, especially when dealing with low voltage and current signals.\\
+
+Others error might be instabilities of power supply. Variations in the power supply used for the frequency generator and other circuit elements can introduce noise and fluctuations in the signal.\\
+
+If the sampling rate of the oscilloscope is not high enough relative to the frequency of the signal (according to the Nyquist criterion), aliasing can occur. This results in the oscilloscope displaying a signal that is lower in frequency than the actual signal.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\noindent {$comments\,about\,your\,findings:$}\\
+
+From \textbf{B2} experiment, the average value of the ratio of peak voltage to RMS voltage, m is 0.6970 with the percentage of discrepancy of 1.43 \% compared with theoretical value $\frac{1}{\sqrt{2}}$. The results is in hight accurancy with the percentage of discrepancy 1.43 \% $<$ 5.00 \%. The results also show that the relationship between the peak voltage is directly proportional to RMS voltage.
+\\
+\\
+\noindent {$Conclusions:$} \\
+
+The average value of the ratio of peak voltage to RMS voltage, m is 0.6970. 
+\vfill
+
+\begin{center}
+-----The End of Part B (Week 2)-----
+\end{center}
+\newpage
+\onecolumn
+\section*{\center APPENDICES}
+\addcontentsline{toc}{section}{APPENDICES}
+\label{sec:APPENDICES}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1.1\linewidth]{SEM6}
+  \caption{Graph of Current against Resistance}
+  \label{1}
+  \end{figure}
+\newpage
+\subsection*{Python code of Graph of Current against Resistance}
+\begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+from scipy.stats import t
+from numpy import sqrt
+
+# Define the data points
+R_1 = np.array([100, 200, 300, 400, 500, 600, 700, 800, 900, 1000])  # Resistance in ohms
+I_mA = np.array([3.80, 2.40, 1.80, 1.40, 1.10, 1.00, 0.80, 0.70, 0.60, 0.50])  # Current in milliamps
+I_errors = np.array([0.1] * len(I_mA))  # Error in current measurements
+
+# Define the exponential function to fit
+def exponential(R, A, b):
+    return A * np.exp(-b * R)
+
+# Perform curve fitting with error consideration
+params, params_covariance = curve_fit(exponential, R_1, I_mA, sigma=I_errors, absolute_sigma=True, p0=[10, 0.001])
+
+# Extract the parameters
+A, b = params
+sigma_A, sigma_b = np.sqrt(np.diag(params_covariance))
+
+# Generate a smoother range of Resistance values
+R_fine = np.linspace(0, 1000, 400)  # More points for a smoother curve
+I_fit = exponential(R_fine, A, b)
+
+# Update b for the fixed A curve
+b_fixed = 0.004875
+I_fixed = exponential(R_fine, 10, b_fixed)  # Fixed A at 10, updated b
+
+# Target current for calculation
+target_I = 1.2
+R_target = np.log(target_I / A) / -b
+
+# Calculate uncertainty in R_target using error propagation
+dR_target_dA = -1 / (A * b) * (target_I / A)
+dR_target_db = -np.log(target_I / A) / b**2
+sigma_R_target = sqrt((dR_target_dA * sigma_A)**2 + (dR_target_db * sigma_b)**2)
+t_value = t.ppf(0.975, len(R_1) - 2)  # T-value for 95% CI
+CI_R_target = t_value * sigma_R_target
+
+# Plot the results
+plt.figure(figsize=(8, 5))
+plt.errorbar(R_1, I_mA, yerr=I_errors, fmt='x', color='red', elinewidth=2, capsize=4, label='Data Points with Error Bars')
+plt.plot(R_fine, I_fit, label=f'Fitted Curve: $I = {A:.2f} e^{{-{b:.4f}R}}$', color='blue')
+plt.plot(R_fine, I_fixed, label=f'Additional Curve: $I = 10 e^{{-{b_fixed:.4f}R}}$', color='green', linestyle='--')
+plt.errorbar([R_target], [target_I], xerr=CI_R_target, fmt='x', color='black', elinewidth=2, capsize=4,
+             label=f'Target Point: $I=1.2$ mA at $R={R_target:.2f} \pm {CI_R_target:.2f}$ Ohms')
+plt.title('Exponential Fit to Current against Resistance with Uncertainty')
+plt.xlabel('Resistance (Ohms)')
+plt.ylabel('Current (mA)')
+plt.legend()
+plt.grid(True)
+plt.show()
+\end{lstlisting}
+\end{document}
