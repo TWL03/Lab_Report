@@ -1,0 +1,30 @@
+\contentsline {section}{ABSTRACT}{i}{section*.4}%
+\contentsline {section}{ACKNOWLEDGEMENTS}{ii}{section*.5}%
+\contentsline {section}{LIST OF TABLES}{v}{section*.6}%
+\contentsline {section}{LIST OF FIGURES}{vi}{section*.7}%
+\contentsline {section}{\numberline {1}\centering INTRODUCTION}{1}{section.1}%
+\contentsline {section}{\numberline {2}\centering THEORY}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Mathematical Derivation \blx@tocontentsinit {0}\autocite {IITRCornuMethod}}{4}{subsection.2.1}%
+\contentsline {section}{\numberline {3}\centering METHODOLOGY}{7}{section.3}%
+\contentsline {section}{\numberline {4}\centering DATA ANALYSIS}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Fringe Pattern Observations}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Experimental Measurements and Tabulated Data}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Linear Regression of Squared Displacements}{14}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Calculation of Poisson's Ratio}{16}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Calculation of Young's Modulus}{17}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Comparison with Reference Values}{18}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Summary of Findings}{18}{subsection.4.7}%
+\contentsline {section}{\numberline {5}\centering DISCUSSION}{19}{section.5}%
+\contentsline {section}{\numberline {6}\centering CONCLUSION}{22}{section.6}%
+\contentsline {section}{\numberline {7}\centering REFERENCES}{23}{section.7}%
+\contentsline {section}{\numberline {8}\centering APPENDICES}{24}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Dataset}{24}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Complete table}{26}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Output}{28}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Graphs Plots}{31}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Poisson's Ratio}{34}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Output}{37}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Young's Modulus}{38}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Output}{41}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Discrepancy Calculation}{42}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Output}{43}{subsection.8.10}%

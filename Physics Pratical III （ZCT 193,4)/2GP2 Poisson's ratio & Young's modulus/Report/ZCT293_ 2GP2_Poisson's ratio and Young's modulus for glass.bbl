@@ -1,0 +1,265 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{ElMoneim1998Elastic}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ad45b1fcc5143cf10749871d79a5e54a}{%
+           family={Abd\bibnamedelima El-Moneim},
+           familyi={A\bibinitperiod\bibinitdelim E\bibinithyphendelim M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=055157a52319c4d0cc3f634c6c0a22c3}{%
+           family={Gaafar},
+           familyi={G\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6e99b6bcacc94924b7eb4ace93e9c3f4}{%
+           family={Sidkey},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{720b91a7461ccb6d434637e67eb24681}
+      \strng{fullhash}{720b91a7461ccb6d434637e67eb24681}
+      \strng{fullhashraw}{720b91a7461ccb6d434637e67eb24681}
+      \strng{bibnamehash}{720b91a7461ccb6d434637e67eb24681}
+      \strng{authorbibnamehash}{720b91a7461ccb6d434637e67eb24681}
+      \strng{authornamehash}{720b91a7461ccb6d434637e67eb24681}
+      \strng{authorfullhash}{720b91a7461ccb6d434637e67eb24681}
+      \strng{authorfullhashraw}{720b91a7461ccb6d434637e67eb24681}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Materials Chemistry and Physics}
+      \field{number}{3}
+      \field{title}{Elastic Moduli Prediction and Correlation in SiO2-Based Glasses}
+      \field{volume}{52}
+      \field{year}{1998}
+      \field{pages}{258\bibrangedash 262}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/S0254-0584(97)02025-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/S0254-0584(97)02025-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/S0254-0584(97)02025-7
+      \endverb
+    \endentry
+    \entry{IITRCornuMethod}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3ccc6e2ef60730c4981ff82d206da112}{%
+           family={{Department of Physics, IIT Roorkee}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ccc6e2ef60730c4981ff82d206da112}
+      \strng{fullhash}{3ccc6e2ef60730c4981ff82d206da112}
+      \strng{fullhashraw}{3ccc6e2ef60730c4981ff82d206da112}
+      \strng{bibnamehash}{3ccc6e2ef60730c4981ff82d206da112}
+      \strng{authorbibnamehash}{3ccc6e2ef60730c4981ff82d206da112}
+      \strng{authornamehash}{3ccc6e2ef60730c4981ff82d206da112}
+      \strng{authorfullhash}{3ccc6e2ef60730c4981ff82d206da112}
+      \strng{authorfullhashraw}{3ccc6e2ef60730c4981ff82d206da112}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Optics Laboratory Resource, IIT Roorkee}
+      \field{title}{Cornu's Method}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://iitr.ac.in/Academics/static/Department/Physics/Optics%20Laboratory/1._Carnus_Method.pdf
+      \endverb
+      \verb{url}
+      \verb https://iitr.ac.in/Academics/static/Department/Physics/Optics%20Laboratory/1._Carnus_Method.pdf
+      \endverb
+    \endentry
+    \entry{Kojima2024Poisson}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d417ff37296a79c351997cd7cf15e890}{%
+           family={Kojima},
+           familyi={K\bibinitperiod},
+           given={Seiji},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d417ff37296a79c351997cd7cf15e890}
+      \strng{fullhash}{d417ff37296a79c351997cd7cf15e890}
+      \strng{fullhashraw}{d417ff37296a79c351997cd7cf15e890}
+      \strng{bibnamehash}{d417ff37296a79c351997cd7cf15e890}
+      \strng{authorbibnamehash}{d417ff37296a79c351997cd7cf15e890}
+      \strng{authornamehash}{d417ff37296a79c351997cd7cf15e890}
+      \strng{authorfullhash}{d417ff37296a79c351997cd7cf15e890}
+      \strng{authorfullhashraw}{d417ff37296a79c351997cd7cf15e890}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Materials}
+      \field{number}{2}
+      \field{title}{Poisson's Ratio of Glasses, Ceramics, and Crystals}
+      \field{volume}{17}
+      \field{year}{2024}
+      \field{pages}{300}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ma17020300
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1996-1944/17/2/300
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1996-1944/17/2/300
+      \endverb
+    \endentry
+    \entry{Li2025NegativePoisson}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ca0530bf32ca76d09aa5cfa71bc3ae80}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Longlong},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca0530bf32ca76d09aa5cfa71bc3ae80}
+      \strng{fullhash}{ca0530bf32ca76d09aa5cfa71bc3ae80}
+      \strng{fullhashraw}{ca0530bf32ca76d09aa5cfa71bc3ae80}
+      \strng{bibnamehash}{ca0530bf32ca76d09aa5cfa71bc3ae80}
+      \strng{authorbibnamehash}{ca0530bf32ca76d09aa5cfa71bc3ae80}
+      \strng{authornamehash}{ca0530bf32ca76d09aa5cfa71bc3ae80}
+      \strng{authorfullhash}{ca0530bf32ca76d09aa5cfa71bc3ae80}
+      \strng{authorfullhashraw}{ca0530bf32ca76d09aa5cfa71bc3ae80}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Materials Letters}
+      \field{title}{Research on the Optimization and Preparation of Negative Poisson's Ratio Structure of Quartz Glass}
+      \field{volume}{384}
+      \field{year}{2025}
+      \field{pages}{138105}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.matlet.2025.138105
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.matlet.2025.138105
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.matlet.2025.138105
+      \endverb
+    \endentry
+    \entry{USMYoungPoisson}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=424444352cbe975abb2180068eff5fd2}{%
+           family={{Pusat Pengajian Fizik dan Ilmu Hisab, Universiti Sains Malaysia}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{424444352cbe975abb2180068eff5fd2}
+      \strng{fullhash}{424444352cbe975abb2180068eff5fd2}
+      \strng{fullhashraw}{424444352cbe975abb2180068eff5fd2}
+      \strng{bibnamehash}{424444352cbe975abb2180068eff5fd2}
+      \strng{authorbibnamehash}{424444352cbe975abb2180068eff5fd2}
+      \strng{authornamehash}{424444352cbe975abb2180068eff5fd2}
+      \strng{authorfullhash}{424444352cbe975abb2180068eff5fd2}
+      \strng{authorfullhashraw}{424444352cbe975abb2180068eff5fd2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Laboratory manual, Universiti Sains Malaysia}
+      \field{title}{Poisson's Ratio and Young's Modulus for Glass}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{Sharpe2007Strain}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=6258b1266c011840fb2f0f748d958b80}{%
+           family={Sharpe},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi N.\bibnamedelimi Jr.},
+           giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=67599cb95bcbb3114d95dc69b708f246}{%
+           family={Pulskamp},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2e79220376416a5f4aa90d778d730cb8}{%
+           family={Gianola},
+           familyi={G\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=fad9ef243703a7a9058a0a4de11e64c2}{%
+           family={Eberl},
+           familyi={E\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=017289f43a0ff1e455eaf978de92e1df}{%
+           family={Polcawich},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=d28521f5ecabe60592fd32807bb2bc65}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b811bbcbd5e5634fb3cf503d813dee1}
+      \strng{fullhash}{5a45740426f7cb87ab26834bd65fc8bd}
+      \strng{fullhashraw}{5a45740426f7cb87ab26834bd65fc8bd}
+      \strng{bibnamehash}{9b811bbcbd5e5634fb3cf503d813dee1}
+      \strng{authorbibnamehash}{9b811bbcbd5e5634fb3cf503d813dee1}
+      \strng{authornamehash}{9b811bbcbd5e5634fb3cf503d813dee1}
+      \strng{authorfullhash}{5a45740426f7cb87ab26834bd65fc8bd}
+      \strng{authorfullhashraw}{5a45740426f7cb87ab26834bd65fc8bd}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Experimental Mechanics}
+      \field{number}{5}
+      \field{title}{Strain Measurements of Silicon Dioxide Microspecimens by Digital Imaging Processing}
+      \field{volume}{47}
+      \field{year}{2007}
+      \field{pages}{649\bibrangedash 658}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/s11340-006-9010-z
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11340-006-9010-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11340-006-9010-z
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
