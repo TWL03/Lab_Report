@@ -42,7 +42,7 @@ Each folder contains:
 
 | No. | Code | Experiment Title | Folder Link |
 |:---:|----|------------------|-------------|
-| 1 | 2EM7 | Magnetic Field | [📄 2EM7 – Magnetic Field](./Physics%20Practical%20III%20(ZCT%20193,4)/2EM7%20Magnetic%20Field) |
+| 1 | 2EM7 | Magnetic Field | [📄 2EM7 – Magnetic Field](.Physics%20Pratical%20III%20（ZCT%20193%2C4)/2EM7%20Magnetic%20Field) |
 | 2 | 2GP1 | Variable \( g \) | [📄 2GP1 – Variable g](./Physics%20Practical%20III%20(ZCT%20193,4)/2GP1%20Variable%20g) |
 | 3 | 2GP2 | Poisson’s Ratio & Young’s Modulus | [📄 2GP2 – Poisson’s Ratio & Young’s Modulus](./Physics%20Practical%20III%20(ZCT%20193,4)/2GP2%20Poisson's%20ratio%20&%20Young's%20modulus) |
 | 4 | 2GP5 | Linear Thermal Expansion | [📄 2GP5 – Linear Thermal Expansion](./Physics%20Practical%20III%20(ZCT%20193,4)/2GP5%20Linear%20Thermal%20Expansion) |
