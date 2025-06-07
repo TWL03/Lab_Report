@@ -16,22 +16,22 @@ Each folder contains:
 
 ---
 
-## 🧪 List of Laboratory Reports (ZCT191 & ZCT2C2)
+## 🧪 List of Laboratory Reports — *Physics Practical I (ZCT 191,2)*
 
 | No. | Experiment Title | Folder Link |
 |:---:|------------------|-------------|
-| 0 | ERR | [📂 ./0. ERR](./Physics Practical I (ZCT 191,2)/0. ERR) |
-| 1 | AC Resonance | [📂 ./1. AC Resonance](./1.%20AC%20Resonance) |
-| 2 | Projectile Motion | [📂 ./2. Projectile Motion](./2.%20Projectile%20Motion) |
-| 3 | Thermoelectric Effect and Thermal Conductivity | [📂 ./3. Thermoelectric Effect and Thermal Conductivity](./3.%20Thermoelectric%20Effect%20and%20Thermal%20Conductivity) |
-| 4 | Interference | [📂 ./4. Interference](./4.%20Interference) |
-| 5 | Mechanical Equivalent of Heat | [📂 ./5.Mechanical Equivalent of Heat](./5.Mechanical%20Equivalent%20of%20Heat) |
-| 6 | Excitation and Ionisation Potentials | [📂 ./6. Excitation and Ionisation Potentials](./6.%20Excitation%20and%20Ionisation%20Potentials) |
-| 7 | Geometrical Optics | [📂 ./7. Geometrical Optics](./7.%20Geometrical%20Optics) |
-| 8 | Basic Electrical Measurement | [📂 ./8. Basic Electrical Measurement](./8.%20Basic%20Electrical%20Measurement) |
-| 9 | Dynamics | [📂 ./9. Dynamics](./9.%20Dynamics) |
-| 10 | Radioactivity | [📂 ./10. Radioactivity](./10.%20Radioactivity) |
-| – | Others Mathematica Code | [📂 ./Others Mathematica code](./Others%20Mathamatica%20code) |
+| 0 | ERR | [📂 0. ERR](./Physics%20Practical%20I%20(ZCT%20191,2)/0.%20ERR) |
+| 1 | AC Resonance | [📂 1. AC Resonance](./Physics%20Practical%20I%20(ZCT%20191,2)/1.%20AC%20Resonance) |
+| 2 | Projectile Motion | [📂 2. Projectile Motion](./Physics%20Practical%20I%20(ZCT%20191,2)/2.%20Projectile%20Motion) |
+| 3 | Thermoelectric Effect and Thermal Conductivity | [📂 3. Thermoelectric Effect and Thermal Conductivity](./Physics%20Practical%20I%20(ZCT%20191,2)/3.%20Thermoelectric%20Effect%20and%20Thermal%20Conductivity) |
+| 4 | Interference | [📂 4. Interference](./Physics%20Practical%20I%20(ZCT%20191,2)/4.%20Interference) |
+| 5 | Mechanical Equivalent of Heat | [📂 5. Mechanical Equivalent of Heat](./Physics%20Practical%20I%20(ZCT%20191,2)/5.Mechanical%20Equivalent%20of%20Heat) |
+| 6 | Excitation and Ionisation Potentials | [📂 6. Excitation and Ionisation Potentials](./Physics%20Practical%20I%20(ZCT%20191,2)/6.%20Excitation%20and%20Ionisation%20Potentials) |
+| 7 | Geometrical Optics | [📂 7. Geometrical Optics](./Physics%20Practical%20I%20(ZCT%20191,2)/7.%20Geometrical%20Optics) |
+| 8 | Basic Electrical Measurement | [📂 8. Basic Electrical Measurement](./Physics%20Practical%20I%20(ZCT%20191,2)/8.%20Basic%20Electrical%20Measurement) |
+| 9 | Dynamics | [📂 9. Dynamics](./Physics%20Practical%20I%20(ZCT%20191,2)/9.%20Dynamics) |
+| 10 | Radioactivity | [📂 10. Radioactivity](./Physics%20Practical%20I%20(ZCT%20191,2)/10.%20Radioactivity) |
+| – | Others Mathematica Code | [📂 Others Mathematica Code](./Physics%20Practical%20I%20(ZCT%20191,2)/Others%20Mathamatica%20code) |
 
 ---
 
@@ -39,9 +39,10 @@ Each folder contains:
 
 | File | Description | Link |
 |------|-------------|------|
-| How to Write a Good Lab Report.pdf | Guidelines for writing a good scientific report | [📄 View](./How%20to%20Write%20a%20Good%20Lab%20Report.pdf) |
-| MustRead.txt | Notes and reminders for lab report writing | [📄 View](./MustRead.txt) |
-| Sample of a Good Lab Report.pdf | Example of an excellent lab report format | [📄 View](./Sample%20of%20a%20Good%20Lab%20Report.pdf) |
+| How to Write a Good Lab Report.pdf | Tips and structure for writing formal scientific reports | [📄 View](./Physics%20Practical%20I%20(ZCT%20191,2)/How%20to%20Write%20a%20Good%20Lab%20Report.pdf) |
+| MustRead.txt | Important reminders and writing principles | [📄 View](./Physics%20Practical%20I%20(ZCT%20191,2)/MustRead.txt) |
+| Sample of a Good Lab Report.pdf | Example of a high-quality report for reference | [📄 View](./Physics%20Practical%20I%20(ZCT%20191,2)/Sample%20of%20a%20Good%20Lab%20Report.pdf) |
+
 > 📌 *Manuals used are referenced in the reports but are not redistributed.*
 
 ---
