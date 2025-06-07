@@ -1,0 +1,1217 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{geometry}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+
+\usepackage{titlesec}
+\usepackage{amsmath}  % For mathematical symbols and equations
+\usepackage{yhmath}
+\usepackage{amssymb}%For some mathrelationsymbol
+\usepackage{extarrows}
+\usepackage{enumerate}
+\usepackage{makecell} % 表格内换行
+\usepackage{paralist}
+\usepackage{datetime}
+\usepackage{siunitx}
+\usepackage{graphicx}  % For including figures
+\graphicspath{{./figure/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.jpg}
+\usepackage{wrapfig}
+\usepackage{bm}       % 同时黑体斜体
+\usepackage{listings} % 插入代码
+\usepackage[all]{xy}
+\usepackage{esint}
+\usepackage{bigints}
+\usepackage{mathrsfs}
+\usepackage{tcolorbox}
+\usepackage{ulem}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\usepackage{tasks}
+\usepackage[hidelinks]{hyperref} %removing red boxes around references
+\usepackage{fancyhdr} % 页眉页脚 header&footer
+\usepackage{calc} % For calculating widths
+\usepackage{tocloft}
+\usepackage{booktabs} % For formal tables
+\usepackage{longtable}
+\usepackage{array}
+
+\usepackage{color} % For syntax highlighting
+% Custom styling for the Python code
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\tiny, % Adjusting the code size here
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+\begin{document}
+
+\begin{center}
+\textbf {\Large REPORT SUBMISSION FORM}
+\end{center}
+
+\begin{figure}[ht]
+\begin{flushright}
+\includegraphics[width=0.28\textwidth]{USMlogo}
+\end{flushright}
+\end{figure}
+
+\large
+\begin{tabular}{lcl}
+Name & : &\dotuline{TAN WEi LIANG\hfill}\\
+\\
+Partner's Name &: &\dotuline{AINA IMANINA BINTI MOHB KHOZIKIN\hfill}\\
+\\
+Group& : &\dotuline{M5B\hfill}\\
+\\
+Experiment Code& :&\dotuline{1MP2\hfill}\\
+\\
+Experiment Title&: &\dotuline{EXCITATION AND IONISATION POTENTIALS\hfill}\\
+\\
+Lecturer’s/Examiner’s&: &\dotuline{DR. MOHD FAREEZUAN BIN ABDUL AZIZ\hfill}\\ 
+Name\\
+\\
+Starting Date &: &\dotuline{25/03/2024\hfill}\\
+(1st session)\\
+\\
+Ending Date &: &\dotuline{01/04/2024\hfill}\\
+(2nd session)\\
+\\
+Submission Date &: &\dotuline{06/04/2024\hfill}\\
+\\
+\end{tabular}
+
+
+\newpage
+\begin{center}
+\textbf{\Large DECLARATION OF ORIGINALITY}
+\end{center}
+\bigskip
+I, \textbf{TAN WEI LIANG 22302889}
+hereby declare that this laboratory report is my own work. I further declare that:
+
+\begin{enumerate}
+    \item The references/bibliography reflect the sources I have consulted, and
+    \item I also certify that this report has not previously been submitted for assessment in this or any other units, and that I have not copied in part or whole or otherwise plagiarized the work of other students and/or persons.
+    \item Sections with no source referrals are my own ideas, arguments, and/or conclusions.
+\end{enumerate}
+
+Signature: \hrulefill \hfill Date: \uline{06/04/2024}
+
+\newpage
+\begin{center}
+\vspace*{1cm}
+\textbf{\Large EXCITATION AND IONISATION POTENTIALS}
+
+\vspace{3.0cm}
+\textbf{By}\\
+
+\vspace{3.0cm}
+\textbf{TAN WEI LIANG} \\
+
+\vspace{3.0cm}
+\textbf{April 2024}\\
+
+\vfill
+\textbf{\large First Year Laboratory Report}
+\end{center}
+
+
+\newpage
+\phantomsection
+\section*{\large \center EXCITATION AND IONISATION POTENTIALS}
+\addcontentsline{toc}{section}{ABSTRACT}
+\section*{\large \center ABSTRACT}
+\label{sec:ABSTRACT}
+The research paper titled "EXCITATION AND IONISATION POTENTIALS".This physics report investigates the excitation and ionization potentials of xenon and argon gases, using principles from the Franck-Hertz experiment with thyratrons. The study found the ionization potential of xenon to be (14.19 $\pm$ 0.01) V, differing by 16.98\% from the expected value, and argon's ionization potential at (9.67 $\pm$ 0.01) V, with a 38.64\% discrepancy. The first excitation potential of xenon was determined to be (7.91 $\pm$ 0.01) V, showing a 4.93\% variance from the theoretical value. Despite these discrepancies, the precision of measurements, as indicated by low fractional uncertainties, demonstrates the experiment's accuracy. The report discusses potential experimental limitations, such as ambient temperature effects and circuit resistance, and suggests improvements for future research. Overall, this study confirms the quantized nature of atomic energy transitions, contributing to our understanding of atomic physics and its applications in quantum technology.  
+
+\newpage 
+\phantomsection
+\section*{\large \center ACKNOWLEDGEMENTS}
+\addcontentsline{toc}{section}{ACKNOWLEDGEMENTS}
+\label{sec:ACKNOWLEDGEMENTS}
+\quad First and foremost, I express my sincere appreciation to DR. Mohd Fareezuan Bin Abdul Aziz, our distinguished lecturer and examiner, for the invaluable guidance and unwavering support extended throughout our scientific exploration. I extend my sincere gratitude to my experiment partner, Aina Imanina Binti Mohb Khozikin. Her invaluable cooperation and dedication throughout both experiments were instrumental to the success of this project. I appreciate her commitment, expertise, and teamwork, which made these scientific endeavours both productive and enjoyable. I extend my sincere gratitude to the individuals whose invaluable contributions have played a pivotal role in the development and enhancement of this lab manual. Originally crafted by T.S.T. and L.S.H. in 1987 and edited by Emeritus Prof. Dr. Lim Koon Ong and J.O. in 1994, this manual stands as a testament to their dedication and expertise. Special acknowledgment is extended to S.K.Fong and F.S.K., whose efforts in translating the manual in 2008 have greatly contributed to its accessibility and reach. A heartfelt acknowledgment is also extended to Dr. John Soo Yue Han for his dedicated efforts in revising and standardizing the manual in 2021, elevating its clarity and educational significance. This collective endeavor has significantly enhanced our scientific learning journey, and I extend genuine gratitude to everyone mentioned for their noteworthy contributions.
+
+\newpage
+\renewcommand{\contentsname}{\centering CONTENTS}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Ensures dotted lines for sections
+% Adjust the dot separation
+\renewcommand{\cftdotsep}{1.0} % Default is 4.5, decrease for more dots
+\tableofcontents
+\phantomsection
+\addcontentsline{toc}{section}{CONTENTS}
+\label{sec:CONTENTS}
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{section}{LIST OF TABLES}
+\label{sec:LIST OF TABLES}
+\listoftables
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{section}{LIST OF FIGURES}
+\label{sec:LIST OF FIGURES}
+\listoffigures
+
+\newpage
+\phantomsection
+\section*{\center INTRODUCTION}
+\addcontentsline{toc}{section}{INTRODUCTION}
+\label{sec:INTRODUCTION}
+\quad The exploration of atomic structure and the behavior of electrons within atoms constitutes a fundamental aspect of modern physics, shedding light on the mechanisms underlying atomic interactions and the emission of electromagnetic radiation. This report delves into the experimental determination of ionization potentials of xenon and argon, as well as the first excitation potential of xenon, aiming to corroborate the theoretical framework established by the pioneers of quantum mechanics.\\
+
+Quantum theory posits that energy within an atom is quantized, manifesting in discrete levels. This concept was elegantly demonstrated through the Balmer series, which provided an empirical formula for the spectral lines of hydrogen. Bohr’s model further developed this idea by introducing quantized orbits for electrons, where energy is only emitted or absorbed as electrons transition between these orbits. The ionization potential, the energy required to liberate an electron from its atom, and the excitation potential, the energy needed to elevate an electron to a higher energy level, are critical parameters that emerge from this theory. These concepts not only explain the line spectra of hydrogen and hydrogen-like atoms but also apply to multi-electron systems where electron arrangement is influenced by the Pauli exclusion principle and other quantum numbers.\\
+
+The experiment detailed herein utilizes the Franck-Hertz experiment's principles, adapted through the use of thyratrons, to empirically demonstrate the quantized nature of atomic energy levels and to measure the ionization and excitation potentials of xenon and argon. By applying varying voltages to a gas-filled tube and observing the resultant current, we can infer the energies associated with these atomic processes.\\
+
+This investigation not only aims to verify theoretical predictions but also to provide a practical understanding of the principles governing atomic physics. Through this experiment, we seek to bridge the gap between quantum theory and observable phenomena, offering insights into the discrete energy levels within atoms and the conditions under which ionization and excitation occur.
+
+% Theory Part
+\newpage
+\phantomsection
+\section*{\center THEORY}
+\addcontentsline{toc}{section}{THEORY}
+\label{sec:THEORY}
+In 1885, J. J. Balmer showed that the line spectrum of a hydrogen atom in the optical can be expressed by the series
+\begin{equation}
+\frac{1}{\lambda} = R_{H} \left( \frac{1}{2^2} - \frac{1}{n^2} \right), \quad n = 3, 4, 5, \ldots
+\end{equation}
+where $\lambda$ is the wavelength of the line spectrum visible and $R_{H} = 1.097 \times 10^7 \, \text{m}^{-1}$ is the Rydberg constant for hydrogen. Although this series can predict wavelengths of the first nine spectral lines with an accuracy of 0.001, Balmer could not explain its origin theoretically.
+
+In 1913, Niels Bohr came out with a theory that can explain the formula perfectly. Bohr made the following postulates:
+\begin{enumerate}
+    \item An electron in an atom moves in an orbit under the influence of the Coulombic attraction between it and the nucleus.
+    \item An electron in an atom can only move in an orbit where the angular momentum is a multiple of $h/2\pi$ where $h = 6.626 \times 10^{-34} \, \text{Js}$ is the Planck's constant.
+    \item The electron orbiting the atom does not emit electromagnetic radiation despite constant acceleration, thus the total energy of an atom is constant.
+    \item Electromagnetic radiation is emitted only when an electron with energy $E_i$ jumps from a higher stationary state to a lower energy state $E_f$. The frequency f emitted can be stated as $f = (E_i - E_f)/h$.
+\end{enumerate}
+A hydrogen atom consists of a single electron with charge -e moving around a proton (nucleus) with charge +e, as shown in \textbf{Figure 1}.\\
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.3\linewidth]{screenshot-1711522079785}
+\caption{A model of the hydrogen atom}
+\label{fig:your_label}
+\end{figure}
+
+According to Bohr’s first postulate, the balance between the Coulomb attraction force and the centripetal force of an electron in circular orbit can be expressed as
+\begin{equation}
+\frac{m_e v^2}{r} = \frac{1}{4 \pi \epsilon_0} \frac{e^2}{r^2}
+\end{equation}
+where $r$ is the electron’s orbit radius, $v$ the electron’s velocity, $e = 1.602 \times 10^{-19} \, \text{C}$ the charge of an electron, $\epsilon_0 = 8.854 \times 10^{-12} \, \text{m}^{-3}\text{kg}^{-1}\text{s}^{4}\text{A}^{2}$ the permittivity of free space, and $m_e = 9.109 \times 10^{-31} \, \text{kg}$ the mass of an electron.
+
+The angular momentum ($L$) of an electron in orbit can be stated as $L = m_e v r$, and Bohr's second postulate states that
+\begin{equation}
+m_e v r = n\frac{h}{2\pi}, \quad n = 1, 2, 3, \ldots
+\end{equation}
+
+From \textbf{Equations 2} and \textbf{3}, we get the radius of the orbit $(r_n)$ and velocity of the electron $(v_n)$ at the nth level as
+\begin{equation}
+r_n = \frac{\epsilon_0 h^2}{\pi m_e e^2 n^2},
+\end{equation}
+\begin{equation}
+v_n = \frac{e^2}{2 \epsilon_0 h n}.
+\end{equation}
+
+From \textbf{Equation 4}, the radius for the smallest orbit is $r_1 = \epsilon_0 h^2 / \pi m_e e^2 = 0.528 \, \AA$, and the radii for the nth orbit can be written as
+\begin{equation}
+r_n = n^2 r_1,
+\end{equation}
+thus all the orbits that can be occupied by electrons will be in the series of $r_1, 4r_1, 9r_1, 16r_1$, and etc. From Bohr's third postulate, whenever an electron occupies orbits stated in the series above, the hydrogen atom will not radiate electromagnetic radiation, and the total energy of the hydrogen atom is constant.
+
+The total energy $(E)$ of an atom can be written as $E = K + V$, where $K$ is the kinetic energy and $U$ is the potential energy for an electron in orbit:
+\begin{equation}
+K = \frac{1}{2} mv^2 = \frac{e^2}{8\pi\epsilon_0 r},
+\end{equation}
+\begin{equation}
+U = - \int_{\infty}^{r} \frac{e^2}{4\pi\epsilon_0 r^2} dr = - \frac{e^2}{4\pi\epsilon_0 r}.
+\end{equation}
+
+Combining both, we get $E = K + V = -e^2/8\pi\epsilon_0 r$, and writing $r$ in terms of Equation 4 gives
+\begin{equation}
+E_n = - \frac{m_e e^4}{8\epsilon_0^2 h^2 n^2} = - \frac{13.6}{n^2} \, \text{eV}, \quad n = 1,2,3, \ldots
+\end{equation}
+
+From \textbf{Equation 9}, it is clear that the allowed energy of a hydrogen atom is discrete. \textbf{Figure 2} shows the energy levels for the hydrogen atom. The lowest energy level for the hydrogen atom is $E_1 = -13.6 \, eV$ at $n = 1$. The hydrogen atom is most stable in this state, which is known as its ground state. If the atom absorbs enough energy, the electron can move to a higher energy level, e.g. to levels $E_2, E_3, E_4$, and etc. When an atom is at an energy level that is higher than the ground state $(n > 1)$, the atom is said to be in an excited state.
+
+For an atom to move from state $n = 1$ to $n = 2$, the energy required is $E_2 - E_1 = -13.6(2^{-2} - 1^{-2}) = 10.21 \, eV$, which is illustrated in \textbf{Figure 2}. Therefore, the first excitation energy (or excitation potential) of hydrogen is $-10.21 \, eV$.
+\newpage
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth]{screenshot-1711522105951}
+\caption{Discrete energy levels for the hydrogen atom}
+\label{11}
+\end{figure}
+An atom can be excited to any excitation level depending on the energy that is absorbed. If the energy absorbed reaches a critical value, the atom can be excited to $n = \infty$, so that $r_\infty = 0$ and $E_\infty = 0$. In this condition, the electron is so far from the nucleus that it behaves effectively as a free electron, so the atom loses one electron and becomes a positive ion. In this case, ionisation has occurred. The free electron and the positive ion are now effectively charge carriers: they can take part in the conduction process. To ionise a hydrogen atom, the energy required is $E_\infty - E_1 = 0 - (-13.6) = 13.6 \, eV$ This is known as the ionisation energy / potential of hydrogen.
+
+From Bohr's fourth postulate, the frequency $(f)$ of the radiation emitted by an atom dropping from an energy level $E_i$ to a lower level $E_f$, is $f = (E_i - E_f)/h$, and from \textbf{Equation 9},
+\begin{equation}
+f = - \frac{m_e e^4}{8 \epsilon_0^2 h^3} \left( \frac{1}{n_i^2} - \frac{1}{n_f^2} \right) = \frac{m_e e^4}{8 \epsilon_0^2 h^3} \left( \frac{1}{n_f^2} - \frac{1}{n_i^2} \right).
+\end{equation}
+Since $f = c/\lambda$, where $c$ is the speed of light, we can rewrite \textbf{Equation 10} as
+\begin{equation}
+\frac{1}{\lambda} = \frac{m_e e^4}{8 \epsilon_0^2 h^3 c} \left( \frac{1}{n_f^2} - \frac{1}{n_i^2} \right) = R_H \left( \frac{1}{n_f^2} - \frac{1}{n_i^2} \right).
+\end{equation}
+
+If $n_f = 2$, we obtain \textbf{Equation 1}, which is the Balmer's series, when the hydrogen atom is moved from states $n > 2$ to $n = 2$. With the same method, we will obtain other series, e.g. when the hydrogen atom moves from states $n > 1$ to $n = 1$, or from states $n > 3$ to $n = 3$. Predictions from Bohr's theory were verified when the other spectrum of the hydrogen series were found. The hydrogen spectrum series are listed in \textbf{Figure 3}. The series can also be represented with an energy level diagram as shown in \textbf{Figure 4}.\\
+
+Besides successfully explaining the hydrogen spectrum series, Bohr's theory can also be used to explain the spectrum series for hydrogen-like atoms like He$^+$, Li$^{2+}$, and others by substituting the Coulomb force with $Ze^2 / 4\pi\epsilon_0 r$, where $Z$ is the atomic number for that atom.
+\newpage
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth]{screenshot-1711901787176}
+\caption{The hydrogen spectrum series}
+\label{10}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth]{screenshot-1711901796483}
+\caption{The energy level diagram for the hydrogen atom}
+\label{9}
+\end{figure}
+Thus, the energies of hydrogen-like atoms can be stated as
+\begin{equation}
+E_n = -Z^2 \frac{m_e e^4}{8\epsilon_0^2 h^2 n^2}.
+\end{equation}
+
+Although Bohr's theory successfully explained the hydrogen and hydrogen-like spectra, it has a number of flaws, as he made several ad hoc assumptions. Also, his theory is not able to explain more complex atoms, explain patterns with greater detail, or explain the brightness of the spectral lines. These problems were solved with the introduction of \textit{quantum mechanics}.\\
+
+The study of quantum mechanics was founded by Schrödinger, Heisenberg, Dirac and many others. In simplified form, a microscopic system like the electron in the hydrogen atom can be described with Schrödinger's equation,
+\begin{equation}
+- \frac{\hbar^2}{2m_e} \nabla^2 \psi(r) + V(r) \psi(r) = E \psi(r),
+\end{equation}
+
+where $\nabla^2 = \partial^2 / \partial x^2 + \partial^2 / \partial y^2 + \partial^2 / \partial z^2$ is the Laplace operator, $V(r)$ the potential energy of the electron, $E(r)$ the total energy of the electron, and $\psi(r)$ the wave function of the electron. This differential equation can be solved if $V(r)$ is known, we will obtain $\psi(r)$ and hence all the information of that electron.
+\newpage
+we assume that,
+\begin{equation}
+V(r) = - \frac{e^2}{4\pi\epsilon_0 r}
+\end{equation}
+which is the Coulomb potential between an electron and a proton, which we would obtain $E_n$ equal to Equation 9: the same answer as from Bohr's model. Thus, the quantisation of the energy of an atom comes naturally from quantum mechanics, which contrasts with Bohr's theory where an ad hoc assumption is required.
+
+Until now, we have discussed only the hydrogen atom. For multi-electron atoms, one question arises: how are the electrons arranged in the atom? The answer would probably be that all electrons will occupy the lowest energy level, so that the electrons are strongly bound by the nucleus. However, due to the intrinsic \textit{electron spin} and \textit{Pauli's exclusion principle}, each energy level can only be occupied by a limited number of electrons.
+
+Briefly, the number of electrons occupying each level is determined by the four quantum numbers as follows:
+\begin{enumerate}
+\item The \textit{principal quantum number} $(n)$, which determines the principal energy level $n$ in Bohr's theory and can take values of $n = 1,2,3...$
+\item The \textit{orbital quantum number} $(\ell)$, which determines the angular momentum of the electron and can take values of $\ell = 0,1,2,...,n - 1$;
+\item The \textit{magnetic quantum number} $(m_\ell)$, which determines the orbital orientation of the electron in a magnetic field and can take the values of $m = 0,\pm1,\pm2,...,\pm\ell$;
+\item The \textit{spin quantum number} $(m_s)$, which determines the electron spin and can take values of $m_s = \pm1/2$.
+\end{enumerate}
+
+The state of the electron in an atom can be determined if all the four quantum numbers are given. For example, the hydrogen atom at ground state and the first excited state can be stated as $(n,\ell,m_\ell,m_s) = (1,0,0,\pm1/2)$ and $(n,\ell,m_\ell,m_s) = (2,0,0,\pm1/2)$, respectively. Since each state can only accept one electron, not all electrons can occupy the lowest energy level in the ground state of each element. \textbf{Table A1} in the \textbf{APPENDIX} shows how the electrons are distributed at ground state for all elements up to xenon. From the table, we can see that all the lowest energy levels are occupied at ground state. If an atom absorbs enough energy, electrons at lower energy levels can be excited and jumps to higher energy levels. Therefore, the excitation and ionisation potential for hydrogen defined in \textit{Equation 9} is also applicable for atoms with multi-electrons.
+
+\subsection*{The Franck-Hertz Experiment}
+
+In 1904, James Franck and Gustav Hertz showed the existence of energy levels in an atom in their famous \textit{Franck-Hertz experiment}. Figure 4 shows a simplified diagram of the apparatus used by Franck and Hertz.
+\newpage
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{screenshot-1711522155431}
+\caption{The schematic diagram setup for the Franck-Hertz experiment.}
+\label{8}
+\end{figure}
+When there is a potential difference across the filament, electrons will be emitted as \textit{thermion}, and they will be accelerated towards the grid. Due to the symmetry of the grid, almost all the electrons will pass through it and be collected on the plate. If the tube is empty, the plate current will increase when the grid potential increases; but if a low-temperature test gas is introduced into the tube, the electrons that are being accelerated from the grid may collide with the gas atoms in the tube. When an electron collides with an atom, the kinetic energy may be conserved (\textit{elastic collision}), or part of the kinetic energy of the electron may be transferred to the excitation energy of the atom (\textit{inelastic collision}). Inelastic collision can only occur if the colliding electron possesses enough kinetic energy to excite an electron in the target atom from ground energy state to a higher energy state. \textbf{Figure 6} shows the results obtained by Franck and Hertz. The first excitation energy of the gas can be determined by estimating the average separation between the minima or maxima in the graph.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\linewidth]{screenshot-1711522165530}
+\caption{Typical results obtained from the Franck-Hertz experiment.}
+\label{7}
+\end{figure}
+
+\begin{wrapfigure}{r}{0.3\textwidth} % Wrap figure on the left side
+  \centering
+  \includegraphics[width=0.15\textwidth]{screenshot-1711522177099} % Include your figure here
+  \caption{Example figure behind content.}
+  \label{fig:example}
+\end{wrapfigure}
+
+The tubes containing gases have been specially designed to show the existence of the energy levels of an atom. These tubes are expensive, and thus are not used in this experiment. As a substitution, \textit{thyratrons} (gas-filled discharge chambers) can be used to determine the ionisation potential and to show the existence of the energy levels in atomic gases. However, not all thyratrons are suitable for this purpose depending on electrode symmetry, gas purity and gas pressure. Thyratrons containing \textit{xenon gas} (type 2D21) and \textit{argon gas} (type 884) can be used as the results obtained from them are close to standard values. The schematic design of a thyratron is shown in \textbf{Figure 7}.
+
+\subsection*{Region of Interest}
+One important aspect of the experiment is the determination of the \textit{region of interest} (ROI). Usually, the required results depend on a few readings taken, thus a rough trial should be carried out at the beginning of the experiment to determine the general trend of the results obtained. From these exploratory results, the ROI can be determined, and more data in the region of interest is then collected. With this method, better results with fewer errors can be obtained without wasting time. This technique should always be used in experiments of all levels (if appropriate).
+
+\newpage
+
+\phantomsection
+\section*{\center EXPERIMENTAL METHODOLOGY}
+\addcontentsline{toc}{section}{EXPERIMENTAL METHODOLOGY}
+\label{sec:EXPERIMENTAL METHODOLOGY}
+% Content for the EXPERIMENTAL METHODOLOGY section goes here.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\linewidth]{ion1}
+\caption{Circuit diagram for Ionisation of Xenon}
+\label{6}
+\end{figure}
+\quad In the experiment of ionisation of xenon, a xenon thyratron tube was mounted on its designated base, with the circuit constructed according to the provided schematic. The setup included a 1 k$\Omega$ resistor, a 6 V multi-tap transformer, a voltmeter (0--30 V), and 6 V dry cells. A picoammeter was connected for current measurement. After a 10-minute warm-up period for the thyratron to ensure optimal operating conditions, a zero calibration on the picoammeter was executed. The acceleration voltage was gradually increased from 0 V to 16 V. A rapid increase in current was observed around 12 V, indicative of xenon ionisation. Data were collected at 1 V intervals of the acceleration voltage, record the acceleration voltage and its corresponding current flow. The anode current versus acceleration voltage was plotted to facilitate the determination of xenon's ionisation potential through graphical analysis within the identified region of interest.\\
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\linewidth]{ion2}
+\caption{Circuit diagram for Ionisation of Argon}
+\label{5}
+\end{figure}
+In experiment of ionisation of argon, the setup involved mounting an argon thyratron tube on its base and assembling the circuit with a 100 $\Omega$ resistor, a 6 V multi-tap transformer, a voltmeter (0--30 V), and a milliammete (0--100 mA). Following a 10-minute warm-up phase for the thyratron, the DC power supply voltage was progressively increased from 0 to 18 V. Data recording started at 0 V, with the acceleration voltage increased in 2 V, record the acceleration voltage and its corresponding current flow. Current versus voltage data were graphed, enabling the extraction of argon's ionisation potential through detailed graphical interpretation within the designated region of interest.\\
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\linewidth]{ion3}
+\caption{Circuit diagram for First Excitation state of Xenon}
+\label{4}
+\end{figure}
+
+In experiment of first excitation state of xenon, this setup was similar to experiment of ionisation of xenon, but utilized a 4 V multi-tap transformer, tailored for excitation state exploration. After warming up the thyratron and calibrating the picoammeter, the DC power supply voltage was adjusted from 0 V to 7 V, monitoring for current variation indicative of xenon excitation. Data were further collected by adjusting the acceleration voltage from 0 V in 1 V increments up to 11 V, with finer measurements within the region of interest in 0.5 V steps. A plot of current versus acceleration voltage was generated, from which xenon's first excitation potential was obtained.
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\phantomsection
+\section*{\center DATA ANALYSIS}
+\addcontentsline{toc}{section}{DATA ANALYSIS}
+\label{sec:DATA ANALYSIS}
+% Content for the DATA ANALYSIS section goes here.
+\begin{table}[h!]
+\small
+\centering
+\begin{tabular}{ccccccccc}
+\toprule
+\multicolumn{1}{c}{\textbf{Power Supply (V)}} & \multicolumn{4}{c}{\textbf{Voltage (±0.1 V)}} & \multicolumn{4}{c}{\textbf{Current ( $\pm$ 0.00001 $\mu$A)}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+& 1 & 2 & 3 & Average & 1 & 2 & 3 & Average \\
+\midrule
+0 & 0 & 0 & 0 & 0 & 0.00351 & 0.00347 & 0.00355 & 0.00351 \\
+1 & 0.9 & 1.0 & 1.0 & 1.0 & 0.00349 & 0.00356 & 0.00356 & 0.00354 \\
+2 & 1.9 & 1.9 & 1.9 & 1.9 & 0.00355 & 0.00349 & 0.00352 & 0.00352 \\
+3 & 3.0 & 3.0 & 3.0 & 3.0 & 0.00356 & 0.00353 & 0.00354 & 0.00354 \\
+4 & 4.0 & 3.9 & 3.9 & 3.9 & 0.00356 & 0.00352 & 0.00353 & 0.00354 \\
+5 & 4.9 & 4.9 & 5.0 & 4.9 & 0.00359 & 0.00359 & 0.00358 & 0.00359 \\
+6 & 5.9 & 5.9 & 6.0 & 5.9 & 0.00364 & 0.00363 & 0.00363 & 0.00363 \\
+7 & 7.0 & 7.0 & 7.0 & 7.0 & 0.00365 & 0.00366 & 0.00367 & 0.00366 \\
+8 & 8.0 & 8.0 & 8.0 & 8.0 & 0.00371 & 0.00370 & 0.00369 & 0.00370 \\
+9 & 9.0 & 8.9 & 8.9 & 8.9 & 0.00378 & 0.00375 & 0.00374 & 0.00376 \\
+10 & 10.0 & 10.0 & 10.0 & 10.0 & 0.00400 & 0.00398 & 0.00399 & 0.00399 \\
+11 & 11.0 & 11.0 & 11.0 & 11.0 & 0.00512 & 0.00514 & 0.00515 & 0.00514 \\
+12 & 11.9 & 11.9 & 11.9 & 11.9 & 0.04085 & 0.04057 & 0.04063 & 0.04068 \\
+13 & 12.8 & 12.8 & 12.8 & 12.8 & 0.10614 & 0.10843 & 0.10981 & 0.10813 \\
+14 & 13.4 & 13.5 & 13.4 & 13.4 & 0.30020 & 0.30734 & 0.30766 & 0.30507 \\
+15 & 12.5 & 12.5 & 12.4 & 12.5 & 1.12348 & 1.24214 & 1.28928 & 1.21830 \\
+16 & 11.5 & 11.4 & 11.4 & 11.4 & 1.99756 & 2.01040 & 2.01452 & 2.00749 \\
+\bottomrule
+\end{tabular}
+\caption{Measured Voltage and Current at Different Power Supply Values for experiment of Ionisation of Xenon}
+\label{tab:measurements}
+\end{table}
+
+\begin{table}[h!]
+\small
+\centering
+\begin{tabular}{ccccccccc}
+\toprule
+\multicolumn{1}{c}{\textbf{Power Supply (V)}} & \multicolumn{4}{c}{\textbf{Voltage (±0.1 V)}} & \multicolumn{4}{c}{\textbf{Current ( $\pm$ 0.00001 $\mu$A)}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+& 1 & 2 & 3 & Average & 1 & 2 & 3 & Average \\
+\midrule
+11.0 & 11.0 & 11.0 & 11.0 & 11.0 & 0.00549 & 0.00549 & 0.00530 & 0.00543 \\
+11.5 & 11.5 & 11.5 & 11.5 & 11.5 & 0.01093 & 0.01099 & 0.01068 & 0.01087 \\
+12.0 & 11.7 & 11.7 & 11.7 & 11.7 & 0.03921 & 0.03898 & 0.03836 & 0.03885 \\
+12.5 & 12.5 & 12.5 & 12.5 & 12.5 & 0.09486 & 0.09474 & 0.09481 & 0.09480 \\
+13.0 & 12.9 & 12.5 & 12.6 & 12.7 & 0.10544 & 0.10555 & 0.10655 & 0.10585 \\
+13.5 & 12.9 & 12.9 & 13.0 & 12.9 & 0.15991 & 0.15435 & 0.15133 & 0.15520 \\
+14.0 & 13.4 & 13.5 & 13.4 & 13.4 & 0.27135 & 0.27497 & 0.27440 & 0.27357 \\
+\hline
+\end{tabular}
+\caption{Results for region of interest in Ionisation of Xenon}
+\label{table:measurements}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width= 0.9 \linewidth]{finalPARTA}
+\caption{Graph of Anode Current against Accelerating Voltage for experiment of Ionisation of Xenon}
+\label{3}
+\end{figure}
+\newpage
+
+In experiment of ionisation of Xenon. The ionisation potential of xenon can be obtained by the intersection point of  two staright line with positive and negative slope of the graph.The value is obtained by using Python (code attached in APPENDICES).
+From the graph, the ionisation potential of xenon is 14.19 V.
+Theoretically, the standard value of ionisation potential of xenon is 12.13V.
+Thus,
+
+\begin{align*}
+\text{Percentage discrepancy} &= \frac{|\text{experimental value} - \text{theoretical value}|}{\text{theoretical value}} \times 100\%
+\end{align*}
+
+Substituting the given values, we have:
+
+\begin{align*}
+\text{Percentage discrepancy}&= \frac{|14.19-12.13|}{12.13} \times 100\% \\
+&=16.98 \%
+\end{align*}
+
+The fractional uncertainty is:
+\begin{align*}
+\frac{0.01}{14.19} \times 100 \% = 0.07 \%<1.00 \%
+\end{align*}
+
+$\therefore$, the ionisation potential of Xenon is (14.19 $\pm$ 0.01) V.
+
+
+\newpage
+\begin{table}[h!]
+\small
+\centering
+\begin{tabular}{ccccccccc}
+\toprule
+\multicolumn{1}{c}{\textbf{Power Supply (V)}} & \multicolumn{4}{c}{\textbf{Voltage (±0.1 V)}} & \multicolumn{4}{c}{\textbf{Current ($\pm$ 10 mA)}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+& 1 & 2 & 3 & Average & 1 & 2 & 3 & Average \\
+\midrule
+0  & 0   & 0   & 0   & 0   & 0  & 0  & 0  & 0  \\
+2  & 1.6 & 1.6 & 1.6 & 1.6 & 20 & 20 & 20 & 20 \\
+4  & 3.4 & 3.4 & 3.5 & 3.4 & 40 & 40 & 40 & 40 \\
+6  & 5.1 & 5.1 & 5.1 & 5.1 & 60 & 60 & 60 & 60 \\
+8  & 6.9 & 6.9 & 6.9 & 6.9 & 80 & 80 & 80 & 80 \\
+10 & 8.5 & 8.6 & 8.5 & 8.5 & 110 & 110 & 110 & 110 \\
+12 & 10.3 & 10.3 & 10.4 & 10.3 & 150 & 150 & 150 & 150 \\
+14 & 10.8 & 10.8 & 11.0 & 10.9 & 180 & 180 & 180 & 180 \\
+16 & 11.5 & 11.5 & 11.5 & 11.5 & 210 & 210 & 210 & 210 \\
+18 & 12.0 & 12.2 & 12.1 & 12.1 & 250 & 250 & 250 & 250 \\
+\bottomrule
+\end{tabular}
+\caption{Measured Voltage and Current at Different Power Supply Values for experiment of Ionisation of Argon}
+\label{tab:measurements}
+\end{table}
+
+\begin{table}[h!]
+\small
+\centering
+\begin{tabular}{ccccccccc}
+\toprule
+\multicolumn{1}{c}{\textbf{Power Supply (V)}} & \multicolumn{4}{c}{\textbf{Voltage (±0.1 V)}} & \multicolumn{4}{c}{\textbf{Current ($\pm$ 10 mA)}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+& 1 & 2 & 3 & Average & 1 & 2 & 3 & Average \\
+\midrule
+10.0 & 8.6 & 8.6 & 8.6 & 8.6 & 120 & 110 & 110 & 113 \\
+10.5 & 9.0 & 9.0 & 9.0 & 9.0 & 120 & 130 & 120 & 123 \\
+11.0 & 9.5 & 9.5 & 9.5 & 9.5 & 130 & 120 & 130 & 127 \\
+11.5 & 9.9 & 9.9 & 9.9 & 9.9 & 140 & 140 & 140 & 140 \\
+12.0 & 10.4 & 10.4 & 10.4 & 10.4 & 150 & 150 & 150 & 150 \\
+12.5 & 10.9 & 10.9 & 10.9 & 10.9 & 160 & 170 & 170 & 167 \\
+13.0 & 11.1 & 11.1 & 11.1 & 11.1 & 180 & 180 & 180 & 180 \\
+13.5 & 11.3 & 11.3 & 11.5 & 11.4 & 200 & 200 & 200 & 200 \\
+14.0 & 11.5 & 11.6 & 11.6 & 11.6 & 210 & 220 & 200 & 210 \\
+14.5 & 11.7 & 11.7 & 11.8 & 11.7 & 220 & 220 & 210 & 217 \\
+15.0 & 11.9 & 11.9 & 11.8 & 11.9 & 210 & 230 & 230 & 223 \\
+15.5 & 12.0 & 12.0 & 12.0 & 12.0 & 230 & 240 & 230 & 233 \\
+16.0 & 12.0 & 12.0 & 12.3 & 12.1 & 250 & 250 & 240 & 247 \\
+\bottomrule
+\end{tabular}
+\caption{Results for region of interest in Ionisation of Argon}
+\label{tab:measurements}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width= 0.9 \linewidth]{finalPARTB}
+\caption{Graph of Current against Voltage for experiment of Ionisation of Argon}
+\label{3}
+\end{figure}
+\newpage 
+
+In experiment of Ionisation of Argon. The ionisation potential of argon can be obtained by the intersection point of  two staright line with positive and negative slope of the graph.The value is obtained by using Python (code attached in APPENDICES).
+From the graph, the ionisation potential of argon is 9.67 V.
+Theoretically, the standard value of ionisation potential of argon is 15.76 V.
+Thus,
+
+\begin{align*}
+\text{Percentage discrepancy} &= \frac{|\text{experimental value} - \text{theoretical value}|}{\text{theoretical value}} \times 100\%
+\end{align*}
+
+Substituting the given values, we have:
+\begin{align*}
+\text{Percentage discrepancy}&= \frac{|9.67 -15.76 |}{15.76} \times 100\% \\
+&= 38.64 \%
+\end{align*}
+
+The fractional uncertainty is :
+\begin{align*}
+\frac{0.01}{9.67} \times 100 \% = 0.10 \%<1.00 \%
+\end{align*}
+
+$\therefore$, the Ionisation Potential of Argon is (9.67 $\pm$ 0.01) V.
+
+
+\newpage
+\begin{table}[h!]
+\small
+\centering
+\begin{tabular}{ccccccccc}
+\toprule
+\multicolumn{1}{c}{\textbf{Power Supply (V)}} & \multicolumn{4}{c}{\textbf{Voltage (±0.1 V)}} & \multicolumn{4}{c}{\textbf{Current ( $\pm$ 0.00001 $\mu$A)}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+& 1 & 2 & 3 & Average & 1 & 2 & 3 & Average \\
+\midrule
+0  & 0     & 0     & 0     & 0     & 0.46367 & 0.46361 & 0.46414 & 0.46381 \\
+1  & 0.9   & 0.9   & 0.9   & 0.9   & 1.18003 & 1.17886 & 1.17863 & 1.17917 \\
+2  & 2.0   & 2.0   & 2.0   & 2.0   & 1.30018 & 1.29962 & 1.30002 & 1.29994 \\
+3  & 3.0   & 3.0   & 3.0   & 3.0   & 1.05928 & 1.06027 & 1.05887 & 1.05947 \\
+4  & 3.9   & 3.9   & 3.9   & 3.9   & 0.83357 & 0.83356 & 0.83456 & 0.83390 \\
+5  & 4.9   & 4.9   & 5.0   & 4.9   & 0.68008 & 0.67994 & 0.68010 & 0.68004 \\
+6  & 6.0   & 6.0   & 5.9   & 6.0   & 0.59174 & 0.59203 & 0.59217 & 0.59198 \\
+7  & 7.0   & 7.0   & 7.0   & 7.0   & 0.54678 & 0.54680 & 0.54662 & 0.54673 \\
+8  & 8.0   & 8.0   & 8.0   & 8.0   & 0.53696 & 0.53700 & 0.53715 & 0.53704 \\
+9  & 9.0   & 9.0   & 9.0   & 9.0   & 0.55461 & 0.55415 & 0.55449 & 0.55442 \\
+10 & 10.0  & 10.0  & 10.0  & 10.0  & 0.59611 & 0.59589 & 0.59530 & 0.59577 \\
+11 & 11.0  & 11.0  & 11.0  & 11.0  & 0.64607 & 0.64600 & 0.64557 & 0.64588 \\
+\bottomrule
+\end{tabular}
+\caption{Measured Voltage and Current at Different Power Supply Values for experiment of First Excitation of Xenon}
+\label{tab:measurements}
+\end{table}
+
+\begin{table}[h!]
+\small
+\centering
+\begin{tabular}{ccccccccc}
+\toprule
+\multicolumn{1}{c}{\textbf{Power Supply (V)}} & \multicolumn{4}{c}{\textbf{Voltage (±0.1 V)}} & \multicolumn{4}{c}{\textbf{Current ( $\pm$ 0.00001 $\mu$A)}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+& 1 & 2 & 3 & Average & 1 & 2 & 3 & Average \\
+\midrule
+6.0 & 6.0 & 6.0 & 6.0 & 6.0 & 0.62089 & 0.62341 & 0.62789 & 0.62406 \\
+6.5 & 6.4 & 6.5 & 6.4 & 6.4 & 0.55528 & 0.55459 & 0.55472 & 0.55486 \\
+7.0 & 7.0 & 6.9 & 7.0 & 7.0 & 0.55378 & 0.55422 & 0.55394 & 0.55398 \\
+7.5 & 7.4 & 7.4 & 7.5 & 7.4 & 0.55265 & 0.55256 & 0.55254 & 0.55258 \\
+8.0 & 8.0 & 8.0 & 7.9 & 8.0 & 0.52224 & 0.52221 & 0.52247 & 0.52231 \\
+8.5 & 8.4 & 8.4 & 8.5 & 8.4 & 0.52990 & 0.52997 & 0.52982 & 0.52990 \\
+9.0 & 9.0 & 9.0 & 9.0 & 9.0 & 0.53288 & 0.53314 & 0.53314 & 0.53305 \\
+\hline
+\end{tabular}
+\caption{Results for region of interest in First Excitation of Xenon}
+\label{table:measurements}
+\end{table}
+
+\newpage
+\begin{figure}[h!]
+\centering
+\includegraphics[width= 0.9 \linewidth]{finalPARTC}
+\caption{Graph of Anode Current against Accelerating Voltage for experiment of First Excitation of Xenon}
+\label{3}
+\end{figure}
+
+
+%Method of getting results
+In experiment of First Excitation of Xenon, the local minimum of voltage value in graph is the first ionization potential of xenon. The value is obtained by using Python (code attached in APPENDICES).
+From the graph, the first ionisation potential of xenon is 7.91 V.
+Theoretically, the standard value of first ionisation potential of xenon is 8.32 V.
+Thus,
+
+\begin{align*}
+\text{Percentage discrepancy} &= \frac{|\text{experimental value} - \text{theoretical value}|}{\text{theoretical value}} \times 100\%
+\end{align*}
+
+Substituting the given values, we have:
+
+\begin{align*}
+\text{Percentage discrepancy}&= \frac{|7.91 - 8.32 |}{8.32} \times 100\% \\
+&= 4.93 \%
+\end{align*}
+
+The fractional uncertainty is :
+\begin{align*}
+\frac{0.01}{7.91} \times 100 \% = 0.13 \%<1.00 \%
+\end{align*}
+
+$\therefore$, the Fisrt Excitation Potential of Xenon is (7.91 $\pm$ 0.01) V.
+
+
+\newpage
+\phantomsection
+\section*{\center DISCUSSION}
+\addcontentsline{toc}{section}{DISCUSSION}
+\label{sec:DISCUSSION}
+% Content for the DISCUSSION section goes here.
+\quad For the experiment of ionisation potential of Xenon, the ionisation potential of Xenon obtained  from experiment is (14.19 $\pm$ 0.01) V with 16.98 \% of percentage of discrepancy from standard value of 12.13 V. The percentage difference of 16.98 \% was inaccurate since the percentage difference is larger than 5.00 \% from the standard value. But the result obtained is quite precise as the fractional uncertainty is  0.07 \% $<$ 1.00 \%.The fractional uncertainty less than 1.00 \%, which it is shows that more precisely results that can be made by computational graphing method.\\
+
+For the experiment of ionisation of Argon, the ionisation potential of Argon obtained from experiment is (9.67 $\pm$ 0.01) V with 38.64 \% of percentage of discrepancy from standard value of 15.76 V. The percentage difference of 38.64 \% show that the result is unreliable to the 
+actual standard ionisation potential of Argon, which it also larger than 5.00 \% from standard value. But the result obtained is still show it precise as the fractional uncertainty is  0.10 \% $<$  1.00 \%.\\
+
+The disparity in ionization potentials between Xenon and Argon reveals that each element requires a distinct energy level for ionization, where an electron is excited from its initial energy state to an infinitely high level. Ionization potential, the energy needed to strip away an atom's most loosely held electron, serves as a key indicator of an element's chemical reactivity. This difference between Xenon and Argon highlights the unique electronic structures of atoms, influenced by their electron configurations and atomic sizes.\\
+
+For the experiment of excitation of Xenon, the first excitation potential of Xenon obtained from experiment is (7.91 $\pm$ 0.01) V with 4.93 \% of percentage of discrepancy from standard value of 8.32 V. The percentage difference of 4.93 \% show that the result is very precise to the 
+actual standard excitation potential of Argon, which it lower than 5.00 \% from standard value. The result obtained is still show it precise as the fractional uncertainty is 0.13 \% $<$ 1.00 \%.\\
+
+In the experiment of excitation of Xenon, the graph of current against accelerating voltage show that the projectile electrons do not all have the same energy (velocity), while some are capable of imparting the fixed quota of energy (quantum) to the Xenon atoms in excitation collisions, other projectile electrons are not capable of making such collisions and thus a rounding off
+occurs in the shape of graph (peak) to become the more rounded.\\
+
+In graph of Anode Current against Accelerating Voltage for experiment of First Excitation of Xenon. The underlying assumption is that, upon reaching the excitation potential, the projectile electrons can only lose a precise amount of energy. This is because Xenon atoms are only able to absorb energy in discrete amounts, enough to move an electron from one orbital level to a higher one.\\
+
+Before reaching this point, the projectile electrons don't have enough energy to elevate a Xenon atom's electron to a higher energy level. Since the Xenon atom cannot accept energy lower than this specific amount, no excitation occurs. As a result, the collision between the projectile electrons and the Xenon atoms is perfectly elastic, and the projectile electrons don’t lose any energy.\\
+
+Once the excitation potential is achieved, the projectile electrons still have energy left after causing the excitation of the Xenon atom. This leftover energy allows them to reach the anode, causing an increase in the anode current observed in the graph. This illustrates the discrete nature of energy absorption during the process of excitation in Xenon atoms.\\
+
+The similarity in the shape and trends of the three graphs to the theoretically expected outcome graph indicates that the experimental procedure were correctly followed. However, threr are significant discrepancies between the experimental and standard values. One potential source of error is the ambient temperature in lab. The substantial difference between the ambient temperature and the thyratron's temperature during heating may have neccessitated a large amount of heat energy to compensate for the loss of heat to the surroundings.\\
+
+to overcome the error, enhance the insulation around the experimental setup. Using materials with high thermal resistance can reduce heat exchange with the surroundings. This can be achieved by enclosing the apparatus in an insulated box or using insulating wraps specifically designed for laboratory equipment.\\
+
+Another potential source of error identified involves the wires utilized for establishing connections within the circuit. As the temperature of the circuit increases, there is a corresponding rise in the resistance of these wires, which may lead to slight inaccuracies in the results observed. To enhance the reliability of the experiment, it is recommended to employ a larger sample size. By doing so, the energy needed to excite and ionize the gases would be augmented, effectively diminishing the impact of minor resistance variations caused by the wire temperatures on the experimental findings.\\
+
+\newpage
+\phantomsection
+\section*{\center  CONCLUSION}
+\addcontentsline{toc}{section}{CONCLUSION}
+\label{sec:CONCLUSION}
+% Content for the CONCLUSION section goes here.
+\quad From this experiments, we conclude that the ionisation potential of Xenon is (14.19 $\pm$ 0.01) V within 16.98 \% of percentage of discrepancy from standard value of 12.13 V. The ionisation potential of Argon is (9.67 $\pm$ 0.01) V within 38.64 \% of percentage of discrepancy from standard value of 15.76 V. The first excitation potential of Xenon is (7.91 $\pm$ 0.01) V within 4.93 \% of percentage of discrepancy from standard value of 8.32 V. 
+\newpage
+\phantomsection
+\section*{\center REFERENCES}
+\addcontentsline{toc}{section}{REFERENCES}
+\label{sec:REFERENCES}
+% Content for the REFERENCES section goes here.
+\begin{enumerate}
+    \item Keithley Instruments (2011). User Manual for Model 6485 Picoammeter.
+    \item FRANCK HERTZ EXPERIMENT SET-xenon gas. INDUSTRIAL EQUIPMENT \& CONTROL PTY.LTD.
+    \item Murat Celik (2007). Experimental and Computational Studies of Electric Thruster
+Plasma Radiation Emission. MASSACHUSETTS INSTITUTE OF TECHNOLOGY.
+\end{enumerate}
+
+\newpage
+\phantomsection
+\section*{\center APPENDICES}
+\addcontentsline{toc}{section}{APPENDICES}
+\label{sec:APPENDICES}
+\subsection*{A list of elements with their respective electron configuation}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{orbit1}
+  \caption{Table A1.1}
+  \label{1}
+  \end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.65\linewidth]{orbit2}
+  \caption{Table A1.2}
+  \label{2}
+  \end{figure}
+  
+\newpage
+\subsection*{Python code of data analysis for experiment of Ionisation of Xenon}
+\begin{lstlisting}[language=Python]
+from __future__ import division
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy import interpolate
+from sklearn.linear_model import LinearRegression
+from scipy.optimize import curve_fit
+
+##############################################################################
+# Given nodes
+nodes = np.array([
+    [0, 0.00351],
+    [1.0, 0.00354],
+    [1.9, 0.00352],
+    [3.0, 0.00354],
+    [3.9, 0.00354],
+    [4.9, 0.00359],
+    [5.9, 0.00363],
+    [7.0, 0.00366],
+    [8.0, 0.00370],
+    [8.9, 0.00376],
+    [10.0, 0.00399],
+    [11.0, 0.00514],
+    [11.9, 0.04068],
+    [12.8, 0.10813],
+    [13.4, 0.30507],
+    [12.5, 1.21830],
+    [11.4, 2.00749]
+]  
+)
+
+x = nodes[:,0]
+y = nodes[:,1]
+
+############################################################################
+# Given nodes for region of interest
+nodes2 = np.array([
+    [11.0, 0.00543],
+    [11.5, 0.01087],
+    [11.7, 0.03885],
+    [12.5, 0.09480],
+    [12.7, 0.10585],
+    [12.9, 0.15520],
+    [13.4, 0.27357]
+]  
+)
+
+x2 = nodes2[:,0]
+y2 = nodes2[:,1]
+
+# Defining a function for curve fitting, using a polynomial of degree 3 as an example
+def poly_func(x, a, b, c, d):
+    return a * x**3 + b * x**2 + c * x + d
+
+# Curve fitting
+popt, pcov = curve_fit(poly_func, x2, y2)
+
+# Plotting the fitted curve
+x_fit = np.linspace(min(x2), max(x2), 500)
+y_fit = poly_func(x_fit, *popt)
+############################################################################
+#first linear regression line
+X1 = nodes[:10,0].reshape(-1, 1)  # Reshape for sklearn
+Y1 = nodes[:10, 1]
+
+# Create and fit the model
+model = LinearRegression()
+model.fit(X1, Y1)
+
+# Extending the X1 range for visualization
+X1_extended = np.linspace(0, 18, 100).reshape(-1, 1)
+Y1_pred_extended = model.predict(X1_extended)
+#############################################################################
+#second linear regression line
+X2 = nodes[-2:, 0].reshape(-1, 1)  # Correctly extract X values for the last three points
+Y2 = nodes[-2:, 1]  # Correctly extract Y values for the last three points
+
+# Re-create and fit the model using the last three points
+model2 = LinearRegression()
+model2.fit(X2, Y2)
+
+# Extending the X2 range for visualization over the same range as defined earlier
+X2_extended = np.linspace(11, 15, 100).reshape(-1, 1)
+Y2_pred_extended = model2.predict(X2_extended)
+#############################################################################
+#find the intersection point of two line
+# Assuming linear regression models have to be fitted to these datasets
+model11 = LinearRegression().fit(X1, Y1)
+model22 = LinearRegression().fit(X2, Y2)
+
+# Extract the coefficients (slope) and intercepts of both linear regression models
+slope1, intercept1 = model11.coef_[0], model11.intercept_
+slope2, intercept2 = model22.coef_[0], model22.intercept_
+
+# Calculate the x-coordinate of the intersection point
+x_inter = (intercept2 - intercept1) / (slope1 - slope2)
+
+# Calculate the y-coordinate of the intersection point
+y_inter = slope1 * x_inter + intercept1
+
+# Intersection point
+print("Intersecion point:{",f"{x_inter:.2f}, {y_inter:.5f}"," }")
+############################################################################
+# Example error values (replace with your actual error data) for first data
+x_errors = np.array([0.1] * len(x))  # Standard error for x-values
+y_errors = np.array([0.0001] * len(y))  # Constant error for illustration
+# Extracting x and y values
+############################################################################
+# Example error values (replace with your actual error data) for region of interest
+x_errors2 = np.array([0.1] * len(x2))  # Standard error for x-values
+y_errors2 = np.array([0.0001] * len(y2))  # Constant error for illustration
+# Extracting x2 and y2 values
+############################################################################
+# Calculate the slope of the line between the last two data points
+dx = nodes[-1, 0] - nodes[-2, 0]
+dy = nodes[-1, 1] - nodes[-2, 1]
+slope = dy / dx
+
+# Extend the line for one more unit
+x_extension = nodes[-1, 0] + dx
+y_extension = nodes[-1, 1] + dy
+
+# Add this point to the nodes
+nodes_extended = np.vstack([nodes, [x_extension, y_extension]])
+
+# Extracting x and y values with the extended node
+x_extended = nodes_extended[:, 0]
+y_extended = nodes_extended[:, 1]
+
+# Performing spline interpolation with the extended nodes
+tck_extended, u_extended = interpolate.splprep([x_extended, y_extended], s=0)
+xnew_extended, ynew_extended = interpolate.splev(np.linspace(0, 1, 100), tck_extended, der=0)
+
+###############################################################################
+# Finding the maximum x-value from the xnew_extended array
+max_x_value = np.max(xnew_extended)
+
+print("Maximum x-value based on the graph:", max_x_value)
+
+################################################################################
+
+# Plotting
+plt.figure(figsize=(8, 6))
+plt.plot(x_extended, y_extended, 'x', xnew_extended, ynew_extended, '-', color = "blue")
+# Add error bars for both x and y
+plt.errorbar(x, y, xerr=x_errors, yerr=y_errors, fmt='x', color="black", ecolor='red', elinewidth=2, capsize=4) 
+# Add error bars for both x2 and y2 
+plt.errorbar(x2,y2, xerr=x_errors2, yerr=y_errors2, fmt='x',color='green',ecolor='orange',elinewidth=2, capsize=4)
+plt.plot(x_fit, y_fit, color='green',label='Fitted Curve')
+plt.legend(['Extended Data', 'Extended Spline' ,'Fitted curve','Original Data with error bar','Data of region of interest with error bar'])
+plt.plot(X1_extended, Y1_pred_extended, '--', color='red')  # Plotting the regression line 1
+plt.plot(X2_extended, Y2_pred_extended, '--', color='red')  # Plotting the regression line 2
+plt.title('Graph of anode current against accelerating voltage')
+plt.xlabel('accelerating voltage, V')
+plt.ylabel('Anode Current, $\mu$A')
+plt.grid(True)
+plt.axis([x.min() - 1, x.max() + 1, y.min() - 0.1, y.max() + 1])
+
+# Setting x-axis scale with interval of 1
+plt.xticks(np.arange(x.min() , x.max() + 1, 1))
+# Setting y-axis scale with interval of 0.1
+plt.yticks(np.arange(0 , y.max() + 1, 0.1))
+
+# Adding minor grid with specified interval
+ax = plt.gca()  # Get current axis
+ax.xaxis.set_minor_locator(plt.MultipleLocator(0.2))
+ax.yaxis.set_minor_locator(plt.MultipleLocator(0.02))
+
+# Enable minor grid with custom styling
+ax.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
+
+# Save the plot to a new file
+plt.savefig('finalPARTA.png')
+
+plt.show()
+\end{lstlisting}
+Output:
+\begin{lstlisting}[language=Python]
+Intersecion point:{ 14.19, 0.00386  }
+Maximum x-value based on the graph: 13.428258169493766
+\end{lstlisting}
+
+\newpage
+\subsection*{Python code of data analysis for experiment of Ionisation of Argon}
+\begin{lstlisting}[language=Python]
+from __future__ import division
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy import interpolate
+from sklearn.linear_model import LinearRegression
+from scipy.optimize import curve_fit
+
+################################################################
+# Given nodes
+nodes = np.array( [
+    [0, 0],
+    [1.6, 20],
+    [3.4, 40],
+    [5.1, 60],
+    [6.9, 80],
+    [8.5, 110],
+    [10.3, 150],
+    [10.9, 180],
+    [11.5, 210],
+    [12.1, 250]
+]
+ )
+
+# Extracting x and y values
+x = nodes[:,0]
+y = nodes[:,1]
+
+############################################################################
+# Given nodes for region of interest
+nodes2 = np.array([
+    [8.6, 113],
+    [9.0, 123],
+    [9.5, 127],
+    [9.9, 140],
+    [10.4, 150],
+    [10.9, 167],
+    [11.1, 180],
+    [11.4, 200],
+    [11.6, 210],
+    [11.7, 217],
+    [11.9, 223],
+    [12.0, 233],
+    [12.1, 247]
+]
+)
+
+x2 = nodes2[:,0]
+y2 = nodes2[:,1]
+
+# Defining a function for curve fitting, using a polynomial of degree 3 as an example
+def poly_func(x, a, b, c, d):
+    return a * x**3 + b * x**2 + c * x + d
+
+# Curve fitting
+popt, pcov = curve_fit(poly_func, x2, y2)
+
+# Plotting the fitted curve
+x_fit = np.linspace(min(x2), max(x2), 500)
+y_fit = poly_func(x_fit, *popt)
+############################################################################
+#first linear regression line
+X1 = nodes[:10,0].reshape(-1, 1)  # Reshape for sklearn
+Y1 = nodes[:10, 1]
+
+# Create and fit the model
+model = LinearRegression()
+model.fit(X1, Y1)
+
+# Extending the X1 range for visualization
+X1_extended = np.linspace(0, 18, 100).reshape(-1, 1)
+Y1_pred_extended = model.predict(X1_extended)
+#############################################################################
+#first linear regression line
+X1 = nodes[:4,0].reshape(-1, 1)  # Reshape for sklearn
+Y1 = nodes[:4, 1]
+
+# Create and fit the model
+model = LinearRegression()
+model.fit(X1, Y1)
+
+# Extending the X1 range for visualization
+X1_extended = np.linspace(0, 12, 100).reshape(-1, 1)
+Y1_pred_extended = model.predict(X1_extended)
+#############################################################################
+#second linear regression line
+X2 = nodes[-4:, 0].reshape(-1, 1)  # Correctly extract X values for the last three points
+Y2 = nodes[-4:, 1]  # Correctly extract Y values for the last three points
+
+# Re-create and fit the model using the last three points
+model2 = LinearRegression()
+model2.fit(X2, Y2)
+
+# Extending the X2 range for visualization over the same range as defined earlier
+X2_extended = np.linspace(9, 12, 100).reshape(-1, 1)
+Y2_pred_extended = model2.predict(X2_extended)
+#############################################################################
+#find the intersection point of two line
+# Assuming linear regression models have to be fitted to these datasets
+model11 = LinearRegression().fit(X1, Y1)
+model22 = LinearRegression().fit(X2, Y2)
+
+# Extract the coefficients (slope) and intercepts of both linear regression models
+slope1, intercept1 = model11.coef_[0], model11.intercept_
+slope2, intercept2 = model22.coef_[0], model22.intercept_
+
+# Calculate the x-coordinate of the intersection point
+x_inter = (intercept2 - intercept1) / (slope1 - slope2)
+
+# Calculate the y-coordinate of the intersection point
+y_inter = slope1 * x_inter + intercept1
+
+# Intersection point
+print("Intersecion point:{",f"{x_inter:.2f}, {y_inter:.5f}"," }")
+############################################################################
+# Example error values (replace with your actual error data)
+x_errors = np.array([0.1] * len(x))  # Standard error for x-values
+y_errors = np.array([10] * len(y))  # Constant error for illustration
+# Extracting x and y values
+############################################################################
+# Example error values (replace with your actual error data) for region of interest
+x_errors2 = np.array([0.1] * len(x2))  # Standard error for x-values
+y_errors2 = np.array([10] * len(y2))  # Constant error for illustration
+# Extracting x and y values
+############################################################################
+# Performing spline interpolation
+tck, u = interpolate.splprep( [x,y], s = 0 )
+xnew, ynew = interpolate.splev( np.linspace( 0, 1, 100 ), tck, der = 0)
+
+#############################################################################
+# Plotting
+plt.figure(figsize=(8, 6))
+plt.plot(xnew ,ynew , '-', color = "blue")
+# Add error bars for both x and y
+plt.errorbar(x, y, xerr=x_errors, yerr=y_errors, fmt='x', color="black", ecolor='red', elinewidth=1, capsize=4, label='Original Data with Error Bars')
+# Add error bars for both x and y
+plt.errorbar(x2,y2, xerr=x_errors2, yerr=y_errors2, fmt='x',color='green',ecolor='orange',elinewidth=2, capsize=4)
+plt.plot(x_fit, y_fit, color='green',label='Fitted Curve')
+plt.legend(['Spline','Fitted curve','Original Data with error bar','Data of region of interest with error bar'], loc='upper left')
+plt.plot(X1_extended, Y1_pred_extended, '--', color='red')  # Plotting the regression line 1
+plt.plot(X2_extended, Y2_pred_extended, '--', color='red')  # Plotting the regression line 2
+plt.title('Graph of current against voltage')
+plt.xlabel('accelerating voltage, V')
+plt.ylabel('Anode Current, mA')
+plt.grid(True)
+plt.axis([x.min() - 1, x.max() + 1, y.min() - 0.1, y.max() + 1])
+
+# Setting x-axis scale with interval of 1
+plt.xticks(np.arange(x.min() , x.max() + 2, 1))
+# Setting y-axis scale with interval of 0.1
+plt.yticks(np.arange(0 , y.max() + 75, 50))
+
+# Adding minor grid with specified interval
+ax = plt.gca()  # Get current axis
+ax.xaxis.set_minor_locator(plt.MultipleLocator(0.2))
+ax.yaxis.set_minor_locator(plt.MultipleLocator(10))
+
+# Enable minor grid with custom styling
+ax.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
+
+# Save the plot to a new file
+plt.savefig('finalPARTB.png')
+
+plt.show()
+\end{lstlisting}
+Output:
+\begin{lstlisting}[language=Python]
+Intersecion point:{ 9.67, 113.57511  }
+\end{lstlisting}
+\newpage
+\subsection*{Python code of data analysis for experiment of Excitation of Xenon}
+\begin{lstlisting}[language=Python]
+from __future__ import division
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy import interpolate
+from scipy.optimize import curve_fit
+
+######################################################
+# Given nodes
+nodes = np.array( [
+    [0, 0.46381],
+    [0.9, 1.17917],
+    [2.0, 1.29994],
+    [3.0, 1.05947],
+    [3.9, 0.83390],
+    [4.9, 0.68004],
+    [6.0, 0.59198],
+    [7.0, 0.54673],
+    [8.0, 0.53704],
+    [9.0, 0.55442],
+    [10.0, 0.59577],
+    [11.0, 0.64588]
+]
+ )
+
+# Extracting x and y values
+x = nodes[:,0]
+y = nodes[:,1]
+######################################################
+# Given nodes for region of interest
+nodes2 = np.array([
+    [6.0, 0.62406],
+    [6.4, 0.55486],
+    [7.0, 0.55398],
+    [7.4, 0.55258],
+    [8.0, 0.52231],
+    [8.4, 0.52990],
+    [9.0, 0.53305]
+]
+)
+
+x2 = nodes2[:,0]
+y2 = nodes2[:,1]
+
+# Defining a function for curve fitting, using a polynomial of degree 3 as an example
+def poly_func(x, a, b, c, d):
+    return a * x**3 + b * x**2 + c * x + d
+
+# Curve fitting
+popt, pcov = curve_fit(poly_func, x2, y2)
+
+# Plotting the fitted curve
+x_fit = np.linspace(min(x2), max(x2), 500)
+y_fit = poly_func(x_fit, *popt)
+#################################################################
+# Performing spline interpolation
+tck, u = interpolate.splprep( [x,y], s = 0 )
+xnew, ynew = interpolate.splev( np.linspace( 0, 1, 100 ), tck, der = 0)
+
+#######################################################################
+# Calculating the first derivative of the spline over the interpolated range
+derivative = interpolate.splev(np.linspace(0, 1, 100), tck, der=1)
+
+# The derivative is a list of arrays, one for each dimension. Since we're working in 1D, we only need the first array.
+dx, dy = derivative
+
+# Find zeros of the derivative - places where dy/dx changes sign might indicate local minima or maxima
+sign_changes = np.diff(np.sign(dy))  # Find where the derivative changes sign
+
+# Local minima are where the derivative changes from negative to positive, i.e., sign change is positive
+minima_indices = np.where(sign_changes > 0)[0] + 1  # +1 because np.diff shifts indices by 1
+
+# Extracting the local minima points
+minima_x = xnew[minima_indices]
+minima_y = ynew[minima_indices]
+
+if len(minima_x) > 0:
+    # Assuming interest in the first local minimum
+    first_min_x = minima_x[0]
+    first_min_y = minima_y[0]
+    print(f"First local minimum point at x = {first_min_x:.2f}, y = {first_min_y:.6f}")
+else:
+    print("No local minimum found.")
+#####################################################################
+# Example error values (replace with your actual error data)
+x_errors = np.array([0.1] * len(x))  # Standard error for x-values
+y_errors = np.array([0.0001] * len(y))  # Constant error for illustration
+# Extracting x and y values
+############################################################################
+# Example error values (replace with your actual error data) for region of interest
+x_errors2 = np.array([0.1] * len(x2))  # Standard error for x-values
+y_errors2 = np.array([0.0001] * len(y2))  # Constant error for illustration
+# Extracting x2 and y2 values
+############################################################################
+# Plotting
+plt.figure(figsize=(8, 6))
+plt.plot(xnew ,ynew , '-', color = "blue")
+plt.errorbar(x, y, xerr=x_errors, yerr=y_errors, fmt='x', color="black", ecolor='red', elinewidth=2, capsize=6, label='Original Data with Error Bars')  # Add error bars for both x and y
+# Add error bars for both x2 and y2 
+plt.errorbar(x2,y2, xerr=x_errors2, yerr=y_errors2, fmt='x',color='green',ecolor='orange',elinewidth=2, capsize=4)
+plt.plot(x_fit, y_fit, color='green',label='Fitted Curve')
+plt.legend(['Spline','Fitted curve','Original Data with error bar','Data of region of interest with error bar'])
+plt.title('Graph of current against accelerating voltage')
+plt.xlabel('accelerating voltage, V')
+plt.ylabel('Anode Current, $\mu$A')
+plt.grid(True)
+plt.axis([x.min() - 1, x.max() + 1, y.min() - 0.1, y.max() + 1])
+
+# Setting x-axis scale with interval of 1
+plt.xticks(np.arange(x.min() , x.max() + 1, 1))
+# Setting y-axis scale with interval of 0.1
+plt.yticks(np.arange(0 , y.max() + 1, 0.1))
+
+# Adding minor grid with specified interval
+ax = plt.gca()  # Get current axis
+ax.xaxis.set_minor_locator(plt.MultipleLocator(0.2))
+ax.yaxis.set_minor_locator(plt.MultipleLocator(0.02))
+
+# Enable minor grid with custom styling
+ax.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
+
+# Save the plot to a new file
+plt.savefig('finalPARTC.png')
+
+plt.show()
+\end{lstlisting}
+Output:
+\begin{lstlisting}[language=Python]
+First local minimum point at x = 7.91, y = 0.536687
+\end{lstlisting}
+\newpage
+\subsection*{Energy level of Xenon and Argon}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\linewidth]{Xenon energy level}
+  \caption{Xenon neutral and single ion energy levels}
+  \label{2}
+  \end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\linewidth]{Argon energy level}
+  \caption{Argon neutral and single ion energy levels}
+  \label{2}
+  \end{figure}
+\end{document}    
