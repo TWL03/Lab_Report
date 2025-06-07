@@ -36,59 +36,57 @@ All reports are written using LaTeX (some are Docs). You may compile them locall
 
 ### Local Compilation
 
-```bash
-cd reports/<experiment-folder>
-pdflatex report.tex
-bibtex report
-pdflatex report.tex
-pdflatex report.tex
-```
+You can Run the LaTeX in Visual Studio Code or LaTeX Works:
+
+Download LaTeX: https://www.latex-project.org/get/
+
 ### Online Compilation
 
 You can also upload report.tex to Overleaf for browser-based editing.
 
 Common packages used:
-	•	amsmath, graphicx, siunitx, caption, float, tikz, hyperref, biblatex
+-	amsmath, graphicx, siunitx, caption, float, tikz, hyperref, biblatex
 
 
 ## 📊 Tools Used for Analysis
-	•	🐍 Python (NumPy, Pandas, Matplotlib) for numerical analysis and plotting
-	•	📊 Excel / Google Sheets for raw data tabulation
-	•	📄 LaTeX for scientific writing
-	•	📓 Jupyter Notebooks (occasionally) for simulation and plotting
+-	🐍 Python (NumPy, Pandas, Matplotlib) for numerical analysis and plotting
+-	📊 Excel / Google Sheets for raw data tabulation
+-	📄 LaTeX for scientific writing
+-	📓 Jupyter Notebooks (occasionally) for simulation and plotting
 
 
 ## 📚 References
 
 Each experiment report includes a bibliography citing:
-	•	Fundamentals of Physics, Halliday, Resnick & Walker
-	•	University Physics, Young & Freedman
-	•	PHYWE and UCSD lab notes
-	•	Official lab manuals from the School of Physics, USM
-	•	Additional scientific articles where relevant
+-	Fundamentals of Physics, Halliday, Resnick & Walker
+-	University Physics, Young & Freedman
+-	PHYWE and UCSD lab notes
+-	Official lab manuals from the School of Physics, USM
+-	Additional scientific articles where relevant
+-	...
 
 
 ## 📑 License
 
 All original content (LaTeX source, plots, and analysis) in this repository is shared under the MIT License.
 
-You are allowed to:
-	•	📖 Use this for educational and reference purposes
-	•	📂 Fork or clone the repository for personal study
-	•	🧠 Learn from the structure and analysis
+### You are allowed to:
+-	📖 Use this for educational and reference purposes
+-	📂 Fork or clone the repository for personal study
+-	🧠 Learn from the structure and analysis
 
-You are not allowed to:
-	•	❌ Plagiarize or submit these reports as your own
-	•	❌ Redistribute modified versions without attribution
-	•	❌ Use this work for commercial purposes
+### You are not allowed to:
+-	❌ Plagiarize or submit these reports as your own
+-	❌ Redistribute modified versions without attribution
+-	❌ Use this work for commercial purposes
 
 
-🙋 Contact
+## 🙋 Contact
 
 For feedback, academic collaboration, or questions:
-	•	Author: Tan Wei Liang
-	•	Institution: Universiti Sains Malaysia (USM)
-	•	GitHub: https://github.com/TWL03
+-	Author: Tan Wei Liang
+-	Institution: Universiti Sains Malaysia (USM), School of Physics
+-	GitHub: https://github.com/TWL03
 
 Thank you for visiting this repository.
 If you find it helpful, please consider starring ⭐ or sharing it with others in the academic community.
