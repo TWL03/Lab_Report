@@ -1,0 +1,383 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{pasco_spectrophotometer_manual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=54f185e0f06f3f854ef3f8158cad53bd}{%
+           family={Scientific},
+           familyi={S\bibinitperiod},
+           given={PASCO},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{54f185e0f06f3f854ef3f8158cad53bd}
+      \strng{fullhash}{54f185e0f06f3f854ef3f8158cad53bd}
+      \strng{fullhashraw}{54f185e0f06f3f854ef3f8158cad53bd}
+      \strng{bibnamehash}{54f185e0f06f3f854ef3f8158cad53bd}
+      \strng{authorbibnamehash}{54f185e0f06f3f854ef3f8158cad53bd}
+      \strng{authornamehash}{54f185e0f06f3f854ef3f8158cad53bd}
+      \strng{authorfullhash}{54f185e0f06f3f854ef3f8158cad53bd}
+      \strng{authorfullhashraw}{54f185e0f06f3f854ef3f8158cad53bd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://cdn.pasco.com/product_document/Educational-Spectrophotometer-System-Manual-OS-8539.pdf}}
+      \field{note}{Accessed: November 3, 2024}
+      \field{title}{Educational Spectrophotometer System Manual}
+      \field{year}{2017}
+    \endentry
+    \entry{cortland_lab_manual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5dbb4ebf47585a5e0022eabe8cf297cb}{%
+           family={Cortland},
+           familyi={C\bibinitperiod},
+           given={SUNY},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5dbb4ebf47585a5e0022eabe8cf297cb}
+      \strng{fullhash}{5dbb4ebf47585a5e0022eabe8cf297cb}
+      \strng{fullhashraw}{5dbb4ebf47585a5e0022eabe8cf297cb}
+      \strng{bibnamehash}{5dbb4ebf47585a5e0022eabe8cf297cb}
+      \strng{authorbibnamehash}{5dbb4ebf47585a5e0022eabe8cf297cb}
+      \strng{authornamehash}{5dbb4ebf47585a5e0022eabe8cf297cb}
+      \strng{authorfullhash}{5dbb4ebf47585a5e0022eabe8cf297cb}
+      \strng{authorfullhashraw}{5dbb4ebf47585a5e0022eabe8cf297cb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://web.cortland.edu/wheeler/phy150/Laboratory/Laboratory1.pdf}}
+      \field{month}{11}
+      \field{note}{Accessed: November 3, 2024}
+      \field{title}{Physics Laboratory Manual: Experiment 1}
+      \field{year}{2024}
+    \endentry
+    \entry{usm_diffraction}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=932a53a794bc5e2ab7fd5344e7f9c06e}{%
+           family={{Universiti Sains Malaysia (USM)}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{932a53a794bc5e2ab7fd5344e7f9c06e}
+      \strng{fullhash}{932a53a794bc5e2ab7fd5344e7f9c06e}
+      \strng{fullhashraw}{932a53a794bc5e2ab7fd5344e7f9c06e}
+      \strng{bibnamehash}{932a53a794bc5e2ab7fd5344e7f9c06e}
+      \strng{authorbibnamehash}{932a53a794bc5e2ab7fd5344e7f9c06e}
+      \strng{authornamehash}{932a53a794bc5e2ab7fd5344e7f9c06e}
+      \strng{authorfullhash}{932a53a794bc5e2ab7fd5344e7f9c06e}
+      \strng{authorfullhashraw}{932a53a794bc5e2ab7fd5344e7f9c06e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{note}{[Accessed: Dec. 8, 2024]}
+      \field{title}{{2OS2 Diffraction Grating Spectrometer Manual}}
+      \field{year}{2024}
+    \endentry
+    \entry{physicsSE_second_order_spectra}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7eb340d0d48b7e0d1f30fd7bfbbda80d}{%
+           family={contributions},
+           familyi={c\bibinitperiod},
+           given={User},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{7eb340d0d48b7e0d1f30fd7bfbbda80d}
+      \strng{fullhash}{7eb340d0d48b7e0d1f30fd7bfbbda80d}
+      \strng{fullhashraw}{7eb340d0d48b7e0d1f30fd7bfbbda80d}
+      \strng{bibnamehash}{7eb340d0d48b7e0d1f30fd7bfbbda80d}
+      \strng{authorbibnamehash}{7eb340d0d48b7e0d1f30fd7bfbbda80d}
+      \strng{authornamehash}{7eb340d0d48b7e0d1f30fd7bfbbda80d}
+      \strng{authorfullhash}{7eb340d0d48b7e0d1f30fd7bfbbda80d}
+      \strng{authorfullhashraw}{7eb340d0d48b7e0d1f30fd7bfbbda80d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://physics.stackexchange.com/questions/284394/second-order-spectra-vs-first-order}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Second order spectra vs. first order}
+    \endentry
+    \entry{nist_mercury_spectrum}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=91348c04260bd8fbee564adff6c9431e}{%
+           family={Standards},
+           familyi={S\bibinitperiod},
+           given={National\bibnamedelima Institute},
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+        {{hash=f3289a183c06bc6d6d1fc05b59fad74b}{%
+           family={(NIST)},
+           familyi={(\bibinitperiod},
+           given={Technology},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{bibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorbibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authornamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://physics.nist.gov/PhysRefData/Handbook/Tables/mercurytable2.htm}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Atomic Spectra Database - Mercury Wavelengths}
+    \endentry
+    \entry{sciencephoto_helium_spectra}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f2be3757db662f71b0a1cbc18e1bd6b6}{%
+           family={Library},
+           familyi={L\bibinitperiod},
+           given={Science\bibnamedelima Photo},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{fullhash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{fullhashraw}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{bibnamehash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{authorbibnamehash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{authornamehash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{authorfullhash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{authorfullhashraw}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.sciencephoto.com/media/673903/view/helium-emission-and-absorption-spectra}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Helium emission and absorption spectra}
+    \endentry
+    \entry{nist_helium_spectrum}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=91348c04260bd8fbee564adff6c9431e}{%
+           family={Standards},
+           familyi={S\bibinitperiod},
+           given={National\bibnamedelima Institute},
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+        {{hash=f3289a183c06bc6d6d1fc05b59fad74b}{%
+           family={(NIST)},
+           familyi={(\bibinitperiod},
+           given={Technology},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{bibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorbibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authornamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://physics.nist.gov/PhysRefData/Handbook/Tables/heliumtable2.htm}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Atomic Spectra Database - Helium Wavelengths}
+    \endentry
+    \entry{sciencephoto_cadmium_spectrum}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f2be3757db662f71b0a1cbc18e1bd6b6}{%
+           family={Library},
+           familyi={L\bibinitperiod},
+           given={Science\bibnamedelima Photo},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{fullhash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{fullhashraw}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{bibnamehash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{authorbibnamehash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{authornamehash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{authorfullhash}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \strng{authorfullhashraw}{f2be3757db662f71b0a1cbc18e1bd6b6}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.sciencephoto.com/media/1674/view/emission-spectrum-of-cadmium}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Emission Spectrum of Cadmium}
+    \endentry
+    \entry{nist_cadmium_spectrum}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=91348c04260bd8fbee564adff6c9431e}{%
+           family={Standards},
+           familyi={S\bibinitperiod},
+           given={National\bibnamedelima Institute},
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+        {{hash=f3289a183c06bc6d6d1fc05b59fad74b}{%
+           family={(NIST)},
+           familyi={(\bibinitperiod},
+           given={Technology},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{bibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorbibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authornamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://physics.nist.gov/PhysRefData/Handbook/Tables/cadmiumtable2_a.htm}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Atomic Spectra Database - Cadmium Wavelengths}
+    \endentry
+    \entry{utexas_hydrogen_spectra}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7867fcb7123194c6303d18c73bcf6212}{%
+           family={Texas\bibnamedelimb at\bibnamedelima Austin},
+           familyi={T\bibinitperiod\bibinitdelim a\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={University},
+           giveni={U\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{7867fcb7123194c6303d18c73bcf6212}
+      \strng{fullhash}{7867fcb7123194c6303d18c73bcf6212}
+      \strng{fullhashraw}{7867fcb7123194c6303d18c73bcf6212}
+      \strng{bibnamehash}{7867fcb7123194c6303d18c73bcf6212}
+      \strng{authorbibnamehash}{7867fcb7123194c6303d18c73bcf6212}
+      \strng{authornamehash}{7867fcb7123194c6303d18c73bcf6212}
+      \strng{authorfullhash}{7867fcb7123194c6303d18c73bcf6212}
+      \strng{authorfullhashraw}{7867fcb7123194c6303d18c73bcf6212}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://ch301.cm.utexas.edu/section2.php?target=atomic/H-atom/line-spectra.html}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Hydrogen Atom Line Spectra}
+    \endentry
+    \entry{nist_hydrogen_spectrum}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=91348c04260bd8fbee564adff6c9431e}{%
+           family={Standards},
+           familyi={S\bibinitperiod},
+           given={National\bibnamedelima Institute},
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+        {{hash=f3289a183c06bc6d6d1fc05b59fad74b}{%
+           family={(NIST)},
+           familyi={(\bibinitperiod},
+           given={Technology},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{bibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorbibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authornamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Atomic Spectra Database - Hydrogen Wavelengths}
+    \endentry
+    \entry{lighting_gallery_sodium_spectrum}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a19c9d6a735d6921df5b12ccead1d40d}{%
+           family={Gallery},
+           familyi={G\bibinitperiod},
+           given={Lighting},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a19c9d6a735d6921df5b12ccead1d40d}
+      \strng{fullhash}{a19c9d6a735d6921df5b12ccead1d40d}
+      \strng{fullhashraw}{a19c9d6a735d6921df5b12ccead1d40d}
+      \strng{bibnamehash}{a19c9d6a735d6921df5b12ccead1d40d}
+      \strng{authorbibnamehash}{a19c9d6a735d6921df5b12ccead1d40d}
+      \strng{authornamehash}{a19c9d6a735d6921df5b12ccead1d40d}
+      \strng{authorfullhash}{a19c9d6a735d6921df5b12ccead1d40d}
+      \strng{authorfullhashraw}{a19c9d6a735d6921df5b12ccead1d40d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.lighting-gallery.net/gallery/displayimage.php?album=3248&pos=46&pid=110444}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Sodium Vapor Emission Spectrum}
+    \endentry
+    \entry{nist_sodium_spectrum}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=91348c04260bd8fbee564adff6c9431e}{%
+           family={Standards},
+           familyi={S\bibinitperiod},
+           given={National\bibnamedelima Institute},
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+        {{hash=f3289a183c06bc6d6d1fc05b59fad74b}{%
+           family={(NIST)},
+           familyi={(\bibinitperiod},
+           given={Technology},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{fullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{bibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorbibnamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authornamehash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhash}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \strng{authorfullhashraw}{6a9a7e8dee739d3ba7ca95eed6cb26ba}
+      \field{extraname}{5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://physics.nist.gov/PhysRefData/Handbook/Tables/sodiumtable2.htm}}
+      \field{note}{Accessed: 2024-12-15}
+      \field{title}{Atomic Spectra Database - Sodium Wavelengths}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

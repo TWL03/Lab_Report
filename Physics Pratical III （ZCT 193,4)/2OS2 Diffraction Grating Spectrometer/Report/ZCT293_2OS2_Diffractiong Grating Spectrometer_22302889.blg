@@ -1,0 +1,17 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'ZCT293_2OS2_Diffractiong Grating Spectrometer_22302889.blg'
+[359] biber-MSWIN64:340> INFO - === 
+[480] Biber.pm:420> INFO - Reading 'ZCT293_2OS2_Diffractiong Grating Spectrometer_22302889.bcf'
+[662] Biber.pm:994> INFO - Found 13 citekeys in bib section 0
+[684] Biber.pm:4463> INFO - Processing section 0
+[727] Biber.pm:4654> INFO - Looking for bibtex file 'ref.bib' for section 0
+[799] bibtex.pm:1713> INFO - LaTeX decoding ...
+[831] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[1232] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1233] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1233] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1233] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1243] bbl.pm:676> INFO - Writing 'ZCT293_2OS2_Diffractiong Grating Spectrometer_22302889.bbl' with encoding 'UTF-8'
+[1253] bbl.pm:779> INFO - Output to ZCT293_2OS2_Diffractiong Grating Spectrometer_22302889.bbl
+[1254] Biber.pm:131> WARN - legacy month field 'November' in entry 'cortland_lab_manual' is not an integer - this will probably not sort properly.
+[1254] Biber.pm:133> INFO - WARNINGS: 1

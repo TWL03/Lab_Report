@@ -1,0 +1,28 @@
+\contentsline {section}{ABSTRACT}{i}{section*.4}%
+\contentsline {section}{ACKNOWLEDGEMENTS}{ii}{section*.5}%
+\contentsline {section}{LIST OF TABLES}{v}{section*.6}%
+\contentsline {section}{LIST OF FIGURES}{vi}{section*.7}%
+\contentsline {section}{\large \hbox to\@tempdima {1\hfil }INTRODUCTION}{1}{section*.8}%
+\contentsline {section}{\large \hbox to\@tempdima {2\hfil }THEORY}{2}{section*.9}%
+\contentsline {section}{\large \hbox to\@tempdima {3\hfil }METHODOLOGY}{4}{section*.12}%
+\contentsline {section}{\large \hbox to\@tempdima {4\hfil }DATA ANALYSIS}{6}{section*.14}%
+\contentsline {subsection}{\large \hbox to\@tempdima {4.1\hfil }Mercury}{8}{table.caption.15}%
+\contentsline {subsection}{\large \hbox to\@tempdima {4.2\hfil }Helium}{10}{table.caption.17}%
+\contentsline {subsection}{\large \hbox to\@tempdima {4.3\hfil }Cadmium}{11}{table.caption.19}%
+\contentsline {subsection}{\large \hbox to\@tempdima {4.4\hfil }Hydrogen}{12}{table.caption.21}%
+\contentsline {subsection}{\large \hbox to\@tempdima {4.5\hfil }Sodium}{13}{table.caption.23}%
+\contentsline {section}{\large \hbox to\@tempdima {5\hfil }DISCUSSION}{14}{section*.26}%
+\contentsline {section}{\large \hbox to\@tempdima {6\hfil }CONCLUSION}{16}{section*.27}%
+\contentsline {section}{\large REFERENCES}{17}{section*.28}%
+\contentsline {section}{\large APPENDICES}{19}{section*.29}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Data}{19}{section*.30}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Mercury}{23}{lstnumber.-2.45}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Mercury percentage difference}{25}{lstnumber.-4.17}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Helium}{27}{lstnumber.-6.9}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Helium percentage difference}{29}{lstnumber.-8.11}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Cadmium}{31}{lstnumber.-10.27}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Cadmium percentage difference}{33}{lstnumber.-12.11}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Hydrogen}{34}{lstnumber.-14.9}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Hydrogen percentage difference}{36}{lstnumber.-16.11}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Sodium}{37}{lstnumber.-18.9}%
+\contentsline {subsection}{\large \hbox to\@tempdima {\hfil }Sodium percentage difference}{39}{lstnumber.-20.7}%
