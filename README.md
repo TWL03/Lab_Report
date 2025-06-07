@@ -40,12 +40,16 @@ Each folder contains:
 
 ### 🧾 Year 2 — *Physics Practical II (ZCT 293, 294 )*
 
-| No. | Title | Link |
-|:--:|-----------------------------|----------------|
-| 1 | Microwave Interference | [📂 View](./Year%202%20-%20Physics%20Practical%20II/1.%20Microwave%20Interference) |
-| 2 | Excitation and Ionisation | [📂 View](./Year%202%20-%20Physics%20Practical%20II/2.%20Excitation%20and%20Ionisation) |
-| 3 | Glider Collision | [📂 View](./Year%202%20-%20Physics%20Practical%20II/3.%20Glider%20Collision) |
-| 4 | Emission Spectrum of Mercury | [📂 View](./Year%202%20-%20Physics%20Practical%20II/4.%20Emission%20Spectrum%20of%20Mercury) |
+| No. | Code | Experiment Title | Folder Link |
+|:---:|:----:|------------------|-------------|
+| 1 | 2EM7 | Magnetic Field | [📂 View](./Physics%20Pratical%20III%20(ZCT%20193,4)/2EM7%20Magnetic%20Field/Manual) |
+| 2 | 2GP1 | Variable \( g \) | [📂 View](./Physics%20Pratical%20III%20(ZCT%20193,4)/2GP1%20Variable%20g/Manual) |
+| 3 | 2GP2 | Poisson’s Ratio & Young’s Modulus | [📂 View](./Physics%20Pratical%20III%20(ZCT%20193,4)/2GP2%20Poisson's%20ratio%20&%20Young's%20modulus) |
+| 4 | 2GP5 | Linear Thermal Expansion | [📂 View](./Physics%20Pratical%20III%20(ZCT%20193,4)/2GP5%20Linear%20Thermal%20Expansion/Manual) |
+| 5 | 2OS2 | Diffraction Grating Spectrometer | [📂 View](./Physics%20Pratical%20III%20(ZCT%20193,4)/2OS2%20Diffraction%20Grating%20Spectrometer) |
+| 6 | 2OS3 | Michelson Interferometer | [📂 View](./Physics%20Pratical%20III%20(ZCT%20193,4)/2OS3%20Michelson%20Interferometer) |
+| 7 | 2OS7 | Speed of Light | [📂 View](./Physics%20Pratical%20III%20(ZCT%20193,4)/2OS7%20Speed%20of%20Light/Manual) |
+| 8 | 2TS1 | Stefan’s Constant | [📂 View](./Physics%20Pratical%20III%20(ZCT%20193,4)/2TS1%20Stefan's%20Constant/Manual) |
 
 ---
 
