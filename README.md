@@ -47,7 +47,7 @@ Each folder contains:
 | 3 | 2GP2 | Poisson’s Ratio & Young’s Modulus | [📄 2GP2 – Poisson’s Ratio & Young’s Modulus](./Physics%20Practical%20III%20(ZCT%20193,4)/2GP2%20Poisson's%20ratio%20&%20Young's%20modulus) |
 | 4 | 2GP5 | Linear Thermal Expansion | [📄 2GP5 – Linear Thermal Expansion](./Physics%20Practical%20III%20(ZCT%20193,4)/2GP5%20Linear%20Thermal%20Expansion) |
 | 5 | 2OS2 | Diffraction Grating Spectrometer | [📄 2OS2 – Diffraction Grating Spectrometer](./Physics%20Practical%20III%20(ZCT%20193,4)/2OS2%20Diffraction%20Grating%20Spectrometer) |
-| 6 | 2OS3 | Michelson Interferometer | [📄 2OS3 – Michelson Interferometer](./Physics%20Practical%20III%20(ZCT%20193,4)/2OS3%20Michelson%20Interferometer) |
+| 6 | 2OS3 | Michelson Interferometer | [📄 2OS3 – Michelson Interferometer](./Physics%20Pratical%20III%20%EF%BC%88ZCT%20193%2C4%EF%BC%89/2OS2%20Diffraction%20Grating%20Spectrometer) |
 | 7 | 2OS7 | Speed of Light | [📄 2OS7 – Speed of Light](./Physics%20Practical%20III%20(ZCT%20193,4)/2OS7%20Speed%20of%20Light) |
 | 8 | 2TS1 | Stefan’s Constant | [📄 2TS1 – Stefan’s Constant](./Physics%20Practical%20III%20(ZCT%20193,4)/2TS1%20Stefan's%20Constant) |
 
