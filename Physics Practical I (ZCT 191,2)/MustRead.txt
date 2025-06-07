@@ -1,0 +1,6 @@
+During my first-year lab sessions, I used both Microsoft Word and LaTeX for report writing, and relied on Excel and Mathematica for data analysis. 
+
+However, I strongly recommend that you start learning how to write your lab reports in LaTeX from the beginning of your first year. Additionally, consider using Python for data analysis instead of relying solely on spreadsheet tools. These skills will be incredibly valuable in your later research work and especially during your Final Year Project (FYP).
+
+Sincerely,  
+Tan Wei Liang
