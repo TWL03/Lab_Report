@@ -20,7 +20,7 @@ Each folder contains:
 
 | No. | Experiment Title | Folder Link |
 |:---:|------------------|-------------|
-| 0 | ERR | [📂 ./0. ERR](./0.%20ERR) |
+| 0 | ERR | [📂 ./0. ERR](./Physics Practical I (ZCT 191,2)/0. ERR) |
 | 1 | AC Resonance | [📂 ./1. AC Resonance](./1.%20AC%20Resonance) |
 | 2 | Projectile Motion | [📂 ./2. Projectile Motion](./2.%20Projectile%20Motion) |
 | 3 | Thermoelectric Effect and Thermal Conductivity | [📂 ./3. Thermoelectric Effect and Thermal Conductivity](./3.%20Thermoelectric%20Effect%20and%20Thermal%20Conductivity) |
