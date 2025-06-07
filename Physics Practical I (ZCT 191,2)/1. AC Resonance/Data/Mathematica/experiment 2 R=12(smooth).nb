@@ -1,0 +1,913 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     35223,        905]
+NotebookOptionsPosition[     34622,        887]
+NotebookOutlinePosition[     35041,        903]
+CellTagsIndexPosition[     34998,        900]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"data", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1.0", ",", "0.1940"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1.5", ",", "0.2985"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2.0", ",", "0.4030"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2.5", ",", "0.5373"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"3.0", ",", "0.7015"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"3.5", ",", "0.8657"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"4.0", ",", "0.9851"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"4.5", ",", "1.0000"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5.0", ",", "0.9403"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5.5", ",", "0.8358"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"6.0", ",", "0.7313"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"6.5", ",", "0.6418"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"7.0", ",", "0.5672"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"7.5", ",", "0.5075"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"8.0", ",", "0.4627"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"8.5", ",", "0.4030"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"9.0", ",", "0.3731"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"9.5", ",", "0.3433"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"10.0", ",", "0.3134"}], "}"}]}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"smoothCurve", "=", 
+    RowBox[{"Interpolation", "[", "data", "]"}]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Find", " ", "the", " ", "maximum", " ", "point", " ", "on", " ", "the", 
+    " ", "smooth", " ", "curve"}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"maxPoint", "=", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"smoothCurve", "[", "x", "]"}]}], "}"}], "/.", " ", 
+     RowBox[{
+      RowBox[{"FindMaximum", "[", 
+       RowBox[{
+        RowBox[{"smoothCurve", "[", "x", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "4.50"}], "}"}]}], "]"}], "[", 
+      RowBox[{"[", "2", "]"}], "]"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"intersectionPoints", "=", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0.707"}], "}"}], "/.", " ", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"FindRoot", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"smoothCurve", "[", "x", "]"}], "==", "0.707"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "xi"}], "}"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"xi", ",", "1", ",", "10", ",", "1"}], "}"}]}], "]"}]}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\n", 
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"smoothCurve", "[", "x", "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "1", ",", "10", ",", "0.1"}], "}"}]}], "]"}], "}"}], 
+   ",", 
+   RowBox[{"PlotStyle", "->", "Blue"}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Frequency, f (kHz)\>\"", ",", "\"\<Vrms/Vrms,max\>\""}], 
+     "}"}]}], ",", 
+   RowBox[{"PlotLabel", "->", "\"\<Graph of Vrms/Vrms,max against f\>\""}], 
+   ",", 
+   RowBox[{"Epilog", "->", 
+    RowBox[{"{", 
+     RowBox[{"Dashed", ",", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0.707"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"10", ",", "0.707"}], "}"}]}], "}"}], "]"}], ",", "Red", 
+      ",", 
+      RowBox[{"PointSize", "[", "Medium", "]"}], ",", 
+      RowBox[{"Point", "[", "intersectionPoints", "]"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{
+            RowBox[{"ToString", "@", 
+             RowBox[{"NumberForm", "[", 
+              RowBox[{"#", ",", 
+               RowBox[{"{", 
+                RowBox[{"4", ",", "3"}], "}"}]}], "]"}]}], ",", "Black"}], 
+           "]"}], ",", 
+          RowBox[{"#", "+", 
+           RowBox[{"{", 
+            RowBox[{"0.5", ",", 
+             RowBox[{"-", "0.01"}]}], "}"}]}]}], "]"}], "&"}], "/@", 
+       "intersectionPoints"}], ",", 
+      RowBox[{"Text", "[", 
+       RowBox[{"\"\<Vrms/Vrms,max=0.707\>\"", ",", 
+        RowBox[{"{", 
+         RowBox[{"1.5", ",", 
+          RowBox[{"0.707", "+", "0.06"}]}], "}"}]}], "]"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{
+            RowBox[{"ToString", "@", 
+             RowBox[{"NumberForm", "[", 
+              RowBox[{"#", ",", 
+               RowBox[{"{", 
+                RowBox[{"4", ",", "4"}], "}"}]}], "]"}]}], ",", "Black"}], 
+           "]"}], ",", 
+          RowBox[{"#", "+", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "0.2"}], ",", "0.02"}], "}"}]}]}], "]"}], "&"}], "/@",
+        "data"}], ",", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<Max Point\>\"", ",", "Black"}], "]"}], ",", 
+        RowBox[{"maxPoint", "+", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "0.5"}], ",", "0.04"}], "}"}]}]}], "]"}], ",", "Red", 
+      ",", 
+      RowBox[{"PointSize", "[", "Medium", "]"}], ",", 
+      RowBox[{"Point", "[", 
+       RowBox[{"{", "maxPoint", "}"}], "]"}], ",", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"ToString", "@", 
+           RowBox[{"NumberForm", "[", 
+            RowBox[{"maxPoint", ",", 
+             RowBox[{"{", 
+              RowBox[{"5", ",", "4"}], "}"}]}], "]"}]}], ",", "Black"}], 
+         "]"}], ",", 
+        RowBox[{"maxPoint", "+", 
+         RowBox[{"{", 
+          RowBox[{"0.2", ",", "0.04"}], "}"}]}]}], "]"}], ",", "Black", ",", 
+      RowBox[{"PointSize", "[", "Medium", "]"}], ",", 
+      RowBox[{"Point", "[", "data", "]"}]}], "}"}]}], ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "11.0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1.1"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"#", ",", 
+          RowBox[{"NumberForm", "[", 
+           RowBox[{"#", ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "1"}], "}"}]}], "]"}]}], "}"}], "&"}], "/@", 
+       RowBox[{"Range", "[", 
+        RowBox[{"0", ",", "10.5", ",", "0.5"}], "]"}]}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"#", ",", 
+          RowBox[{"NumberForm", "[", 
+           RowBox[{"#", ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "1"}], "}"}]}], "]"}]}], "}"}], "&"}], "/@", 
+       RowBox[{"Range", "[", 
+        RowBox[{"0", ",", "1.1", ",", "0.1"}], "]"}]}]}], "}"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.9097203633091946`*^9, 3.909720389714487*^9}, {
+   3.90972043999583*^9, 3.909720482541396*^9}, {3.9097205259557433`*^9, 
+   3.9097205410040054`*^9}, {3.9097206552374616`*^9, 3.9097206600284185`*^9}, 
+   3.9097207144330587`*^9, {3.909720755407021*^9, 3.9097207576995974`*^9}, {
+   3.909720851105961*^9, 3.9097208952498426`*^9}, {3.9097209303488092`*^9, 
+   3.909720984028488*^9}, {3.909721020231497*^9, 3.909721023825387*^9}, {
+   3.9098134539934053`*^9, 3.909813456301133*^9}, {3.909837632652561*^9, 
+   3.9098376434071865`*^9}},
+ CellLabel->"In[67]:=",ExpressionUUID->"06e4c3ea-c442-43ca-a907-aa70f395ae93"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "FindMaximum", "lstol", 
+   "\"The line search decreased the step size to within the tolerance \
+specified by AccuracyGoal and PrecisionGoal but was unable to find a \
+sufficient increase in the function. You may need more than \\!\\(\\*RowBox[{\
+\\\"MachinePrecision\\\"}]\\) digits of working precision to meet these \
+tolerances.\"", 2, 69, 20, 22987769372014868095, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9098376447954025`*^9},
+ CellLabel->
+  "During evaluation of \
+In[67]:=",ExpressionUUID->"5474bfa0-b59e-4bc3-aefd-4d3249cf3937"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, 
+   InterpretationBox[{
+     TagBox[{{}, {}, 
+       TagBox[
+        {RGBColor[0, 0, 1], PointSize[
+          NCache[
+           Rational[1, 60], 0.016666666666666666`]], AbsoluteThickness[2], 
+         LineBox[CompressedData["
+1:eJw91HtMU1ccB/DKGweltLVCoaUPxnQvJ4/FMMn9Gp0bZCQCZuIEJwsDtvBS
+hmFOxI25gWzDZcKE4UCmSHAZEkZLgBBjcEM3FaWl5VUKLQ9LoVWQofLYgF/3
+S27uP+d8zvmd+71H+kFG9Id2LBbrwH/PynutrEz1m4qZRVUnU162Ug+ZLOUZ
+s+LqX0zQas0wla72p15Lu8Pc/nulZhnX6h8iRIVdTNJqzTGxyqJj97vvMWve
+PPN759H2SmE3eU8YTl+CXVqCigle9Z4xhyz7A2W/qslbYMrcUkMvL/WQt8TU
+h1xyMsZpyWPhXDo3/9qtXhrPQmvusyHFgX7y12FhRh68jTVI8+3Q4H+6761m
+Ha1nj4qtgh9nd+jJc0DG5w43ircOk+eAmyerU1SBI+Q5ou3VfeWWNwzkOaFy
+qEIxGWEkzxn3xqe8u+NHyXNBzU8dkqtHxshzweGYWl520Th5rigT26dEXJhg
+kle99fiM804eGh6Q9xyytj9tSW42keeGwaYvj3c1TpLnBvezGZ5ZF83kuSPt
+knQ294sp8tiIa2MXOUdMk+eB0Ct12wP+mSaPg+RdH2VYT1moHw42Pz5astxn
+IZ8DafIeucHZSvM9URf2Ok/Es9J6nrBXbUndxLGSx4UtN2seF6Xqu3M7/7R5
+XPAcehdccyzk8ZDpLnPZzbeQx8OVrAa2+bxtf3y0Nn/rZBVMUz98zDU27tyX
+O0UeHzULTU4srZnyuAFpeaLp3s2289gA86asc6rsSfIEuDnKXBxqN5EnwHd1
+AQUtHibyBFjsLeZ/n2A7/41o0y0+PNg0Qd5G5MhnOv3cJsjzgob7aMfdpHHy
+vKBKyY8/eMv2vb3wSZ1U0BM4Rp43XH6LbA+uGiXPG2PhBbU5XFtehEjYG/1C
+VaGRPCFEi1s01Y5G8oS4bRKlf/2VgTwfpIp8zZFuBvJ8sHz2xai50hHyfJEf
+FX7+ZMAIeb6Yj87pMrfY8u2L98uUptC9w+SJoPR3Nn/8SE+eCOseJ6mOl9j+
+DzHC1mt+yQzTkydGjXYk8WXjEHliXJe9lBgTM0SeH7TTn+5P79CR54fZbddj
+S4J05EkgW5zL1lcM0ngJBjwKv4lVD1B+JKgVs5UTrgM0X4KU+jJNKvppPQn4
+bzNd1070kSf9/z5Y86Rg59f/HB7VS54UjU9P3Mge15Inhd7/SNKhQi15Uizv
+OWb1D7LdLzJk3im4r9NrKF8yDHfs9gjM01D/MrzbtBxXLNKQJ8PzTxSO1tYe
+8mSoeJARE/leD3lyuOtfOVM1ryZPjs6QWUdDqZo8OXx2/bHkHqImT474xMsd
+wm4VeXL0W8ov2B1WkeePsZU4s1XMv2ayeMg=
+          "]]},
+        Annotation[#, "Charting`Private`Tag#1"]& ]},
+      {"WolframDynamicHighlight", <|
+       "Label" -> {"XYLabel"}, "Ball" -> {"InterpolatedBall"}|>}], 
+     DynamicBox[(Charting`HighlightActionBox["DynamicHighlight", {}, 
+       Slot["HighlightElements"], 
+       Slot["LayoutOptions"], 
+       Slot["Meta"], 
+       Charting`HighlightActionFunction["DynamicHighlight", {{{}, {}, 
+          Annotation[{
+            Hue[0.67, 0.6, 0.6], 
+            Directive[
+             PointSize[
+              Rational[1, 60]], 
+             AbsoluteThickness[2], 
+             RGBColor[0, 0, 1]], 
+            Line[CompressedData["
+1:eJw91HtMU1ccB/DKGweltLVCoaUPxnQvJ4/FMMn9Gp0bZCQCZuIEJwsDtvBS
+hmFOxI25gWzDZcKE4UCmSHAZEkZLgBBjcEM3FaWl5VUKLQ9LoVWQofLYgF/3
+S27uP+d8zvmd+71H+kFG9Id2LBbrwH/PynutrEz1m4qZRVUnU162Ug+ZLOUZ
+s+LqX0zQas0wla72p15Lu8Pc/nulZhnX6h8iRIVdTNJqzTGxyqJj97vvMWve
+PPN759H2SmE3eU8YTl+CXVqCigle9Z4xhyz7A2W/qslbYMrcUkMvL/WQt8TU
+h1xyMsZpyWPhXDo3/9qtXhrPQmvusyHFgX7y12FhRh68jTVI8+3Q4H+6761m
+Ha1nj4qtgh9nd+jJc0DG5w43ircOk+eAmyerU1SBI+Q5ou3VfeWWNwzkOaFy
+qEIxGWEkzxn3xqe8u+NHyXNBzU8dkqtHxshzweGYWl520Th5rigT26dEXJhg
+kle99fiM804eGh6Q9xyytj9tSW42keeGwaYvj3c1TpLnBvezGZ5ZF83kuSPt
+knQ294sp8tiIa2MXOUdMk+eB0Ct12wP+mSaPg+RdH2VYT1moHw42Pz5astxn
+IZ8DafIeucHZSvM9URf2Ok/Es9J6nrBXbUndxLGSx4UtN2seF6Xqu3M7/7R5
+XPAcehdccyzk8ZDpLnPZzbeQx8OVrAa2+bxtf3y0Nn/rZBVMUz98zDU27tyX
+O0UeHzULTU4srZnyuAFpeaLp3s2289gA86asc6rsSfIEuDnKXBxqN5EnwHd1
+AQUtHibyBFjsLeZ/n2A7/41o0y0+PNg0Qd5G5MhnOv3cJsjzgob7aMfdpHHy
+vKBKyY8/eMv2vb3wSZ1U0BM4Rp43XH6LbA+uGiXPG2PhBbU5XFtehEjYG/1C
+VaGRPCFEi1s01Y5G8oS4bRKlf/2VgTwfpIp8zZFuBvJ8sHz2xai50hHyfJEf
+FX7+ZMAIeb6Yj87pMrfY8u2L98uUptC9w+SJoPR3Nn/8SE+eCOseJ6mOl9j+
+DzHC1mt+yQzTkydGjXYk8WXjEHliXJe9lBgTM0SeH7TTn+5P79CR54fZbddj
+S4J05EkgW5zL1lcM0ngJBjwKv4lVD1B+JKgVs5UTrgM0X4KU+jJNKvppPQn4
+bzNd1070kSf9/z5Y86Rg59f/HB7VS54UjU9P3Mge15Inhd7/SNKhQi15Uizv
+OWb1D7LdLzJk3im4r9NrKF8yDHfs9gjM01D/MrzbtBxXLNKQJ8PzTxSO1tYe
+8mSoeJARE/leD3lyuOtfOVM1ryZPjs6QWUdDqZo8OXx2/bHkHqImT474xMsd
+wm4VeXL0W8ov2B1WkeePsZU4s1XMv2ayeMg=
+             "]]}, "Charting`Private`Tag#1"]}}, <|
+        "HighlightElements" -> <|
+          "Label" -> {"XYLabel"}, "Ball" -> {"InterpolatedBall"}|>, 
+         "LayoutOptions" -> <|
+          "PlotRange" -> {{0., 11.}, {0., 1.1}}, 
+           "Frame" -> {{False, False}, {False, False}}, 
+           "AxesOrigin" -> {0, 0}, "ImageSize" -> {360, 360/GoldenRatio}, 
+           "Axes" -> {True, True}, "LabelStyle" -> {}, "AspectRatio" -> 
+           GoldenRatio^(-1), "DefaultStyle" -> {
+             Directive[
+              PointSize[
+               Rational[1, 60]], 
+              AbsoluteThickness[2], 
+              RGBColor[0, 0, 1]]}, 
+           "HighlightLabelingFunctions" -> <|"CoordinatesToolOptions" -> ({
+               Identity[
+                Part[#, 1]], 
+               Identity[
+                Part[#, 2]]}& ), 
+             "ScalingFunctions" -> {{Identity, Identity}, {
+               Identity, Identity}}|>, "Primitives" -> {}, "GCFlag" -> 
+           False|>, 
+         "Meta" -> <|
+          "DefaultHighlight" -> {"Dynamic", None}, "Index" -> {}, "Function" -> 
+           ListLinePlot, "GroupHighlight" -> False|>|>]]& )[<|
+       "HighlightElements" -> <|
+         "Label" -> {"XYLabel"}, "Ball" -> {"InterpolatedBall"}|>, 
+        "LayoutOptions" -> <|
+         "PlotRange" -> {{0., 11.}, {0., 1.1}}, 
+          "Frame" -> {{False, False}, {False, False}}, "AxesOrigin" -> {0, 0},
+           "ImageSize" -> {360, 360/GoldenRatio}, "Axes" -> {True, True}, 
+          "LabelStyle" -> {}, "AspectRatio" -> GoldenRatio^(-1), 
+          "DefaultStyle" -> {
+            Directive[
+             PointSize[
+              Rational[1, 60]], 
+             AbsoluteThickness[2], 
+             RGBColor[0, 0, 1]]}, 
+          "HighlightLabelingFunctions" -> <|"CoordinatesToolOptions" -> ({
+              Identity[
+               Part[#, 1]], 
+              Identity[
+               Part[#, 2]]}& ), 
+            "ScalingFunctions" -> {{Identity, Identity}, {
+              Identity, Identity}}|>, "Primitives" -> {}, "GCFlag" -> False|>,
+         "Meta" -> <|
+         "DefaultHighlight" -> {"Dynamic", None}, "Index" -> {}, "Function" -> 
+          ListLinePlot, "GroupHighlight" -> False|>|>],
+      ImageSizeCache->{{4.503599627370496*^15, -4.503599627370496*^15}, {
+       4.503599627370496*^15, -4.503599627370496*^15}}]},
+    Annotation[{{{}, {}, 
+       Annotation[{
+         Hue[0.67, 0.6, 0.6], 
+         Directive[
+          PointSize[
+           Rational[1, 60]], 
+          AbsoluteThickness[2], 
+          RGBColor[0, 0, 1]], 
+         Line[CompressedData["
+1:eJw91HtMU1ccB/DKGweltLVCoaUPxnQvJ4/FMMn9Gp0bZCQCZuIEJwsDtvBS
+hmFOxI25gWzDZcKE4UCmSHAZEkZLgBBjcEM3FaWl5VUKLQ9LoVWQofLYgF/3
+S27uP+d8zvmd+71H+kFG9Id2LBbrwH/PynutrEz1m4qZRVUnU162Ug+ZLOUZ
+s+LqX0zQas0wla72p15Lu8Pc/nulZhnX6h8iRIVdTNJqzTGxyqJj97vvMWve
+PPN759H2SmE3eU8YTl+CXVqCigle9Z4xhyz7A2W/qslbYMrcUkMvL/WQt8TU
+h1xyMsZpyWPhXDo3/9qtXhrPQmvusyHFgX7y12FhRh68jTVI8+3Q4H+6761m
+Ha1nj4qtgh9nd+jJc0DG5w43ircOk+eAmyerU1SBI+Q5ou3VfeWWNwzkOaFy
+qEIxGWEkzxn3xqe8u+NHyXNBzU8dkqtHxshzweGYWl520Th5rigT26dEXJhg
+kle99fiM804eGh6Q9xyytj9tSW42keeGwaYvj3c1TpLnBvezGZ5ZF83kuSPt
+knQ294sp8tiIa2MXOUdMk+eB0Ct12wP+mSaPg+RdH2VYT1moHw42Pz5astxn
+IZ8DafIeucHZSvM9URf2Ok/Es9J6nrBXbUndxLGSx4UtN2seF6Xqu3M7/7R5
+XPAcehdccyzk8ZDpLnPZzbeQx8OVrAa2+bxtf3y0Nn/rZBVMUz98zDU27tyX
+O0UeHzULTU4srZnyuAFpeaLp3s2289gA86asc6rsSfIEuDnKXBxqN5EnwHd1
+AQUtHibyBFjsLeZ/n2A7/41o0y0+PNg0Qd5G5MhnOv3cJsjzgob7aMfdpHHy
+vKBKyY8/eMv2vb3wSZ1U0BM4Rp43XH6LbA+uGiXPG2PhBbU5XFtehEjYG/1C
+VaGRPCFEi1s01Y5G8oS4bRKlf/2VgTwfpIp8zZFuBvJ8sHz2xai50hHyfJEf
+FX7+ZMAIeb6Yj87pMrfY8u2L98uUptC9w+SJoPR3Nn/8SE+eCOseJ6mOl9j+
+DzHC1mt+yQzTkydGjXYk8WXjEHliXJe9lBgTM0SeH7TTn+5P79CR54fZbddj
+S4J05EkgW5zL1lcM0ngJBjwKv4lVD1B+JKgVs5UTrgM0X4KU+jJNKvppPQn4
+bzNd1070kSf9/z5Y86Rg59f/HB7VS54UjU9P3Mge15Inhd7/SNKhQi15Uizv
+OWb1D7LdLzJk3im4r9NrKF8yDHfs9gjM01D/MrzbtBxXLNKQJ8PzTxSO1tYe
+8mSoeJARE/leD3lyuOtfOVM1ryZPjs6QWUdDqZo8OXx2/bHkHqImT474xMsd
+wm4VeXL0W8ov2B1WkeePsZU4s1XMv2ayeMg=
+          "]]}, "Charting`Private`Tag#1"]}}, <|
+     "HighlightElements" -> <|
+       "Label" -> {"XYLabel"}, "Ball" -> {"InterpolatedBall"}|>, 
+      "LayoutOptions" -> <|
+       "PlotRange" -> {{0., 11.}, {0., 1.1}}, 
+        "Frame" -> {{False, False}, {False, False}}, "AxesOrigin" -> {0, 0}, 
+        "ImageSize" -> {360, 360/GoldenRatio}, "Axes" -> {True, True}, 
+        "LabelStyle" -> {}, "AspectRatio" -> GoldenRatio^(-1), "DefaultStyle" -> {
+          Directive[
+           PointSize[
+            Rational[1, 60]], 
+           AbsoluteThickness[2], 
+           RGBColor[0, 0, 1]]}, 
+        "HighlightLabelingFunctions" -> <|"CoordinatesToolOptions" -> ({
+            Identity[
+             Part[#, 1]], 
+            Identity[
+             Part[#, 2]]}& ), 
+          "ScalingFunctions" -> {{Identity, Identity}, {
+            Identity, Identity}}|>, "Primitives" -> {}, "GCFlag" -> False|>, 
+      "Meta" -> <|
+       "DefaultHighlight" -> {"Dynamic", None}, "Index" -> {}, "Function" -> 
+        ListLinePlot, "GroupHighlight" -> False|>|>, 
+     "DynamicHighlight"]], {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox[
+     TagBox["\"Frequency, f (kHz)\"", HoldForm], TraditionalForm], 
+    FormBox[
+     TagBox["\"Vrms/Vrms,max\"", HoldForm], TraditionalForm]},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Epilog->{
+    Dashing[{Small, Small}], 
+    LineBox[{{1, 0.707}, {10, 0.707}}], 
+    RGBColor[1, 0, 0], 
+    PointSize[Medium], 
+    PointBox[{{3.0160201327936655`, 0.707}, {3.0160201327936624`, 0.707}, {
+     3.0160201327936655`, 0.707}, {3.0160201327936655`, 0.707}, {
+     6.127804116304401, 0.707}, {6.127804116304401, 0.707}, {
+     6.127804116304401, 0.707}, {6.127804116304401, 0.707}, {
+     3.0160201327936655`, 0.707}, {3.0160201327936655`, 0.707}}], {
+     InsetBox[
+      FormBox[
+       StyleBox["\"{3.016, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      3.5160201327936655`, 0.697}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{3.016, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      3.5160201327936624`, 0.697}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{3.016, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      3.5160201327936655`, 0.697}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{3.016, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      3.5160201327936655`, 0.697}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{6.128, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      6.627804116304401, 0.697}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{6.128, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      6.627804116304401, 0.697}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{6.128, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      6.627804116304401, 0.697}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{6.128, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      6.627804116304401, 0.697}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{3.016, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      3.5160201327936655`, 0.697}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{3.016, 0.707}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+      3.5160201327936655`, 0.697}]}, 
+    InsetBox[
+     FormBox["\"Vrms/Vrms,max=0.707\"", TraditionalForm], {1.5, 
+     0.7669999999999999}], {
+     InsetBox[
+      FormBox[
+       StyleBox["\"{1.0000, 0.1940}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {0.8, 0.214}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{1.5000, 0.2985}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {1.3, 
+      0.3185}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{2.0000, 0.4030}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {1.8, 
+      0.42300000000000004`}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{2.5000, 0.5373}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {2.3, 
+      0.5573}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{3.0000, 0.7015}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {2.8, 
+      0.7215}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{3.5000, 0.8657}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {3.3, 
+      0.8857}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{4.0000, 0.9851}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {3.8, 
+      1.0050999999999999`}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{4.5000, 1.0000}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {4.3, 1.02}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{5.0000, 0.9403}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {4.8, 
+      0.9603}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{5.5000, 0.8358}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {5.3, 
+      0.8558}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{6.0000, 0.7313}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {5.8, 
+      0.7513}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{6.5000, 0.6418}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {6.3, 
+      0.6618}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{7.0000, 0.5672}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {6.8, 
+      0.5872}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{7.5000, 0.5075}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {7.3, 
+      0.5275}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{8.0000, 0.4627}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {7.8, 
+      0.4827}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{8.5000, 0.4030}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {8.3, 
+      0.42300000000000004`}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{9.0000, 0.3731}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {8.8, 
+      0.3931}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{9.5000, 0.3433}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {9.3, 
+      0.3633}], 
+     InsetBox[
+      FormBox[
+       StyleBox["\"{10.0000, 0.3134}\"", 
+        GrayLevel[0], StripOnInput -> False], TraditionalForm], {9.8, 
+      0.33340000000000003`}]}, 
+    InsetBox[
+     FormBox[
+      StyleBox["\"Max Point\"", 
+       GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+     3.8282838801895966`, 1.0448030880860941`}], 
+    RGBColor[1, 0, 0], 
+    PointSize[Medium], 
+    PointBox[{{4.328283880189597, 1.004803088086094}}], 
+    InsetBox[
+     FormBox[
+      StyleBox["\"{4.3283, 1.0048}\"", 
+       GrayLevel[0], StripOnInput -> False], TraditionalForm], {
+     4.528283880189597, 1.0448030880860941`}], 
+    GrayLevel[0], 
+    PointSize[Medium], 
+    PointBox[CompressedData["
+1:eJxTTMoPSmViYGAQBmIQDQEf7Be5bvv898oJewj/h/2WE2X75ktdhvIZHGbk
+CTUfOHUTymdxyG9kOdpv+BDK53BYNvuIwoaiZ1A+j8PdrS01Fza/hvIFHNJd
+MvM/tL6H8oUcYPZCaBGH3Tt62T6IvYPyxRxOPrVfcn/fKyhfwuG60CfH82nP
+oXwph8SQIPUFnU+gfBmH5kDPuQ1qj6B8OQdbruuLC2wfQPkKDkp/v5U+mHMX
+yldE84+SQ8G5jkv3HlyH8pUdeB/oTljw4yqUr+LwDOQcviv2AIexWtE=
+     "]]},
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImageSize->{1087.8, Automatic},
+  Method->{
+   "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "DefaultPlotStyle" -> {
+      Directive[
+       RGBColor[0.368417, 0.506779, 0.709798], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.880722, 0.611041, 0.142051], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.560181, 0.691569, 0.194885], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.922526, 0.385626, 0.209179], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.528488, 0.470624, 0.701351], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.772079, 0.431554, 0.102387], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.363898, 0.618501, 0.782349], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[1, 0.75, 0], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.647624, 0.37816, 0.614037], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.571589, 0.586483, 0.], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.915, 0.3325, 0.2125], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.9728288904374106, 0.621644452187053, 0.07336199581899142], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.736782672705901, 0.358, 0.5030266573755369], 
+       AbsoluteThickness[2]], 
+      Directive[
+       RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965], 
+       AbsoluteThickness[2]]}, "DomainPadding" -> Scaled[0.02], 
+    "RangePadding" -> Scaled[0.05], "OptimizePlotMarkers" -> True, 
+    "IncludeHighlighting" -> "CurrentSet", "HighlightStyle" -> Automatic, 
+    "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& )}},
+  PlotLabel->FormBox["\"Graph of Vrms/Vrms,max against f\"", TraditionalForm],
+  PlotRange->{{0., 11.}, {0., 1.1}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{0, 0}, {0, 0}},
+  Ticks->{{{0., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.0\"", ShowStringCharacters -> False], 0., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {0.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.5\"", ShowStringCharacters -> False], 0.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {1., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"1.0\"", ShowStringCharacters -> False], 1., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {1.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"1.5\"", ShowStringCharacters -> False], 1.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {2., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"2.0\"", ShowStringCharacters -> False], 2., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {2.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"2.5\"", ShowStringCharacters -> False], 2.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {3., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"3.0\"", ShowStringCharacters -> False], 3., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {3.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"3.5\"", ShowStringCharacters -> False], 3.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {4., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"4.0\"", ShowStringCharacters -> False], 4., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {4.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"4.5\"", ShowStringCharacters -> False], 4.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {5., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"5.0\"", ShowStringCharacters -> False], 5., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {5.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"5.5\"", ShowStringCharacters -> False], 5.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {6., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"6.0\"", ShowStringCharacters -> False], 6., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {6.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"6.5\"", ShowStringCharacters -> False], 6.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {7., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"7.0\"", ShowStringCharacters -> False], 7., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {7.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"7.5\"", ShowStringCharacters -> False], 7.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {8., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"8.0\"", ShowStringCharacters -> False], 8., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {8.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"8.5\"", ShowStringCharacters -> False], 8.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {9., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"9.0\"", ShowStringCharacters -> False], 9., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {9.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"9.5\"", ShowStringCharacters -> False], 9.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {10., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"10.0\"", ShowStringCharacters -> False], 10., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {10.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"10.5\"", ShowStringCharacters -> False], 10.5, 
+         AutoDelete -> True], NumberForm[#, {3, 1}]& ], TraditionalForm]}}, {{
+     0., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.0\"", ShowStringCharacters -> False], 0., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {0.1, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.1\"", ShowStringCharacters -> False], 0.1, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {0.2, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.2\"", ShowStringCharacters -> False], 0.2, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {
+     0.30000000000000004`, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.3\"", ShowStringCharacters -> False], 
+         0.30000000000000004`, AutoDelete -> True], NumberForm[#, {3, 1}]& ], 
+       TraditionalForm]}, {0.4, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.4\"", ShowStringCharacters -> False], 0.4, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {0.5, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.5\"", ShowStringCharacters -> False], 0.5, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {
+     0.6000000000000001, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.6\"", ShowStringCharacters -> False], 
+         0.6000000000000001, AutoDelete -> True], NumberForm[#, {3, 1}]& ], 
+       TraditionalForm]}, {0.7000000000000001, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.7\"", ShowStringCharacters -> False], 
+         0.7000000000000001, AutoDelete -> True], NumberForm[#, {3, 1}]& ], 
+       TraditionalForm]}, {0.8, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.8\"", ShowStringCharacters -> False], 0.8, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {0.9, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"0.9\"", ShowStringCharacters -> False], 0.9, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {1., 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"1.0\"", ShowStringCharacters -> False], 1., AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}, {1.1, 
+      FormBox[
+       TagBox[
+        InterpretationBox[
+         StyleBox["\"1.1\"", ShowStringCharacters -> False], 1.1, AutoDelete -> 
+         True], NumberForm[#, {3, 1}]& ], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.909720723320444*^9, 3.9097207618065577`*^9, {3.909720859636408*^9, 
+   3.9097208966729994`*^9}, {3.9097209335189342`*^9, 3.9097209853977723`*^9}, 
+   3.909721025401682*^9, 3.909813461309389*^9, 3.9098376449332237`*^9},
+ CellLabel->"Out[71]=",ExpressionUUID->"28d6e6d2-43dc-450a-b6d9-1e236d19d3f6"]
+}, Open  ]]
+},
+WindowSize->{574.8, 568.8},
+WindowMargins->{{Automatic, 11.400000000000091`}, {Automatic, 12}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b2aa3b7e-90b2-4521-b1e5-8747083367c7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 7832, 222, 657, "Input",ExpressionUUID->"06e4c3ea-c442-43ca-a907-aa70f395ae93"],
+Cell[8415, 246, 600, 12, 83, "Message",ExpressionUUID->"5474bfa0-b59e-4bc3-aefd-4d3249cf3937"],
+Cell[9018, 260, 25588, 624, 656, "Output",ExpressionUUID->"28d6e6d2-43dc-450a-b6d9-1e236d19d3f6"]
+}, Open  ]]
+}
+]
+*)
+
