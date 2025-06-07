@@ -16,16 +16,32 @@ Each folder contains:
 
 ---
 
-## 🧪 List of Laboratory Experiments
+## 🧪 List of Laboratory Reports (ZCT191 & ZCT2C2)
 
-| No. | Experiment Code | Experiment Title | Folder | Description |
-|:---:|--------|------------------|--------|-------------|
-| 1 | 1| Interference of Microwaves | [`01-microwave-interference`](./reports/01-microwave-interference) | Investigation of interference patterns using microwave sources and reflectors. |
-| 2 | 2| Excitation and Ionization of Gases | [`02-gas-ionization`](./reports/02-gas-ionization) | Franck-Hertz-type measurement of excitation potentials in Xenon and Argon. |
-| 3 | 3| Elastic and Inelastic Collisions | [`03-glider-collision`](./reports/03-glider-collision) | Study of conservation of momentum and kinetic energy using gliders. |
-| 4 | 4| Mercury Emission Spectrum | [`04-mercury-spectrum`](./reports/04-mercury-spectrum) | Angular diffraction of mercury light to analyze discrete atomic spectra. |
-| … | | More experiments coming soon | – | – |
+| No. | Experiment Title | Folder Link |
+|:---:|------------------|-------------|
+| 0 | ERR | [📂 ./0. ERR](./0.%20ERR) |
+| 1 | AC Resonance | [📂 ./1. AC Resonance](./1.%20AC%20Resonance) |
+| 2 | Projectile Motion | [📂 ./2. Projectile Motion](./2.%20Projectile%20Motion) |
+| 3 | Thermoelectric Effect and Thermal Conductivity | [📂 ./3. Thermoelectric Effect and Thermal Conductivity](./3.%20Thermoelectric%20Effect%20and%20Thermal%20Conductivity) |
+| 4 | Interference | [📂 ./4. Interference](./4.%20Interference) |
+| 5 | Mechanical Equivalent of Heat | [📂 ./5.Mechanical Equivalent of Heat](./5.Mechanical%20Equivalent%20of%20Heat) |
+| 6 | Excitation and Ionisation Potentials | [📂 ./6. Excitation and Ionisation Potentials](./6.%20Excitation%20and%20Ionisation%20Potentials) |
+| 7 | Geometrical Optics | [📂 ./7. Geometrical Optics](./7.%20Geometrical%20Optics) |
+| 8 | Basic Electrical Measurement | [📂 ./8. Basic Electrical Measurement](./8.%20Basic%20Electrical%20Measurement) |
+| 9 | Dynamics | [📂 ./9. Dynamics](./9.%20Dynamics) |
+| 10 | Radioactivity | [📂 ./10. Radioactivity](./10.%20Radioactivity) |
+| – | Others Mathematica Code | [📂 ./Others Mathematica code](./Others%20Mathamatica%20code) |
 
+---
+
+## 📄 Supporting Materials
+
+| File | Description | Link |
+|------|-------------|------|
+| How to Write a Good Lab Report.pdf | Guidelines for writing a good scientific report | [📄 View](./How%20to%20Write%20a%20Good%20Lab%20Report.pdf) |
+| MustRead.txt | Notes and reminders for lab report writing | [📄 View](./MustRead.txt) |
+| Sample of a Good Lab Report.pdf | Example of an excellent lab report format | [📄 View](./Sample%20of%20a%20Good%20Lab%20Report.pdf) |
 > 📌 *Manuals used are referenced in the reports but are not redistributed.*
 
 ---
