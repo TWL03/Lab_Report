@@ -1,0 +1,4 @@
+Count (N),Initial Position (mm),Final Position (mm),"Actual Position Change (Δd, um)",Uncertainty in Δd (um),"Experimental Wavelength (λ_e, nm)",Uncertainty in λ_e (nm),Relative Uncertainty (%),"Theoretical Wavelength (λ_0, nm)",Percentage Discrepancy (%)
+30,1.0,1.19,9.5,0.71,633.33,47.14,7.44,632.8,0.18
+50,1.0,1.32,16.0,0.71,640.0,28.28,4.42,632.8,0.18
+70,1.0,1.44,22.0,0.71,628.57,20.2,3.21,632.8,0.18

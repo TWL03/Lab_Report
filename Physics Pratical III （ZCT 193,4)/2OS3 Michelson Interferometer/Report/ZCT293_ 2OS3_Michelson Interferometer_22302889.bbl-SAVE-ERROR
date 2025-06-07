@@ -1,0 +1,122 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{michelson_interferometer_wikipedia}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e2ceeea38f8620383cfbd3e99c5c0cd8}{%
+           family={contributors},
+           familyi={c\bibinitperiod},
+           given={Wikipedia},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{fullhash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{fullhashraw}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{bibnamehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authorbibnamehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authornamehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authorfullhash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authorfullhashraw}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \field{sortinit}{c}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Michelson Interferometer}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Michelson_interferometer
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Michelson_interferometer
+      \endverb
+    \endentry
+    \entry{usm_2os3_manual}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=04e2b2f28b5518fae8087a11bb0ff1e6}{%
+           family={Malaysia},
+           familyi={M\bibinitperiod},
+           given={Universiti\bibnamedelima Sains},
+           giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{04e2b2f28b5518fae8087a11bb0ff1e6}
+      \strng{fullhash}{04e2b2f28b5518fae8087a11bb0ff1e6}
+      \strng{fullhashraw}{04e2b2f28b5518fae8087a11bb0ff1e6}
+      \strng{bibnamehash}{04e2b2f28b5518fae8087a11bb0ff1e6}
+      \strng{authorbibnamehash}{04e2b2f28b5518fae8087a11bb0ff1e6}
+      \strng{authornamehash}{04e2b2f28b5518fae8087a11bb0ff1e6}
+      \strng{authorfullhash}{04e2b2f28b5518fae8087a11bb0ff1e6}
+      \strng{authorfullhashraw}{04e2b2f28b5518fae8087a11bb0ff1e6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-12-28}
+      \field{title}{2OS3 Manual and Laser Safety}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://elearning.usm.my/sidang2425/pluginfile.php/190755/mod_resource/content/2/2OS3%20Manual%20%2B%20Laser%20Safety%20%281%29.pdf
+      \endverb
+      \verb{url}
+      \verb https://elearning.usm.my/sidang2425/pluginfile.php/190755/mod_resource/content/2/2OS3%20Manual%20%2B%20Laser%20Safety%20%281%29.pdf
+      \endverb
+    \endentry
+    \entry{michelson_morley_1887}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4c988316feb65f5ac7af04633ab7a38c}{%
+           family={Michelson},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=908f035bafc0f28a8f9f2294978652d7}{%
+           family={Morley},
+           familyi={M\bibinitperiod},
+           given={E.\bibnamedelimi W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc907e973d95f7c4a9580e192a10d095}
+      \strng{fullhash}{cc907e973d95f7c4a9580e192a10d095}
+      \strng{fullhashraw}{cc907e973d95f7c4a9580e192a10d095}
+      \strng{bibnamehash}{cc907e973d95f7c4a9580e192a10d095}
+      \strng{authorbibnamehash}{cc907e973d95f7c4a9580e192a10d095}
+      \strng{authornamehash}{cc907e973d95f7c4a9580e192a10d095}
+      \strng{authorfullhash}{cc907e973d95f7c4a9580e192a10d095}
+      \strng{authorfullhashraw}{cc907e973d95f7c4a9580e192a10d095}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Science}
+      \field{title}{On the Relative Motion of the Earth and the Luminiferous Ether}
+      \field{volume}{34}
+      \field{year}{1887}
+      \field{pages}{333\bibrangedash 345}
+      \range{pages}{13}
+      \verb{urlraw}
+      \verb https://en.wikisource.org/wiki/The_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether
+      \endverb
+      \verb{url}
+      \verb https://en.wikisource.org/wiki/The_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

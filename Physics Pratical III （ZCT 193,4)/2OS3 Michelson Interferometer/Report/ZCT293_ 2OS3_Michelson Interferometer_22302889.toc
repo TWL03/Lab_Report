@@ -1,0 +1,21 @@
+\contentsline {section}{ABSTRACT}{i}{section*.4}%
+\contentsline {section}{ACKNOWLEDGEMENTS}{ii}{section*.5}%
+\contentsline {section}{LIST OF TABLES}{iv}{section*.6}%
+\contentsline {section}{LIST OF FIGURES}{v}{section*.7}%
+\contentsline {section}{\numberline {1}\centering INTRODUCTION}{1}{section.1}%
+\contentsline {section}{\numberline {2}\centering THEORY}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Michelson Interferometer}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Temporal Coherence and Coherence Length \blx@tocontentsinit {0}\autocite {phywe_2019}\blx@tocontentsinit {0}\autocite {UCSB_HeNe_Lasers}}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}\centering METHODOLOGY}{4}{section.3}%
+\contentsline {section}{\numberline {4}\centering DATA ANALYSIS}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Michelson Interferometer Setup}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Wavelength Determination}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Coherence Length Determination}{8}{subsection.4.3}%
+\contentsline {section}{\numberline {5}\centering DISCUSSION}{12}{section.5}%
+\contentsline {section}{\numberline {6}\centering CONCLUSION}{15}{section.6}%
+\contentsline {section}{\numberline {7}\centering REFERENCES}{16}{section.7}%
+\contentsline {section}{\numberline {8}\centering APPENDICES}{17}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Calculation for wavelength determination}{17}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Calculation for coherence length determination}{20}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Graphical representation of the contrast function}{22}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Calculation for percentage difference}{25}{subsection.8.4}%
