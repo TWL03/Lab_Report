@@ -1,0 +1,825 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{geometry}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+
+% Load xcolor first with all necessary options
+\usepackage[table]{xcolor}
+\definecolor{mygreen}{rgb}{0.82, 0.94, 0.75}
+\definecolor{mygreen2}{rgb}{0.67, 0.88, 0.69}
+\definecolor{codegreen}{rgb}{0,0.94,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\usepackage{titlesec}
+\usepackage{amsmath}  % For mathematical symbols and equations
+\usepackage{yhmath}
+\usepackage{amssymb}%For some mathrelationsymbol
+\usepackage{extarrows}
+\usepackage{enumerate}
+\usepackage{makecell} % 表格内换行
+\usepackage{paralist}
+\usepackage{datetime}
+\usepackage{siunitx}
+\usepackage{graphicx}  % For including figures
+\graphicspath{{./figure/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.jpg}
+\usepackage{wrapfig}
+\usepackage{bm}       % 同时黑体斜体
+\usepackage{listings} % 插入代码
+\usepackage[all]{xy}
+\usepackage{esint}
+\usepackage{bigints}
+\usepackage{mathrsfs}
+\usepackage{tcolorbox}
+\usepackage{ulem}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\usepackage{tasks}
+\usepackage[hidelinks]{hyperref} %removing red boxes around references
+\usepackage{fancyhdr} % 页眉页脚 header&footer
+\usepackage{calc} % For calculating widths
+\usepackage{tocloft}
+\usepackage{booktabs} % For formal tables
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{multicol} % Required for multicolumn within a column
+\usepackage{caption}
+
+\captionsetup[table]{
+  labelfont=bf, % Makes the "Table:" label bold
+}
+
+\captionsetup[figure]{labelfont=bf}
+
+% Custom styling for the Python code
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\tiny, % Adjusting the code size here
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+\begin{document}
+
+\begin{center}
+\textbf {\Large REPORT SUBMISSION FORM}
+\end{center}
+
+\begin{figure}[ht]
+\begin{flushright}
+\includegraphics[width=0.28\textwidth]{USMlogo}
+\end{flushright}
+\end{figure}
+
+\large
+\begin{tabular}{lcl}
+Name & : &\dotuline{TAN WEi LIANG\hfill}\\
+\\
+Partner's Name &: &\dotuline{AINA IMANINA BINTI MOHB KHOZIKIN\hfill}\\
+\\
+Group& : &\dotuline{M5B\hfill}\\
+\\
+Experiment Code& :&\dotuline{1GP1\hfill}\\
+\\
+Experiment Title&: &\dotuline{DYNAMICS\hfill}\\
+\\
+Lecturer’s/Examiner’s&: &\dotuline{DR. NURSAKINAH SUARDI\hfill}\\ 
+Name\\
+\\
+Starting Date &: &\dotuline{20/05/2024\hfill}\\
+(1st session)\\
+\\
+Ending Date &: &\dotuline{27/05/2024\hfill}\\
+(2nd session)\\
+\\
+Submission Date &: &\dotuline{03/06/2024\hfill}\\
+\\
+\end{tabular}
+
+
+\newpage
+\begin{center}
+\textbf{\Large DECLARATION OF ORIGINALITY}
+\end{center}
+\bigskip
+I, \textbf{TAN WEI LIANG 22302889}
+hereby declare that this laboratory report is my own work. I further declare that:
+
+\begin{enumerate}
+    \item The references/bibliography reflect the sources I have consulted, and
+    \item I also certify that this report has not previously been submitted for assessment in this or any other units, and that I have not copied in part or whole or otherwise plagiarized the work of other students and/or persons.
+    \item Sections with no source referrals are my own ideas, arguments, and/or conclusions.
+\end{enumerate}
+
+Signature: \hrulefill \hfill Date: 03/06/2024
+
+\newpage
+\begin{center}
+\vspace*{1cm}
+\textbf{\Large DYNAMICS}
+
+\vspace{3.0cm}
+\textbf{By}\\
+
+\vspace{3.0cm}
+\textbf{TAN WEI LIANG} \\
+
+\vspace{3.0cm}
+\textbf{May 2024}\\
+
+\vfill
+\textbf{\large First Year Laboratory Report}
+\end{center}
+
+
+\newpage
+\phantomsection
+\section*{\large \center DYNAMICS}
+\addcontentsline{toc}{section}{ABSTRACT}
+\section*{\large \center ABSTRACT}
+\label{sec:ABSTRACT}
+The research paper titled "Dynamics". This physics report investigates the fundamental principles of dynamics through a series of experiments focusing on free fall, conservation of energy, and conservation of momentum. The objectives were to determine the acceleration due to gravity, g by analyzing the free fall of a steel sphere, to explore the conversion of potential energy to kinetic energy using an air track system, and to study the conservation of momentum and kinetic energy during collisions between two gliders. The study found the acceleration due to gravity, g to be \(9.09 \pm 1.43 \)\, m$s^{-2}$, differing by 7.34\,\% from the theoreticald value \(9.81\)\, m$s^{-2}$. The potential energy per rubber band was determined to be \(0.0487 \pm 0.0036 \, \text{J}\) with a 7.39\,\% fractional uncertainty. The momentum conservation experiment showed a 14.03\% difference between the initial and final momentum values. The Percentage difference between initial kinetic energy and final kinetic energy is 66.64\%. Despite these discrepancies, the precision of measurements, as indicated by low fractional uncertainties, demonstrates the experiment's accuracy. The report discusses potential experimental limitations, such as air resistance and timing inaccuracies, and suggests improvements for future research. Overall, this study confirms the principles of dynamics and contributes to our understanding of fundamental mechanics and their applications in various fields.
+
+\newpage 
+\phantomsection
+\section*{\large \center ACKNOWLEDGEMENTS}
+\addcontentsline{toc}{section}{ACKNOWLEDGEMENTS}
+\label{sec:ACKNOWLEDGEMENTS}
+First and foremost, I express my deepest gratitude to Dr. NURSAKINAH SUARDI, our distinguished lecturer and examiner, for his invaluable guidance and unwavering support throughout our scientific exploration. I am truly thankful for his mentorship and the foundation he laid for our scientific understanding. I extend my sincere gratitude to my experiment partner, Aina Imanina Binti Mohb Khozikin. Her invaluable cooperation and dedication throughout both experiments were instrumental to the success of this project. I appreciate her commitment, expertise, and teamwork, which made these scientific endeavours both productive and enjoyable. A heartfelt acknowledgment is also extended to Dr. John Soo Yue Han for his dedicated efforts in revising and standardizing the manual in 2020, elevating its clarity and educational significance. I extend my sincere gratitude to Dr. Nur Azwin Ismail and Dr. Suhana Arshad whose efforts in editing the manual in 2020 and 2021. This collective endeavor has significantly enhanced our scientific learning journey, and I extend genuine gratitude to everyone mentioned for their noteworthy contributions.
+
+\newpage
+\renewcommand{\contentsname}{\centering CONTENTS}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Ensures dotted lines for sections
+% Adjust the dot separation
+\renewcommand{\cftdotsep}{1.0} % Default is 4.5, decrease for more dots
+\tableofcontents
+\phantomsection
+\addcontentsline{toc}{section}{CONTENTS}
+\label{sec:CONTENTS}
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{section}{LIST OF TABLES}
+\label{sec:LIST OF TABLES}
+\listoftables
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{section}{LIST OF FIGURES}
+\label{sec:LIST OF FIGURES}
+\listoffigures
+
+\newpage
+\phantomsection
+\section*{\center INTRODUCTION}
+\addcontentsline{toc}{section}{INTRODUCTION}
+\label{sec:INTRODUCTION}
+Understanding the principles of dynamics is crucial for comprehending the motion of objects and the forces that influence them. This physics experiment report focuses on three fundamental aspects of mechanics: free fall, conservation of energy, and conservation of momentum. The objectives were to determine the acceleration due to gravity (\(g\)) by examining the free fall of a steel sphere, investigate the conversion of potential energy to kinetic energy using an air track system, and study the conservation of momentum and kinetic energy in collisions by analyzing the interactions between two gliders on an air track. These experiments provide a comprehensive understanding of the dynamics involved in these processes, bridging the gap between theoretical physics and practical application.
+
+
+\newpage
+\phantomsection
+\section*{\center THEORY}
+\addcontentsline{toc}{section}{THEORY}
+\label{sec:THEORY}
+% Content for the THEORY section goes here.
+\subsection*{Gravitational Force}
+Gravitation is the force of attraction that exists between all particles with mass in the Universe. It is the force of gravity which is responsible for holding objects onto the surface of planets, and Newton's law of inertia responsible for keeping objects in orbit around one another.\\
+\\
+\textit{“Gravity is the force that pulls you down.''} -- Merlin in Disney's \textit{The Sword in the Stone}
+\\
+
+Merlin was right, of course, but gravity does much more than just holding you in your
+chair. It was the genius of Isaac Newton to recognise this. Newton recalled in a late memoir that 
+while he was trying to figure out what kept the Moon in the sky, he saw an apple fall to the 
+ground in his orchard. Only then he realised that the Moon was not suspended in the sky, but 
+continuously falling, like a cannon ball that was shot so fast it continuously misses the ground 
+as it falls away due to the curvature of the Earth. 
+\\
+
+According to Newton's third law, any two objects exert equal and oppositely directed
+gravitational pulls on each other. Isaac Newton was the first scientist to define gravity 
+mathematically when he formulated his law of universal gravitation. The law of gravitation says 
+that gravity is strongest between two very massive objects, and gets much weaker as these
+objects get further apart
+
+\subsection*{Free Fall}
+A body in free fall such as a sphere in this experiment will be accelerated because of the Earth’s
+gravitational force. For this experiment, we can assume that the acceleration by the gravity \textit{g} is constant. If the initial velocity of a body is zero, the time \textit{t} taken for the sphere to pass a distance \textit{d} can be expressed using the equation\\
+\begin{equation}
+d = \frac{1}{2}gt^2.
+\end{equation}
+\\
+The value of \( g \) can be determined by making a suitable measurement for \( d \) and \( t \).
+
+We make many assumptions when using Equation (1) to determine \( g \), one of them is that we assume there are no systematic errors in the time measurements. Besides, in many mechanics and electrical systems, there will be a time delay in measurement, since the system does not react immediately. So, the recorded time \( \bar{t} \) by the timer may be different from the actual time taken by the sphere to fall along the distance \( d \). If the time delay \( \Delta t \) is constant, we have
+
+\begin{equation}
+\bar{t} = t + \Delta t,
+\end{equation}
+
+where \( t \) is the actual time for the sphere to fall down along the distance \( d \). So, Equation (1) now becomes
+
+\begin{equation}
+d = \frac{1}{2} g (t - \Delta t)^2,
+\end{equation}
+or
+
+\begin{equation}
+\bar{t} = \sqrt{\frac{2d}{g}} + \Delta t.
+\end{equation}
+\\
+
+In the arrangement of the equipment used in this experiment, you will see that there are 
+various systematic errors in your measurement. You must find a way to minimise them by 
+making observations and recognising the error sources.
+\subsection*{Conservation of Momentum}
+The conservation of momentum is a fundamental concept of physics along with the conservation of energy and the conservation of mass. Momentum ($p$) is defined to be the mass of an object multiplied by the velocity of the object, $p = mv$. The conservation of momentum states that within a problem domain, the amount of momentum remains constant; momentum is neither created nor destroyed, but only changed through the action of forces as described by Newton's laws of motion.
+
+Dealing with momentum is more difficult than dealing with mass and energy because momentum is a vector quantity, having both a magnitude and a direction. Momentum is conserved in all three physical directions at the same time. It is even more difficult when dealing with a gas because forces in one direction can affect the momentum in another direction, causing collisions among the many molecules.
+
+The law of momentum conservation is one of the most powerful laws in physics. The law of momentum conservation can be summarised as follows:
+
+\begin{quote}
+For a collision occurring between object 1 and object 2 in an isolated system, the total momentum of the two objects before the collision is equal to the total momentum of the two objects after the collision.
+\end{quote}
+
+\subsection*{Air Track Collision}
+An air track is a track without any friction, it is used to study the movement of any object in a straight line. An air source from a vacuum blower is directed into the tube of the triangular track to support the glider that moves across it. The air source must be placed as close as possible as it is needed to support the gliders. A 100 g load (given in the box) is placed on the glider before the spindle at the vacuum equipment, so that a load of at least 100 g can be supported by the air without friction.
+\\
+
+An air track must first be adjusted to level horizontally by using a water bubble level. Then, the air source is turned on, and an unloaded glider is placed on the track to for further calibration: the glider should be floating statically and should not move to the left or right. Some rubber bands should be placed at both ends of the air track to prevent the gliders from colliding at the end of the track.
+\\
+
+In this experiment, the glider velocity is determined using a photogate. A card can be 
+placed on the glider to block the light beam from shinning in the photogate, which triggers the 
+timer. When this light beam is blocked, the timer will start counting until the glider passes it
+and the light beam resumes. In this way, the glider’s velocity can be calculated from the time 
+measured and the card length.
+\subsection*{Potential Energy and Kinetic Energy}
+Rubber bands can be used to supply a potential energy to the gliders. The potential energy of 
+the rubber bands is given by
+
+\begin{equation}
+E_p = ne,
+\end{equation}
+
+where \( n \) is the number of the rubber bands and \( e \) is the energy in each rubber band. The kinetic energy for the glider is given by
+
+\begin{equation}
+E_k = \frac{1}{2} mv^2,
+\end{equation}
+
+where \( m \) is the glider mass and \( v \) is the glider velocity. By equating equations (5) and (6), we get:
+
+\begin{equation}
+v^2 = \frac{2ne}{m},
+\end{equation}
+
+In this experiment, the number of rubber band is fixed. The potential energy of the rubber band \( e \), is also fixed by stretching the rubber band at the same suitable distance every time. The glider mass \( m \) changes and the value of \( v \) corresponding to the mass change can be determined.
+
+\newpage
+\phantomsection
+\section*{\center EXPERIMENTAL METHODOLOGY}
+\addcontentsline{toc}{section}{EXPERIMENTAL METHODOLOGY}
+\label{sec:EXPERIMENTAL METHODOLOGY}
+% Content for the EXPERIMENTAL METHODOLOGY section goes here.
+\subsection*{Experiment Part A: Free Fall of a Body}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.35\textwidth]{dynamic1}
+    \caption{Experimental setup for Part A.}
+    \label{fig:setupA}
+\end{figure}
+The experiment commenced with the measurement and recording of the mass and diameter of a small steel sphere. The experimental setup, as depicted in Figure 1, involved a sphere holder mounted on a retort stand and a receiver plate connected to a digital timer.  Following this setup, the stell sphere was put on the holder by pulling the dowel pin and the digital timer was reset to zero to eliminate any timing discrepancies. Starting with a drop height ($d$) of \SI{10}{cm}, the sphere was released by withdrawing a dowel pin, allowing it to free fall onto the receiver plate. The fall time ($t$) was meticulously recorded for each trial. This process was repeated for increasing distances, specifically at 12, 15, 17, 20, 23, 25, 27, 30, 32, 35, 37, and \SI{40}{cm}, ensuring ten measurements at each height to achieve statistical relevance and precision.The analysis involved plotting the average fall time ($\bar{t}$) against the drop height square root ($d^\frac{1}{2}$) to derive the gravitational acceleration ($g$) and $\Delta$t from graph. Find the slope of the linear graph and calculated the error for the value of ($g$). Error bars were plotted to represent measurement uncertainty, allowing for a comparative analysis against the standard gravitational value. The slope of the graph was determined to calculate the experimental value of $g$, followed by an error analysis to discuss potential discrepancies and systematic errors.
+
+\subsection*{Experiment Part B: Air Track System with One Glider}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.35\textwidth]{dynamic2}
+    \caption{Experimental setup for Part B.}
+    \label{fig:setupB}
+\end{figure}
+In Experiment Part B, our investigation delved into the dynamics of a glider on an air track, specifically examining the conversion of potential energy stored in rubber bands to the kinetic energy of the glider. Following the setup depicted in Figure 2 and adhering to theoretical guidance, we initiated the experiment by ensuring the air track was perfectly leveled using a water bubble level, thus establishing a baseline for a straight horizontal motion. A single phototransistor was connected to the timer and positioned at an optimal point along the track to capture the glider's velocity accurately.
+
+The procedural steps commenced with measuring and recording the card length attached to the glider, followed by the glider's mass without any additional weights. The glider was then positioned at one end of the air track, with the rubber band stretched 2 cm to standardize the potential energy provided across all trials. This stretching distance was meticulously maintained throughout the experiment to ensure consistent force application. The photogate timer, set to \textbf{GATE} mode, was reset before each trial. Upon releasing the glider, we captured the time it took to traverse the photogate, carefully avoiding any return motion that could disrupt the measurement.
+
+This process was repeated up to 6 times for a singular mass setting, after which we incrementally increased the glider's mass by adding weights (plasticine), varying between 10 to 20 g,with mass of glider,m of 190, 200, 210, 220, 230, 240, 250, and \SI{260}{g} to explore a range of kinetic energy outcomes. This was conducted for at least eight distinct mass configurations, with each variation subject to the same repeated measurement procedure to accumulate a robust dataset for analysis, as recorded on the designated worksheet.
+
+analysis involved plotting the square of the glider's velocity ($v^2$ ) against the reciprocal of its mass ($\frac{1}{m}$), investigating the relationship as proposed by the theoretical equation (7) provided in the manual. This plot aimed to validate the principle of energy conservation within the system. The slope of the graph offered a quantitative measure of the system's kinetic energy transformation capabilities, with error bars plotted to visualize the uncertainty in our measurements. Further, we calculated the potential energy ($\epsilon$) for each rubber band used, providing a comprehensive understanding of the energy conversion efficiency and the experimental setup's fidelity to theoretical expectations. 
+\subsection*{Experiment Part C: Air Track System with Two Gliders}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.35\textwidth]{dynamic3}
+    \caption{Experimental setup for Part C.}
+    \label{fig:setupC}
+\end{figure}
+In Part C of the experiment, we investigated the conservation of momentum and energy during the collision between two gliders with different masses. The experimental setup involved placing two photogates, one with a timer and the other without, at suitable distances apart. A small glider, without any additional load, was positioned between these photogates. Another glider, known as the big glider, was loaded with an additional 100 g and placed at the end of the air track.
+
+To conduct the experiment, the big glider was displaced from its equilibrium position by stretching the rubber band to a suitable distance, allowing the timer to measure the time taken for the big glider to pass through photogate 1 before the collision, the time for the small glider to pass through photogate 2 after the collision, and the time for the big glider to pass through any photogate after the collision. It was ensured that the collision occurred only after the big glider had completely passed through photogate 1, and both gliders were fully separated before either passed a photogate.
+
+The photogate timer was set to GATE mode, and data were collected for six sets of measurements for each run. Initial times were stored using the memory function while final times were measured.
+
+Subsequently, the data collected were analyzed and calculations were performed. The velocities of the big glider before collision (\(v_1\)), the small glider after collision (\(v_2\)), and the big glider after collision (\(v_3\)) were calculated. The conservation of momentum before and after the collision was determined, as well as the conservation of kinetic energy. Error analysis was conducted to assess the accuracy of the calculations.
+
+Finally, the findings from both Part B and Part C of the experiment were compiled into a comprehensive report. The report included the title, objectives, equipment setup, data collected, graphs illustrating the results, detailed calculations, error analysis, discussion of the results, and a conclusion summarizing the findings and their implications. The report was submitted at the end of the laboratory session in the second week, ensuring that all aspects of the experiment were thoroughly documented and analyzed.
+
+\newpage
+\phantomsection
+\section*{\center DATA ANALYSIS}
+\addcontentsline{toc}{section}{DATA ANALYSIS}
+\label{sec:DATA ANALYSIS}
+% Content for the DATA ANALYSIS section goes here.
+\noindent \textbf{PART A}
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c| } 
+\hline
+$d^\frac{1}{2} (m^{\frac{1}{2}})$ & Mean time,$\bar t$ (s)\\
+\hline
+0.32 & 0.132 \\
+0.35 & 0.150 \\
+0.39 & 0.171 \\
+0.41 & 0.182 \\
+0.45 & 0.195 \\
+0.48 & 0.224 \\
+0.50 & 0.222 \\
+0.52 & 0.231 \\
+0.55 & 0.242 \\
+0.57 & 0.249 \\
+0.59 & 0.264 \\
+0.61 & 0.272 \\
+0.63 & 0.283 \\
+\hline
+\end{tabular}
+\caption{Data table for PART A}
+\label{table:1}
+\end{table}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{D1G1}
+    \caption{Graph of $d^\frac{1}{2}$ against $\bar t$.}
+    \label{fig:setupC}
+\end{figure}
+\\Using Linear regression in Python,
+\begin{align*}
+\text{Gradient, m} &=  0.4691 \, \text{s}\text{m}^{\frac{1}{2}} \\
+\text{Standard error of the gradient, $\sigma$m}&= 0.0185 \, \text{s}\text{m}^{\frac{1}{2}} \\
+\text{Value of gravitational acceleration, } g&= 9.09 \, \text{m}\text{s}^{-2} \\
+\text{Standard error of gravitational acceleration, $\sigma$g}&= 1.43 \,\text{m}\text{s}^{-2}\\
+\text{Value of Y-intercept, } \Delta t&=  -0.01 \, \text{s} \\
+\text{Standard error of Y-intercept, } \sigma\Delta t&=  0.0085 \, \text{s} \\
+R\text{-correlation} &= 0.99
+\end{align*}
+The gravitational acceleration, g is,
+
+\begin{align*}
+g &= 9.09 \pm 1.43 \, \text{m}\text{s}^{-2} \\
+\end{align*}
+\noindent Percentage discrepancy of $g$ and $g_{theo}$,
+\begin{align*}
+\text{Discrepancy} &= \frac{|\text{experimental value} - \text{theoretical value}|}{\text{theoretical value}} \times 100\,\%\\
+&= \frac{|9.09- 9.81|}{9.81} \times 100\,\%\\
+&= 7.34\,\%
+\end{align*}
+Fractional uncertainty of $g$,
+\begin{align*}
+\text{Fractional uncertainty} &= \frac{\delta g}{g} \times 100\%\\
+&= \frac{1.43}{9.09} \times 100\,\%\\
+&= 15.73\,\%
+\end{align*}
+\newpage
+
+\noindent \textbf{PART B}
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c|c| } 
+\hline
+$m$ (g) & $\frac{1}{m}$ (g$^{-1}$) & $\bar{t}$ (s) & $v$ (m$s^{-1}$) & $v^2$ (m$^2$s$^{-2}$) \\
+\hline
+190 & 0.005263 & 0.127 & 0.788436 & 0.621632
+\\
+200 & 0.005000 & 0.133 & 0.755668 & 0.571033
+\\
+210 & 0.004762 & 0.137 & 0.718563 & 0.516333
+\\
+220 & 0.004545 & 0.145 & 0.668896 & 0.447422
+\\
+230 & 0.004348 & 0.153 & 0.643777 & 0.414449
+\\
+240 & 0.004167 & 0.164 & 0.617284 & 0.381039
+\\
+250 & 0.004000 & 0.163 & 0.614125 & 0.377149
+\\
+260 & 0.003846 & 0.169 & 0.598802 & 0.358564
+\\
+\hline
+\end{tabular}
+\caption{Data table for PART B}
+\label{table:1}
+\end{table}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{D1G2}
+    \caption{Graph of $v^{2}$ against $\frac{1}{m}$.}
+    \label{fig:setupC}
+\end{figure}
+\\
+\noindent Calculation by using Python,
+\begin{align*}
+\text{Gradient, m} &= 0.1949 \\
+\text{Standard Error of gradient, $\sigma$m} &= 0.0144 \\
+\text{Calculated potential energy of each rubber band, $\varepsilon$} &= 0.0487 \, \text{J} \\
+\text{Standard Error of potential energy of each rubber band, $\sigma \varepsilon$} &=  0.0036 \, \text{J} \\
+R\text{-correlation} &=  0.98
+\end{align*}
+The potential energy of each rubber band is,
+
+\begin{align*}
+\varepsilon &= 0.0487 \pm 0.0036 \, \text{J} \\
+\end{align*}
+\newpage
+\noindent Fractional uncertainty of $\varepsilon$,
+
+\begin{align*}
+\text{Fractional uncertainty} &= \frac{\sigma \varepsilon}{\varepsilon} \times 100\%\\
+&= \frac{0.0036}{0.0487} \times 100\,\%\\
+&= 7.39\,\%
+\end{align*}
+\\
+\noindent \textbf{PART C}
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c| } 
+\hline
+Photogate Passes & Average Time, \( \bar{t} \) (s) & Valocity, v\\
+\hline
+Big Glider (before collision) & 0.215 & 0.464\\
+\hline
+Small Glider (after collision) & 0.296 & 0.338\\
+\hline
+Big Glider (after collision) & 0.547 & 0.183\\
+\hline
+\end{tabular}
+\caption{Data table for PART C}
+\label{table:1}
+\end{table}
+
+\noindent Calculation by using Python,
+\begin{align*}
+\text{Velocity of big glider before collision, $v_1$}  &= \quad 0.4651 \, \text{ms}^{-1} \\
+\text{Velocity of small glider after collision, $v_2$}  &= \quad 0.3378 \, \text{ms}^{-1} \\
+\text{Velocity of big glider after collision, $v_3$}  &= \quad 0.1828 \, \text{ms}^{-1} \\
+\text{Initial momentum, $p_i$}  &= \quad 0.1349 \, \text{kgms}^{-1} \\
+\text{Final momentum,  $p_f$}  &= \quad 0.1172 \, \text{kgms}^{-1} \\
+\text{Percentage difference in momentum} &= \quad 14.03\,\% \\
+\text{Initial kinetic energy, $K_i$}  &= \quad 0.0314 \, \text{J} \\
+\text{Final kinetic energy, $K_f$} &=\quad 0.0157 \, \text{J} \\
+\text{Percentage difference in kinetic energy} &= \quad 66.64\,\% \\
+\end{align*}
+
+\newpage
+\phantomsection
+\section*{\center DISCUSSION}
+\addcontentsline{toc}{section}{DISCUSSION}
+\label{sec:DISCUSSION}
+% Content for the DISCUSSION section goes here.
+\quad In Part A, we investigated the free fall of a steel sphere to determine the acceleration due to gravity, g. The experimental setup was designed to minimize errors, yet certain systematic errors were inevitable. The recorded data were plotted as \(\overline{t}\) versus \(\sqrt{d}\), yielding a linear relationship consistent with the theoretical expectation. The slope of the resulting graph provided an experimental value of \(g = 9.09 \pm 1.43 \, \text{ms}^{-2}\).\\
+
+The percentage discrepancy of experimental value \(9.09\, \text{ms}^{-2}\) from the theoretical value of \(9.81 \, \text{ms}^{-2}\) was calculated to be 7.34\%, which falls within an acceptable range given the potential sources of error, such as timing inaccuracies and air resistance. Additionally, the fractional uncertainty of 15.73\% highlights the precision limitations of our experimental apparatus. The high \(R\)-correlation value of 0.99 indicates a strong linear relationship, affirming the validity of our measurements and the theoretical model.\\Despite these discrepancies, the experiment successfully demonstrated the key concepts of gravitational acceleration and free fall.\\
+
+To further analyze, the systematic errors could include the reaction time delay in starting and stopping the timer and air resistance acting on the falling sphere. The recorded times might have been slightly higher due to these delays, leading to a lower calculated value of \(g\). Improving the precision of the timing apparatus or conduct experiment in vacuum chamber could potentially reduce this error.\\
+
+Part B of the experiment focused on the conversion of potential energy stored in rubber bands to the kinetic energy of a glider. The results, plotted as \(v^2\) versus \(1/m\), confirmed the linear relationship predicted by the theoretical model. The slope of the graph provided the potential energy per rubber band as \(0.0487 \pm 0.0036 \, \text{J}\). Additionally, the fractional uncertainty of 7.39\% highlights the precision limitations of our experimental apparatus. The high \(R\)-correlation value of 0.98 indicates a strong linear relationship, affirming the validity of our measurements and the theoretical model.\\
+
+The data showed a clear trend where the velocity squared inversely correlated with the glider's mass. This is in line with the equation \( v^2 = 2n\varepsilon\frac{1}{m} \). The potential energy stored in the rubber bands was effectively converted into kinetic energy, demonstrating energy conservation. However, minor deviations from the linear trend could be attributed to slight variations in the initial stretching distance of the rubber bands, air resistance, and minor friction between the glider and the air track.\\
+
+Further investigation could involve calibrating the stretch distance more precisely and ensuring the air track is perfectly horizontal to minimize any influence of gravity on the glider's motion. These steps could help in achieving even more accurate results.\\
+
+In Part C, we explored the conservation of momentum and kinetic energy during collisions between two gliders of different masses. The initial and final momenta were calculated as \(0.1349 \, \text{kg ms}^{-1}\) and \(0.1172 \, \text{kg ms}^{-1}\), respectively.The velocities of the gliders before and after the collision were measured using photogates, and the results showed that the total momentum before and after the collision was not perfectly conserved, with a percentage difference of 14.03\%. This indicates a loss of momentum likely due to non-ideal conditions in the laboratory setting.This deviation can be attributed to experimental factors such as air resistance, friction, and imperfectly elastic collisions. Similarly, the kinetic energy was not entirely conserved, with the initial kinetic energy calculated as \(0.0314 \, \text{J}\) and the final kinetic energy as \(0.0157 \, \text{J}\), indicating a significant energy loss likely due to non-elastic deformation and sound energy produced during the collision. The percentage difference in kinetic energy was calculated to be 66.64\%, further highlighting the challenges in achieving perfectly elastic collisions.\\
+
+The experiment underscores the difficulties in achieving perfectly elastic collisions. The significant loss of kinetic energy suggests that some energy was transformed into other forms, such as heat or sound. Improving the air track setup to further reduce friction and ensuring more elastic collision conditions could help in achieving results that are closer to the ideal conservation laws.
+
+\newpage
+\phantomsection
+\section*{\center  CONCLUSION}
+\addcontentsline{toc}{section}{CONCLUSION}
+\label{sec:CONCLUSION}
+% Content for the CONCLUSION section goes here.
+\quad The acceleration due to gravity, g is \(9.09 \pm 1.43 \, \text{ms}^{-2}\), with a 7.34\% discrepancy from the theoretical value \(9.81 \, \text{ms}^{-2}\). \\
+
+The linear relationship between \(v^2\) and \(1/m\), determining the potential energy per rubber band as \(0.0487 \pm 0.0036 \, \text{J}\) with a 7.39\% fractional uncertainty. \\
+
+Collisions between big and small gliders, revealing a 14.03\% discrepancy in initial and final momentum and a 66.64\% difference in initial and final kinetic energy, highlighting the challenges of achieving perfectly elastic collisions. 
+
+\newpage
+\phantomsection
+\section*{\center REFERENCES}
+\addcontentsline{toc}{section}{REFERENCES}
+\label{sec:REFERENCES}
+% Content for the REFERENCES section goes here.
+\begin{enumerate}
+    \item Halliday, D., Resnick, R., \& Walker, J. (2003). \textit{Fundamentals of Physics} (10th ed.). John Wiley \& Sons.
+    \item Cutnell, J. D., \& Johnson, K. W. (2009). \textit{Physics} (8th ed.). John Wiley \& Sons.
+\end{enumerate}
+
+
+\newpage
+\phantomsection
+\section*{\center APPENDICES}
+\addcontentsline{toc}{section}{APPENDICES}
+\label{sec:APPENDICES}
+
+\section*{DYNAMICS WORKSHEET 1}
+
+\textbf{Instructions:} please complete Worksheet 1 by the end of the first session of your experiment.
+
+\bigskip
+\noindent Name: \underline{TAN WEI LIANG\hfill} \hfill Date: \underline{20/05/2024} \\
+\noindent Partner's Name: \underline{AINA IMANINA BINTI MOHB KHOZIKIN\hfill} \hfill Group: \underline{M5B}
+
+\subsection*{Part A}
+Mass of steel sphere: \underline{27 $\pm$ 1} g\\
+Diameter of steel sphere: \underline{1.9 $\pm$ 0.1} cm\\
+\begin{table}[h!]
+\caption*{Data table for PART A.}
+\label{table:part_a}
+\begin{tabular}{|c|c|*{10}{c|}c|}
+\hline
+$d$ (cm) & $d^{\frac{1}{2}}$ & $t_1$ & $t_2$ & $t_3$ & $t_4$ & $t_5$ & $t_6$ & $t_7$ & $t_8$ & $t_9$ & $t_{10}$ & $\overline{t}$ \\
+\hline
+10 & 3.2 & 0.134 & 0.132 & 0.131 & 0.131 & 0.130 & 0.132 & 0.137 & 0.130 & 0.131 & 0.133 & 0.132 \\
+12 & 3.5 & 0.149 & 0.153 & 0.150 & 0.148 & 0.150 & 0.149 & 0.149 & 0.149 & 0.149 & 0.151 & 0.150 \\
+15 & 3.9 & 0.169 & 0.170 & 0.170 & 0.169 & 0.173 & 0.175 & 0.170 & 0.169 & 0.172 & 0.174 & 0.171 \\
+17 & 4.1 & 0.181 & 0.181 & 0.181 & 0.183 & 0.183 & 0.182 & 0.181 & 0.181 & 0.182 & 0.180 & 0.182 \\
+20 & 4.5 & 0.195 & 0.195 & 0.195 & 0.196 & 0.196 & 0.194 & 0.195 & 0.195 & 0.195 & 0.196 & 0.195 \\
+23 & 4.8 & 0.214 & 0.215 & 0.215 & 0.216 & 0.213 & 0.214 & 0.214 & 0.215 & 0.313 & 0.214 & 0.224 \\
+25 & 5.0 & 0.220 & 0.221 & 0.223 & 0.220 & 0.222 & 0.221 & 0.222 & 0.223 & 0.221 & 0.224 & 0.222 \\
+27 & 5.2 & 0.230 & 0.230 & 0.229 & 0.230 & 0.231 & 0.226 & 0.232 & 0.234 & 0.235 & 0.235 & 0.231 \\
+30 & 5.5 & 0.241 & 0.242 & 0.243 & 0.242 & 0.245 & 0.244 & 0.241 & 0.242 & 0.242 & 0.242 & 0.242 \\
+32 & 5.7 & 0.249 & 0.247 & 0.249 & 0.249 & 0.249 & 0.248 & 0.249 & 0.250 & 0.249 & 0.250 & 0.249 \\
+35 & 5.9 & 0.264 & 0.265 & 0.262 & 0.264 & 0.263 & 0.264 & 0.266 & 0.266 & 0.265 & 0.265 & 0.264 \\
+37 & 6.1 & 0.271 & 0.271 & 0.272 & 0.274 & 0.271 & 0.273 & 0.272 & 0.272 & 0.274 & 0.272 & 0.272 \\
+40 & 6.3 & 0.281 & 0.284 & 0.282 & 0.284 & 0.284 & 0.284 & 0.282 & 0.284 & 0.284 & 0.284 & 0.283 \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+\section*{DYNAMICS WORKSHEET 2}
+
+\textbf{Instructions:} please complete \textit{Worksheet 2} by the end of the second session of your experiment.
+
+\bigskip
+\noindent Name: \underline{TAN WEI LIANG\hfill} \hfill Date: \underline{27/05/2024} \\
+\noindent Partner's Name: \underline{AINA IMANINA BINTI MOHB KHOZIKIN\hfill} \hfill Group: \underline{M5B}
+
+\subsection*{Part B}
+
+Mass of unloaded glider: \underline{190 $\pm$ 1} g
+\\
+Length of card: \underline{0.100 $\pm$ 0.001} m
+\\
+number of rubber band = 2
+\\
+\begin{table}[h!]
+\caption*{Data table for PART B.}
+\label{table:part_b}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{| l | l | l | l | l | l | l | l | l | l | l |}
+\hline
+$m$ (g) & $\frac{1}{m}$ (g$^{-1}$) & $t_1$ (s) & $t_2$ (s) & $t_3$ (s) & $t_4$ (s) & $t_5$ (s) & $t_6$ (s) & $\bar{t}$ (s) & $v$ (m/s) & $v^2$ (m$^2$/s$^2$) \\
+\hline
+% Data rows for Part B
+190 & 0.005263 & 0.120 & 0.126 & 0.129 & 0.134 & 0.120 & 0.132 & 0.127 & 0.788436 & 0.621632
+\\
+200 & 0.005000 & 0.135 & 0.131 & 0.134 & 0.131 & 0.130 & 0.133 & 0.133 & 0.755668 & 0.571033
+\\
+210 & 0.004762 & 0.138 & 0.142 & 0.138 & 0.139 & 0.141 & 0.137 & 0.137 & 0.718563 & 0.516333
+\\
+220 & 0.004545 & 0.153 & 0.146 & 0.155 & 0.145 & 0.153 & 0.145 & 0.145 & 0.668896 & 0.447422
+\\
+230 & 0.004348 & 0.154 & 0.154 & 0.159 & 0.154 & 0.158 & 0.153 & 0.153 & 0.643777 & 0.414449
+\\
+240 & 0.004167 & 0.162 & 0.160 & 0.165 & 0.161 & 0.160 & 0.164 & 0.164 & 0.617284 & 0.381039
+\\
+250 & 0.004000 & 0.163 & 0.166 & 0.162 & 0.162 & 0.161 & 0.163 & 0.163 & 0.614125 & 0.377149
+\\
+260 & 0.003846 & 0.169 & 0.166 & 0.166 & 0.169 & 0.163 & 0.169 & 0.169 & 0.598802 & 0.358564
+\\
+\hline
+\end{tabular}
+}
+\end{table}
+\\
+\subsection*{Part C}
+Mass of big glider: \underline{290 $\pm$ 1} g\\
+Mass of small glider: \underline{190 $\pm$ 1} g
+\begin{table}[h!]
+\centering
+\caption*{Data table for PART C.}
+\label{table:part_c}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l|*{6}{c|}c|}
+\hline
+Photogate Passes & \( t_1 \) & \( t_2 \) & \( t_3 \) & \( t_4 \) & \( t_5 \) & \( t_6 \) & Average Time, \( \bar{t} \) (s) \\
+\hline
+Big Glider (before collision) & 0.215 & 0.203 & 0.206 & 0.206 & 0.233 & 0.229 & 0.215\\
+\hline
+Small Glider (after collision) & 0.329 & 0.267 & 0.318 & 0.276 & 0.273 & 0.310 & 0.296\\
+\hline
+Big Glider (after collision) & 0.564 & 0.526 & 0.539 & 0.581 & 0.537 & 0.533 & 0.547\\
+\hline
+\end{tabular}
+}
+\end{table}
+\newpage
+\subsection*{Python code of PART A}
+\begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import linregress
+
+# Given data
+distances_cm = np.array([10, 12, 15, 17, 20, 23, 25, 27, 30, 32])  # in cm
+distances_m = distances_cm / 100  # converting cm to m
+sqrt_distances_m = np.sqrt(distances_m)  # 
+
+# Replace this with your calculated mean times in seconds
+mean_times_s = np.array([0.132, 0.150, 0.171, 0.182, 0.195, 0.224, 0.222, 0.231, 0.242, 0.249])
+# Replace this with your error values for the mean times
+mean_time_errors_s = np.array([0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001])
+
+# Perform linear regression using scipy.stats.linregress to get standard error of the slope
+regression_result = linregress(sqrt_distances_m, mean_times_s)
+slope = regression_result.slope
+intercept = regression_result.intercept
+slope_std_err = regression_result.stderr
+intercept_std_err = regression_result.intercept_stderr
+r_value = regression_result.rvalue
+
+# Determine g and its error from the slope and standard error of the slope
+g = 2 / slope**2
+g_error = (4 * slope_std_err / slope**3) * 2
+
+# Plotting the graph with error bars
+plt.figure(figsize=(10, 6))
+plt.errorbar(sqrt_distances_m, mean_times_s, yerr=mean_time_errors_s, fmt='o', label='Experimental Data', capsize=5)
+plt.plot(sqrt_distances_m, intercept + slope * sqrt_distances_m, '-', label=f'Linear Fit: $\\bar{{t}} = {slope:.2f}\\sqrt{{d}} + {intercept:.2f}$')
+
+plt.xlabel('$\sqrt{d}$ (m^0.5)')
+plt.ylabel('Mean Time (s)')
+plt.title('Graph of Mean Time vs. $\sqrt{d}$')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# Print the calculated values of m, g,$\Delta$ t, and the error
+print(f"Slope: {slope:.4f} s/m^0.5")
+print(f"Standard error of the slope: {slope_std_err:.4f} s/m^0.5")
+print(f"value of g: {g:.2f} m/s^2")
+print(f"Standard error in g: {g_error:.2f} m/s^2")
+print(f"value of $\Delta$t: {intercept:.2f} s")
+print(f"Standard error of $\Delta$t (intercept): {intercept_std_err:.4f} s")
+print(f"R-correlation: {r_value:.2f}")
+\end{lstlisting}
+\subsection*{Output}
+\begin{lstlisting}
+Slope: 0.4691 s/m^0.5
+Standard error of the slope: 0.0185 s/m^0.5
+value of g: 9.09 m/s^2
+Standard error in g: 1.43 m/s^2
+value of $\Delta$ t: -0.01 s
+Standard error of $\Delta$ t (intercept): 0.0085 s
+R-correlation: 0.99
+\end{lstlisting}
+\newpage
+\subsection*{Python code of PART B}
+\begin{lstlisting}[language=Python]
+import matplotlib.pyplot as plt
+from scipy.stats import linregress
+import numpy as np
+
+# Given data for 1/m (1/kg) and v^2 (m^2/s^2)
+# Masses in grams
+masses_g = [190, 200, 210, 220, 230, 240, 250, 260]
+# Convert masses to kilograms
+masses_kg = np.array(masses_g) / 1000
+# Calculate 1/m in (1/kg)
+inverse_masses = 1 / masses_kg
+
+# Velocities in m/s
+velocities_m1_s = [0.788436268, 0.755667506, 0.718562874, 0.668896321, 0.643776824, 0.617283951, 0.614124872, 0.598802395]
+# Convert velocities to m/s
+velocities_m_s = np.array(velocities_m1_s)
+# Calculate v^2 in (m^2/s^2)
+v_squared = velocities_m_s ** 2
+
+# Perform linear regression on v^2 vs 1/m
+slope, intercept, r_value, p_value, std_err = linregress(inverse_masses, v_squared)
+
+# Plotting the graph
+plt.figure(figsize=(10, 6))
+plt.scatter(inverse_masses, v_squared, label='Experimental Data')
+plt.plot(inverse_masses, intercept + slope * np.array(inverse_masses), 'r', label=f'Linear Fit: $v^2 = {slope:.4f}(1/m) + {intercept:.4f}$')
+
+plt.xlabel('1/m ($kg^{-1}$)')
+plt.ylabel('$v^2$ ($m^2$$s^{-2}$)')
+plt.title('Graph of $v^2$ vs. 1/m')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# Number of rubber bands
+n = 2  # Replace with the actual number of rubber bands if different
+
+# Calculate the potential energy of each rubber band
+epsilon = slope / (2 * n)
+std_err_epsilon = std_err / (2 * n)
+
+print(f"Slope (m): {slope:.4f}")
+print(f"Standard Error of Slope ($\sigma$m): {std_err:.4f}")
+print(f"Calculated potential energy of each rubber band ($\varepsilon$): {epsilon:.4f} J")
+print(f"Standard Error of potential energy of each rubber band ($\sigma$$\varepsilon$): {std_err_epsilon:.4f} J")
+print(f"R-correlation: {r_value:.2f}")
+\end{lstlisting}
+\subsection*{Output}
+\begin{lstlisting}
+Slope (m): 0.1949
+Standard Error of Slope (($\sigma$m): 0.0144
+Calculated potential energy of each rubber band ($\varepsilon$): 0.0487 J
+Standard Error of potential energy of each rubber band (($\sigma$$\varepsilon$): 0.0036 J
+R-correlation: 0.98
+\end{lstlisting}
+\newpage
+\subsection*{Python code of PART C}
+\begin{lstlisting}[language=Python]
+# Given data
+l = 0.10  # length of the card in meters
+mass_big = 0.290  # mass of big glider in kg
+mass_small = 0.190  # mass of small glider in kg
+
+# Before the collision
+time_v1 = 0.215  # time for big glider before collision in seconds
+velocity_v1 = l / time_v1  # velocity of big glider before collision
+
+# After the collision
+time_v2 = 0.296  # time for small glider after collision in seconds
+velocity_v2 = l / time_v2  # velocity of small glider after collision
+
+time_v3 = 0.547  # time for big glider after collision in seconds
+velocity_v3 = l / time_v3  # velocity of big glider after collision
+
+# Calculate momentum
+initial_momentum = mass_big * velocity_v1
+final_momentum = (mass_small * velocity_v2) + (mass_big * velocity_v3)
+
+# Calculate percentage difference in momentum
+percentage_difference_momentum = abs(initial_momentum - final_momentum) / ((initial_momentum + final_momentum) / 2) * 100
+
+# Calculate kinetic energy
+initial_kinetic_energy = 0.5 * mass_big * (velocity_v1 ** 2)
+final_kinetic_energy = 0.5 * mass_small * (velocity_v2 ** 2) + 0.5 * mass_big * (velocity_v3 ** 2)
+
+# Calculate percentage difference in kinetic energy
+percentage_difference_kinetic_energy = abs(initial_kinetic_energy - final_kinetic_energy) / ((initial_kinetic_energy + final_kinetic_energy) / 2) * 100
+
+# Print the results
+print(f"Velocity of big glider before collision (v1): {velocity_v1:.4f} m/s")
+print(f"Velocity of small glider after collision (v2): {velocity_v2:.4f} m/s")
+print(f"Velocity of big glider after collision (v3): {velocity_v3:.4f} m/s")
+print(f"Initial momentum (pi): {initial_momentum:.4f} kgm/s")
+print(f"Final momentum (pf): {final_momentum:.4f} kgm/s")
+print(f"Percentage difference in momentum: {percentage_difference_momentum:.2f}%")
+print(f"Initial kinetic energy (Ki): {initial_kinetic_energy:.4f} J")
+print(f"Final kinetic energy (Kf): {final_kinetic_energy:.4f} J")
+print(f"Percentage difference in kinetic energy: {percentage_difference_kinetic_energy:.2f}%")
+\end{lstlisting}
+\subsection*{Output}
+\begin{lstlisting}
+Velocity of big glider before collision (v1): 0.4651 m/s
+Velocity of small glider after collision (v2): 0.3378 m/s
+Velocity of big glider after collision (v3): 0.1828 m/s
+Initial momentum (pi): 0.1349 kgm/s
+Final momentum (pf): 0.1172 kgm/s
+Percentage difference in momentum: 14.03%
+Initial kinetic energy (Ki): 0.0314 J
+Final kinetic energy (Kf): 0.0157 J
+Percentage difference in kinetic energy: 66.64%
+\end{lstlisting}
+\end{document}
